@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" SchemaVersion="75">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Door_Open" ID="{9B4A9B30-6348-4EF6-A27C-DDE68771EDB3}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B634D714-BD07-4876-AC34-1A53FAF327D8}" ShortID="627638458" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0D738259-D35A-4CAF-9CE6-E17340ACA2CF}" Global="false">
+									<ObjectRef Name="Door Open" ID="{C5CA4B7D-DEDA-4C8B-AD66-E1C2E8DA1449}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Monster_Closer" ID="{205114D0-453D-40EE-8A3E-78B302D7D09E}">
+					<ChildrenList>
+						<Action Name="Set Game Parameter" ID="{38B3F846-E8DF-4867-8100-5C2DCE443766}" ShortID="1062765114" Type="SetGameParameter" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Absolute" Type="bool" Value="False"/>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{D1627DA1-F3F8-404B-86F5-E47FF90D038C}" Global="false">
+									<ObjectRef Name="Monster_Coming" ID="{8DF9A529-59C7-40A8-BB27-1835E2A1BB99}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Monster_Farther" ID="{F3A76281-CAD3-4FE7-A9B9-167106BC52DA}">
+					<ChildrenList>
+						<Action Name="Set Game Parameter" ID="{00702B3E-02E1-4A7B-B840-A7F2ECD77B26}" ShortID="892365019" Type="SetGameParameter" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Absolute" Type="bool" Value="False"/>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="-1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{89E97653-AD6C-4CC9-9FA7-DD431FA65A8E}" Global="false">
+									<ObjectRef Name="Monster_Coming" ID="{8DF9A529-59C7-40A8-BB27-1835E2A1BB99}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Walking" ID="{2B4F444F-8B21-49B3-A076-912F0DE8A207}">
+					<ChildrenList>
+						<Action Name="Play" ID="{E2591538-A636-4290-9351-852F5EB08A06}" ShortID="498144823" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E46892FF-2D1E-474D-83D5-D7C5E569EE0E}" Global="false">
+									<ObjectRef Name="WetConcrete" ID="{9EBE8295-4E6D-4A76-BB41-074A51EB3EFC}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Monster_step" ID="{A9D2C5F7-F50B-4E41-81F4-A48327494A83}">
+					<ChildrenList>
+						<Action Name="Play" ID="{E05147E0-54F4-4BA4-AFCC-CD25BB937639}" ShortID="790890401" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3A272DF3-FD41-4A12-ADD3-84C57376AF4D}" Global="false">
+									<ObjectRef Name="Monster Steps Blend" ID="{45B03253-21AA-41E8-83DC-CC5C1D1C0FE1}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

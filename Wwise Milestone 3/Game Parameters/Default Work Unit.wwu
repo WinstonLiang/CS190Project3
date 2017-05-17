@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}" SchemaVersion="75">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Monster_Coming" ID="{8DF9A529-59C7-40A8-BB27-1835E2A1BB99}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

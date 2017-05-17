@@ -1,0 +1,1878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}" SchemaVersion="75">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchContainer Name="Player Footstep" ID="{41E5DAB3-7B30-4144-8378-53C33FFA57B1}" ShortID="239295669">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="WetConcrete" ID="{9EBE8295-4E6D-4A76-BB41-074A51EB3EFC}" ShortID="448481058">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5D6AFAFB-3130-4A71-938F-9C5B36DE8088}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="126"/>
+													<Property Name="Min" Type="Real64" Value="-101"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D57B8BB6-0129-4F6B-AD74-5E1117091C79}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Footsteps_WetConcrete_V1" ID="{8F8344D4-6ADC-4025-8D13-45396B76331C}" ShortID="372182144" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Footsteps_WetConcrete_V1" ID="{0762B49D-6896-42BC-AEB6-11EE6933DD7C}" ShortID="869576447">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="3.37801532130986"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.78337715986704"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Footsteps_WetConcrete_V1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="30230954"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Footsteps_WetConcrete_V1" ID="{0762B49D-6896-42BC-AEB6-11EE6933DD7C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Footsteps_WetConcrete_V2" ID="{4CFAD5E5-32FD-4A0F-AE5B-3A147A6F761E}" ShortID="885863748" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Footsteps_WetConcrete_V1" ID="{91448D00-3C3C-454F-B5BD-D1AEBCBCDBDE}" ShortID="636877582">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="18.9506659525483"/>
+												<Property Name="TrimEnd" Type="Real64" Value="19.524928557171"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Footsteps_WetConcrete_V1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Footsteps_WetConcrete_V1" ID="{91448D00-3C3C-454F-B5BD-D1AEBCBCDBDE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Footsteps_WetConcrete_V3" ID="{761A78E3-F363-45F4-A001-A86BBF0F347D}" ShortID="201480766" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Footsteps_WetConcrete_V1" ID="{D1FDE88E-DF9C-410E-9D58-FB30E39ECAF0}" ShortID="159538527">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="11.654152858519"/>
+												<Property Name="TrimEnd" Type="Real64" Value="12.0257345438631"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Footsteps_WetConcrete_V1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Footsteps_WetConcrete_V1" ID="{D1FDE88E-DF9C-410E-9D58-FB30E39ECAF0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Footsteps_WetConcrete_V4" ID="{EC8F1153-3038-43BF-A45D-A2B17D3C0449}" ShortID="769475860" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Footsteps_WetConcrete_V1" ID="{0526DB42-A8F6-4B25-A212-77F676FC3401}" ShortID="759330069">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="18.2075025818602"/>
+												<Property Name="TrimEnd" Type="Real64" Value="18.7817651864828"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Footsteps_WetConcrete_V1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Footsteps_WetConcrete_V1" ID="{0526DB42-A8F6-4B25-A212-77F676FC3401}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Footsteps_WetConcrete_V5" ID="{4A41E4BC-D445-4EF8-803D-6CC398E38936}" ShortID="792137040" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Footsteps_WetConcrete_V1" ID="{A5F1C2A4-0EAE-4A59-BB8D-084549A3EF84}" ShortID="535209269">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="8.27613753720916"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.71527952897944"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Footsteps_WetConcrete_V1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Footsteps_WetConcrete_V1" ID="{A5F1C2A4-0EAE-4A59-BB8D-084549A3EF84}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Footsteps_WetConcrete_V6" ID="{DFC6DA81-D9E7-4033-A6BC-5BA43114C672}" ShortID="900466705" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Footsteps_WetConcrete_V1" ID="{E92ADAD7-CC1F-4753-8FDD-12DF7EAFC18B}" ShortID="30230954">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="2.02680919278592"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.5672916441955"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Footsteps_WetConcrete_V1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="869576447"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Footsteps_WetConcrete_V1" ID="{E92ADAD7-CC1F-4753-8FDD-12DF7EAFC18B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Footsteps_WetConcrete_V7" ID="{88F475C6-9BB8-44BE-B926-913E96A6C6D3}" ShortID="126853459" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Footsteps_WetConcrete_V1" ID="{CEF71E4A-FBAB-44D7-9959-CD751D19BF73}" ShortID="977595785">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="8.98552075468423"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.12064136753662"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Footsteps_WetConcrete_V1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Footsteps_WetConcrete_V1" ID="{CEF71E4A-FBAB-44D7-9959-CD751D19BF73}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+						<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="WetConcrete" ID="{9EBE8295-4E6D-4A76-BB41-074A51EB3EFC}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<SwitchContainer Name="Room Types" ID="{ABCC6769-3C33-4A78-9520-82FC6BEE4810}" ShortID="146164790">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Moist Room" ID="{B47DE63D-016A-4973-B0B0-B9A7FF3ED5C0}" ShortID="41731571">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Room Dripping" ID="{67B6DFB2-F535-415F-8917-C781A67F8DDB}" ShortID="122981687">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4F4D7E96-8E73-45B4-9FA1-752E334FEF8E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="253"/>
+															<Property Name="Min" Type="Real64" Value="-253"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5B158734-4043-4B29-9766-1E035D8F87A2}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_Room_Wet_Dripping_V1" ID="{384EB9C9-0D01-486C-B052-969F17A1A095}" ShortID="460279034" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Room_Wet_Dripping_V1" ID="{9CF1BD75-6317-41CC-B90B-E237CBF506E7}" ShortID="501855142">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="1.00450324762673"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.87939317297905"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_Room_Wet_Dripping_V1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="33571887"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Room_Wet_Dripping_V1" ID="{9CF1BD75-6317-41CC-B90B-E237CBF506E7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Room_Wet_Dripping_V2" ID="{3C820484-73A4-4096-BBB1-9EF88185CB0E}" ShortID="440781372" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Room_Wet_Dripping_V1" ID="{AD6B8777-FDB6-44D6-B123-890044C491BE}" ShortID="940685016">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="20.802938225044"/>
+														<Property Name="TrimEnd" Type="Real64" Value="21.5482148281219"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_Room_Wet_Dripping_V1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Room_Wet_Dripping_V1" ID="{AD6B8777-FDB6-44D6-B123-890044C491BE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Room_Wet_Dripping_V3" ID="{2D537F90-9A2E-4423-8AED-D8C993A146DB}" ShortID="16897626" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Room_Wet_Dripping_V1" ID="{154848EE-367F-42F4-B682-5555AA8E588C}" ShortID="861566122">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="33.0513971799764"/>
+														<Property Name="TrimEnd" Type="Real64" Value="33.8614804441915"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_Room_Wet_Dripping_V1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="501855142"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Room_Wet_Dripping_V1" ID="{154848EE-367F-42F4-B682-5555AA8E588C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Room_Wet_Dripping_V4" ID="{6F569FD3-A962-4F5E-8D08-84A274D66E7E}" ShortID="503241094" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Room_Wet_Dripping_V1" ID="{9A32BE76-D76F-41B5-993C-3FCEFFBE76C0}" ShortID="33571887">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="14.1926587890487"/>
+														<Property Name="TrimEnd" Type="Real64" Value="14.905532061558"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_Room_Wet_Dripping_V1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="861566122"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Room_Wet_Dripping_V1" ID="{9A32BE76-D76F-41B5-993C-3FCEFFBE76C0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+						<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Moist Room" ID="{B47DE63D-016A-4973-B0B0-B9A7FF3ED5C0}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<RandomSequenceContainer Name="Door Open" ID="{C5CA4B7D-DEDA-4C8B-AD66-E1C2E8DA1449}" ShortID="899245881">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="MetalDoor V1" ID="{A1C44F22-FC57-45D8-A2E1-E6A5C0F38BD5}" ShortID="266992271">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5E7FADED-112C-41C3-BC11-440E3327AA16}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Door_Drag" ID="{7BDFF72A-50A8-4340-8F0A-22F87A65403B}" ShortID="677330046" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_Drag" ID="{705F4B02-EAFC-4AE4-A288-8FA91EB24352}" ShortID="260994041">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="1.16458444139456"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.23234503569972"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_Drag.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_Drag" ID="{705F4B02-EAFC-4AE4-A288-8FA91EB24352}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_GearHeavy" ID="{C6C87049-8A91-4757-9FCC-56ED2C358F93}" ShortID="422002688" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_GearHeavy" ID="{5E8F073B-7576-48B5-B86F-29F717B76C7E}" ShortID="187253810">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="6.61320697405987E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.06712228904684"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_GearHeavy.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_GearHeavy" ID="{5E8F073B-7576-48B5-B86F-29F717B76C7E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_PipeRoll" ID="{3AB3E51F-F694-45AA-A278-9B6DE5201F57}" ShortID="379562798" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_PipeRoll" ID="{7BFFD46B-77EC-4F9F-9558-D87753992425}" ShortID="586645235">
+											<PropertyList>
+												<Property Name="TrimEnd" Type="Real64" Value="3.11326699471478"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_PipeRoll.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_PipeRoll" ID="{7BFFD46B-77EC-4F9F-9558-D87753992425}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_GearMetal" ID="{79B6F897-A1A5-484D-AAB9-63CC5C992172}" ShortID="359376023" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_GearMetal" ID="{23438001-EAC2-4233-834A-E1E96A606F09}" ShortID="669278220">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="7.52241848078765E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="5.64181386059079E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.02748301799305"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.10212636175301"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_GearMetal.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_GearMetal" ID="{23438001-EAC2-4233-834A-E1E96A606F09}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_Steam" ID="{337C84F2-1EF3-4D4F-9B1A-6C9F93BE04E7}" ShortID="101069681" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>4.5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Hall_Large_Dark" ID="{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_Steam" ID="{47E743B0-CE36-4609-A646-2EA26AA6E221}" ShortID="862865505">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.135870967741936"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.07941935483871"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.02296774193548"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.82703225806451"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_Steam.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_Steam" ID="{47E743B0-CE36-4609-A646-2EA26AA6E221}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_MultipleDrag" ID="{D82BDCA3-379B-4128-BF8D-93D4BAE70A5C}" ShortID="16043463" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_MultipleDrag" ID="{90F0CD39-C1B6-4E9A-8F3E-777073D27AD9}" ShortID="664318253">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.367152043977782"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.440582452773342"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.22224850574456"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.25223150824021"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_MultipleDrag.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_MultipleDrag" ID="{90F0CD39-C1B6-4E9A-8F3E-777073D27AD9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Metal DoorV2" ID="{FC141921-F91B-425B-9F5D-464A008F4C63}" ShortID="1060638770">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E0801B1E-6539-45A0-9833-176DD95F4F9D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Door_GearChange" ID="{6F88D9F8-3A15-4663-873B-62E36B96CBE8}" ShortID="169169011" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_GearChange" ID="{894396CA-1290-4C3B-8078-6C93D6C890E9}" ShortID="89533266">
+											<PropertyList>
+												<Property Name="TrimEnd" Type="Real64" Value="3.94405686167305"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_GearChange.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_GearChange" ID="{894396CA-1290-4C3B-8078-6C93D6C890E9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_Drag" ID="{3C7124E3-BA5D-417D-A82D-755B2F19F205}" ShortID="298941351" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_Drag" ID="{FD3A4DE2-6462-448F-98E3-5E1233FD5BBC}" ShortID="160494670">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="1.16458444139456"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.23234503569972"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_Drag.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="260994041"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_Drag" ID="{FD3A4DE2-6462-448F-98E3-5E1233FD5BBC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_GearMetal" ID="{58CF4F9D-8EDC-4AD1-AA0B-8A6A8872D72A}" ShortID="365888993" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_GearMetal" ID="{898CE916-DF2F-4046-9DA6-53935615DE68}" ShortID="481479529">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="7.52241848078765E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="5.64181386059079E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.02748301799305"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.10212636175301"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_GearMetal.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="669278220"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_GearMetal" ID="{898CE916-DF2F-4046-9DA6-53935615DE68}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_Steam" ID="{1928F896-0579-4455-8BF1-AA8F9A5FB21F}" ShortID="144846685" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>4.5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Hall_Large_Dark" ID="{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_Steam" ID="{BD325497-4091-449F-B468-F110750154EC}" ShortID="608090741">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.135870967741936"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.07941935483871"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.02296774193548"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.82703225806451"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_Steam.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="862865505"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_Steam" ID="{BD325497-4091-449F-B468-F110750154EC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_MultipleDrag" ID="{E1D2819C-12F8-4333-BFE5-2593AB1A6EE1}" ShortID="914986008" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_MultipleDrag" ID="{B0989244-5138-4753-864C-869BDE0910A0}" ShortID="300983609">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.367152043977782"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.440582452773342"/>
+												<Property Name="TrimBegin" Type="Real64" Value="14.2087841019404"/>
+												<Property Name="TrimEnd" Type="Real64" Value="19.7160647616072"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_MultipleDrag.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_MultipleDrag" ID="{B0989244-5138-4753-864C-869BDE0910A0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_GearHeavy" ID="{3A1C31FC-C59A-4ED6-9F70-2D85CD3100BB}" ShortID="50779762" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_GearHeavy" ID="{9864944E-C9CC-4A01-9AD1-E9ADA60D934D}" ShortID="357707710">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="6.61320697405987E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.06712228904684"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_GearHeavy.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="187253810"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_GearHeavy" ID="{9864944E-C9CC-4A01-9AD1-E9ADA60D934D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Metal DoorV3" ID="{BFA6D360-3D4D-467A-91FE-1D56AB6A8393}" ShortID="730584289">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{84A7CD6A-824C-4ECC-85E7-507191D67F96}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Door_GearChange" ID="{20179EB8-A38F-461A-8C24-6B46F3CF9DB4}" ShortID="646721115" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_GearChange" ID="{D6FD65BE-548E-49CB-BBD4-E508E43E6A40}" ShortID="140690594">
+											<PropertyList>
+												<Property Name="TrimEnd" Type="Real64" Value="3.94405686167305"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_GearChange.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="89533266"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_GearChange" ID="{D6FD65BE-548E-49CB-BBD4-E508E43E6A40}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_Drag" ID="{37C4A530-894D-4FB5-BC44-949E0B3E7FC5}" ShortID="867571539" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_Drag" ID="{D111A263-4886-40D8-A7E9-5E321092E512}" ShortID="848383316">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="1.16458444139456"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.23234503569972"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_Drag.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="260994041"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_Drag" ID="{D111A263-4886-40D8-A7E9-5E321092E512}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_GearMetal" ID="{77C13AE2-00FE-497C-9F8B-96A581C9A4A9}" ShortID="209720893" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_GearMetal" ID="{00E8AFBF-E5ED-462B-8D7F-E9B235938AEA}" ShortID="472349124">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="7.52241848078765E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="5.64181386059079E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.02748301799305"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.10212636175301"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_GearMetal.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="669278220"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_GearMetal" ID="{00E8AFBF-E5ED-462B-8D7F-E9B235938AEA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_Steam" ID="{96FA571B-FEBE-4061-8232-9A4B2371B2D7}" ShortID="342582891" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>4.5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Hall_Large_Dark" ID="{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_Steam" ID="{B1C1C640-DDB9-4958-8EA1-2C611DBD721D}" ShortID="153889085">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.135870967741936"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.07941935483871"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.02296774193548"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.82703225806451"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_Steam.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="862865505"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_Steam" ID="{B1C1C640-DDB9-4958-8EA1-2C611DBD721D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_MultipleDrag" ID="{0D14014A-1D72-450F-BD67-78E1BEBB7142}" ShortID="450987092" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>4.5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_MultipleDrag" ID="{58CCBDB5-3E47-4652-BFB2-79CFF5CEC72A}" ShortID="995254731">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.367152043977782"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.440582452773342"/>
+												<Property Name="TrimBegin" Type="Real64" Value="23.2023701077713"/>
+												<Property Name="TrimEnd" Type="Real64" Value="27.2856663165148"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_MultipleDrag.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_MultipleDrag" ID="{58CCBDB5-3E47-4652-BFB2-79CFF5CEC72A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_BigChain" ID="{1E850531-195F-4304-BED5-A45ACDB1A2E4}" ShortID="584448344" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Large_Dark" ID="{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_BigChain" ID="{96C86670-4CBD-4A61-BB8F-A6EB06FCD6C3}" ShortID="978612318">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.321095551761802"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.19590983760007"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_BigChain.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_BigChain" ID="{96C86670-4CBD-4A61-BB8F-A6EB06FCD6C3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<BlendTrackList>
+								<BlendTrack Name="New Blend Track" ID="{5C6B7D64-56DF-48F7-9138-4C71C32FBA99}" ShortID="594889027"/>
+							</BlendTrackList>
+						</BlendContainer>
+						<BlendContainer Name="MetalDoor V4" ID="{7BAE11D2-1D6F-4660-ACD2-9894AAE104DE}" ShortID="9485527">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3CAEA4D7-9FF6-4157-94A0-BFFF324DCD2F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Door_Drag" ID="{3679E71C-505E-4B9D-ACD9-AF287670A0B2}" ShortID="754798046" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_Drag" ID="{7863BA1D-032B-4B13-A58A-19F3B3C5FEE5}" ShortID="898670833">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="1.16458444139456"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.23234503569972"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_Drag.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="260994041"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_Drag" ID="{7863BA1D-032B-4B13-A58A-19F3B3C5FEE5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_PipeRoll" ID="{1C7B3E41-3631-47A1-AAD2-DB1CAE43A7F7}" ShortID="289543171" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_PipeRoll" ID="{18198C9F-B128-4C4A-89B2-ADD3044F94F5}" ShortID="226582094">
+											<PropertyList>
+												<Property Name="TrimEnd" Type="Real64" Value="3.11326699471478"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_PipeRoll.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="586645235"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_PipeRoll" ID="{18198C9F-B128-4C4A-89B2-ADD3044F94F5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_GearMetal" ID="{8E661462-262D-49D2-9B11-F227720DB1B7}" ShortID="249303431" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_GearMetal" ID="{24B9F9A4-D6F0-4CAD-88A0-93B83C59C123}" ShortID="772892624">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="7.52241848078765E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="5.64181386059079E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.02748301799305"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.10212636175301"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_GearMetal.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="669278220"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_GearMetal" ID="{24B9F9A4-D6F0-4CAD-88A0-93B83C59C123}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_Steam" ID="{8058E7C8-C118-4C15-91E1-CFB3EAF99BAF}" ShortID="328309943" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>4.5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Hall_Large_Dark" ID="{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_Steam" ID="{F2856F11-AC15-4ADE-B740-D3F1D6F0CB9C}" ShortID="263770960">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.135870967741936"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.07941935483871"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.02296774193548"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.82703225806451"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_Steam.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="862865505"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_Steam" ID="{F2856F11-AC15-4ADE-B740-D3F1D6F0CB9C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_MultipleDrag" ID="{052378C1-B683-47BC-9B8F-AAF6A0AD77E3}" ShortID="733964120" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_MultipleDrag" ID="{0484E0E4-2670-4224-B035-1C320FAFCEB8}" ShortID="477929822">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.367152043977782"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.440582452773342"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.22224850574456"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.25223150824021"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_MultipleDrag.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="664318253"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_MultipleDrag" ID="{0484E0E4-2670-4224-B035-1C320FAFCEB8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Door_BigChain" ID="{B6269495-9540-46F9-88D3-9260C47FA87B}" ShortID="493339198" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2032D23D-C548-435F-80C5-0615CA5DA0D1}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Large_Dark" ID="{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Door_BigChain" ID="{D5D10585-7798-4743-8152-6A5ACD10A7C9}" ShortID="85218057">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.321095551761802"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.19590983760007"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Door_BigChain.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="978612318"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Door_BigChain" ID="{D5D10585-7798-4743-8152-6A5ACD10A7C9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<SwitchContainer Name="Monster Steps" ID="{ECD08383-B478-46F2-BAE2-C9C314B33D6F}" ShortID="979567142">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Monster Steps Blend" ID="{45B03253-21AA-41E8-83DC-CC5C1D1C0FE1}" ShortID="403876517">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{122B8D0F-75DD-4863-B885-C2ED3F67AA57}" ShortID="460998828">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Monster_Coming" ID="{8DF9A529-59C7-40A8-BB27-1835E2A1BB99}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{2419F633-31B5-4169-90B2-AEBBBF00E0C1}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>77</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>10</XPos>
+														<YPos>62</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{FAE9D0E2-60C4-4837-B9EA-F0D7CB2C7DC0}" ShortID="319449309">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Monster_Coming" ID="{8DF9A529-59C7-40A8-BB27-1835E2A1BB99}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{D291CD56-674C-48E3-8645-DEAE9DC239F4}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-10.0933</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>10</XPos>
+														<YPos>-8.34325</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Monster Footsteps" ID="{532B3266-36BB-48B0-B1D8-F7FBF0B123C1}" ShortID="115705009">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_Monster_Steps_V1" ID="{71C888FF-D30D-47C9-9DBC-F44A8A395369}" ShortID="508994305" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="79569__razzvio__metal-sheet-bang" ID="{7BFD0393-8218-4CBD-89E7-A9E7E32BE60F}" ShortID="507594868">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.362663589245222"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.40532140832524"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.93861627389051"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>79569__razzvio__metal-sheet-bang.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="270095210"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="79569__razzvio__metal-sheet-bang" ID="{7BFD0393-8218-4CBD-89E7-A9E7E32BE60F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Monster_Steps_V2" ID="{0B4A4194-195D-42F4-935E-D479072809BE}" ShortID="535404233" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="79569__razzvio__metal-sheet-bang" ID="{E75A9AC5-7C25-4617-87A7-9C24AB3DEBC9}" ShortID="1027574177">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.475995960884354"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.93861627389051"/>
+														<Property Name="TrimEnd" Type="Real64" Value="11.4239030612245"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>79569__razzvio__metal-sheet-bang.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="79569__razzvio__metal-sheet-bang" ID="{E75A9AC5-7C25-4617-87A7-9C24AB3DEBC9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Monster_Steps_V3" ID="{F084FDDA-8AB6-4B17-A4FD-DBE780579EDE}" ShortID="657171897" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="79569__razzvio__metal-sheet-bang" ID="{2013E585-6A2F-4D30-A856-6E1212DD47AB}" ShortID="360077993">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.294664166261743"/>
+														<Property Name="TrimBegin" Type="Real64" Value="11.4239030612245"/>
+														<Property Name="TrimEnd" Type="Real64" Value="16.2518620930515"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>79569__razzvio__metal-sheet-bang.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="79569__razzvio__metal-sheet-bang" ID="{2013E585-6A2F-4D30-A856-6E1212DD47AB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Monster_Steps_V4" ID="{2D97E6B1-424C-41B3-8EF2-FCB5A7FEAC5F}" ShortID="358305296" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="79569__razzvio__metal-sheet-bang" ID="{2C6F60FE-833F-41D6-B642-067075956B45}" ShortID="270095210">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.929325447440881"/>
+														<Property Name="TrimBegin" Type="Real64" Value="16.2518620930515"/>
+														<Property Name="TrimEnd" Type="Real64" Value="20.1731621517655"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>79569__razzvio__metal-sheet-bang.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="507594868"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="79569__razzvio__metal-sheet-bang" ID="{2C6F60FE-833F-41D6-B642-067075956B45}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="SFX_Monster_Thud" ID="{BB04913D-7812-4612-B3F9-09A5E46649BC}" ShortID="165291784" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CB149A88-FE20-4628-A3C1-775051A2C70C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-1086"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Thud" ID="{A646C454-961E-4AA4-94F6-777137B0671E}" ShortID="717217387">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Thud.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Thud" ID="{A646C454-961E-4AA4-94F6-777137B0671E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+						<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Monster Steps Blend" ID="{45B03253-21AA-41E8-83DC-CC5C1D1C0FE1}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<BlendContainer Name="Monster" ID="{5EF1E2A9-807C-4C64-B797-AFA232057B57}" ShortID="233018642">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Footsteps" ID="{C58D2AF8-6BBE-49C2-B936-245D46DFFCB9}" ShortID="308546318">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+								</Reference>
+							</ReferenceList>
+						</BlendContainer>
+					</ChildrenList>
+				</BlendContainer>
+				<BlendContainer Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" ShortID="350976489">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SFX_DeadEnd_Electric" ID="{A3BE109A-08B8-43C6-8219-BF3F7F2BB72C}" ShortID="666927016" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_DeadEnd_Electric" ID="{724B002A-63FA-4EDA-ABC0-0E465F07300E}" ShortID="808076968">
+									<Language>SFX</Language>
+									<AudioFile>SFX_DeadEnd_Electric.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_DeadEnd_Electric" ID="{724B002A-63FA-4EDA-ABC0-0E465F07300E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_DeadEnd_Vocal" ID="{541DA636-5AB5-47E6-80FE-32095CB8DB19}" ShortID="1041199323" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_DeadEnd_Vocal" ID="{95E40D64-C074-4516-9F24-170761B7716A}" ShortID="121047549">
+									<Language>SFX</Language>
+									<AudioFile>SFX_DeadEnd_Vocal.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_DeadEnd_Vocal" ID="{95E40D64-C074-4516-9F24-170761B7716A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<BlendTrackList>
+						<BlendTrack Name="Dead End Door" ID="{A09CAAB0-7429-4EB2-B4D2-C4851676AEB7}" ShortID="871691403">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{053A5F85-BEE6-4200-BBF8-4D3CDE4A1F4E}" ShortID="779533235">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{BE7740FF-7511-4219-98E9-2C5306E816BE}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>45</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>3.61091</XPos>
+														<YPos>31</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>6.02297</XPos>
+														<YPos>-71</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>10</XPos>
+														<YPos>-100</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{32DA6287-4D31-4FE2-90A8-221CC96DCB7D}" ShortID="375130345">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{E108C5C3-5E06-475D-9B89-6C3C1E9EE77F}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-3.36809</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>9.00933</XPos>
+														<YPos>8.94316</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>10</XPos>
+														<YPos>19.40078</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="SFX_DeadEnd_Electric" ID="{A3BE109A-08B8-43C6-8219-BF3F7F2BB72C}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>9.9995</RightEdgePos>
+										<RightFadingMode>None</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="SFX_DeadEnd_Vocal" ID="{541DA636-5AB5-47E6-80FE-32095CB8DB19}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>3.26992103374013</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>10</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
