@@ -11,6 +11,8 @@ public class Movement : MonoBehaviour {
     public Camera followme;
     public GameObject shroud;
 
+    public float currentSpeed;
+
     string currentPosition;
 
     int x = 0;
@@ -22,42 +24,63 @@ public class Movement : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        currentSpeed = 2;
         currentPosition = currentRoom.coordinate;
 
         Int32.TryParse(currentPosition[0].ToString(), out x);
         Int32.TryParse(currentPosition[1].ToString(), out y);
 
-        transform.position = new Vector2(x * constant, y * constant);
+        transform.position = new Vector3(x * constant, y * constant, 0);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        float step = 2 * Time.deltaTime;
+
+        float playerStep = currentSpeed * Time.deltaTime;
+
         if (Input.GetKeyDown("up"))
         {
             direction = "up";
-            transform.position = currentRoom.UpDoor.spot.transform.position;
         }
         if (Input.GetKeyDown("down"))
         {
             direction = "down";
-            transform.position = currentRoom.DownDoor.spot.transform.position;
         }
         if (Input.GetKeyDown("right"))
         {
             direction = "right";
-            transform.position = currentRoom.RightDoor.spot.transform.position;
         }
         if (Input.GetKeyDown("left"))
         {
             direction = "left";
-            transform.position = currentRoom.LeftDoor.spot.transform.position;
+        }
+
+        switch (direction)
+        {
+            case "up":
+                transform.position = Vector3.MoveTowards(transform.position, currentRoom.UpDoor.spot.transform.position, currentSpeed);
+                break;
+            case "down":
+                transform.position = Vector3.MoveTowards(transform.position, currentRoom.DownDoor.spot.transform.position, currentSpeed);
+                break;
+            case "right":
+                transform.position = Vector3.MoveTowards(transform.position, currentRoom.RightDoor.spot.transform.position, currentSpeed);
+                break;
+            case "left":
+                transform.position = Vector3.MoveTowards(transform.position, currentRoom.LeftDoor.spot.transform.position, currentSpeed);
+                break;
+            default:
+                transform.position = Vector3.MoveTowards(transform.position, new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0), currentSpeed);
+                break;
         }
 
         float x = currentRoom.transform.position.x;
         float y = currentRoom.transform.position.y;
 
-        followme.transform.position = new Vector3(x, y, -10);
-        shroud.transform.position = new Vector3(x, y, 0);
+        followme.transform.position = Vector3.MoveTowards(followme.transform.position, new Vector3(x, y, -10), step);
+        shroud.transform.position = Vector3.MoveTowards(shroud.transform.position, new Vector3(x, y, -5), step);
     }
 
     public void SwitchMove()
@@ -94,7 +117,7 @@ public class Movement : MonoBehaviour {
                 opposite = "right";
                 break;
             default:
-                opposite = "up";
+                opposite = "center";
                 break;
         }
 
@@ -104,24 +127,24 @@ public class Movement : MonoBehaviour {
         {
                 currentRoom = RoomCoords.coordinates[tryCoordinate];
                 direction = opposite;
-                switch (direction)
-                {
-                    case "up":
-                        transform.position = currentRoom.UpDoor.spot.transform.position;
-                        break;
-                    case "down":
-                        transform.position = currentRoom.DownDoor.spot.transform.position;
-                        break;
-                    case "right":
-                        transform.position = currentRoom.RightDoor.spot.transform.position;
-                        break;
-                    case "left":
-                        transform.position = currentRoom.LeftDoor.spot.transform.position;
-                        break;
-                    default:
-                        transform.position = currentRoom.UpDoor.spot.transform.position;
-                        break;
-                }
+                //switch (direction)
+                //{
+                //    case "up":
+                //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.UpDoor.spot.transform.position, currentSpeed);
+                //        break;
+                //    case "down":
+                //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.DownDoor.spot.transform.position, currentSpeed);
+                //        break;
+                //    case "right":
+                //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.RightDoor.spot.transform.position, currentSpeed);
+                //        break;
+                //    case "left":
+                //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.LeftDoor.spot.transform.position, currentSpeed);
+                //        break;
+                //    default:
+                //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.transform.position, currentSpeed);
+                //        break;
+                //}
         }
         else
         {

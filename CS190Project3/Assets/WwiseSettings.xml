@@ -6,5 +6,5 @@
   <CreateWwiseListener>true</CreateWwiseListener>
   <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise 2016.2.3.6077</WwiseInstallationPathWindows>
   <WwiseInstallationPathMac />
-  <CreatedPicker>false</CreatedPicker>
+  <CreatedPicker>true</CreatedPicker>
 </WwiseSettings>
