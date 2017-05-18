@@ -1872,6 +1872,299 @@
 						</BlendTrack>
 					</BlendTrackList>
 				</BlendContainer>
+				<RandomSequenceContainer Name="Timer" ID="{4DBFEB7E-EE0A-45C6-AAF2-41184DF816A1}" ShortID="436501927">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Clock up (Even)" ID="{CAF81616-6066-4B7F-8784-A09024778DE0}" ShortID="955848010">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E12D6199-2C44-40A3-8C20-13F182327D03}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="278"/>
+													<Property Name="Min" Type="Real64" Value="-278"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Timer_GrandfatherClock_V6" ID="{E27F5DFD-0B89-4598-A122-533F8CF3FDF7}" ShortID="559524221" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Timer_GrandfatherClock" ID="{9485633C-B368-454F-8105-23AEC36BE19B}" ShortID="293861222">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="3.96220351980078"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.96954339771623"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Timer_GrandfatherClock.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Timer_GrandfatherClock" ID="{9485633C-B368-454F-8105-23AEC36BE19B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Timer_GrandfatherClock_V8" ID="{1C8B4AA0-3DC4-46F8-9788-7BE150FC9E3B}" ShortID="731988483" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Timer_GrandfatherClock" ID="{DC73FF80-CC5C-429C-90E8-BEC1CFDA402B}" ShortID="414673257">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="5.90972728377066"/>
+												<Property Name="TrimEnd" Type="Real64" Value="7.05137914540817"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Timer_GrandfatherClock.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Timer_GrandfatherClock" ID="{DC73FF80-CC5C-429C-90E8-BEC1CFDA402B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Timer_GrandfatherClock_V10" ID="{672BC791-1B69-4C7D-99ED-B94FE97DD59B}" ShortID="1052369672" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Timer_GrandfatherClock" ID="{338FB012-99DD-4510-A1E6-FCE8C7C0B6DF}" ShortID="956120217">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="7.99156303146259"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.99890290937804"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Timer_GrandfatherClock.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Timer_GrandfatherClock" ID="{338FB012-99DD-4510-A1E6-FCE8C7C0B6DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Timer_GrandfatherClock_V1" ID="{3F7122F6-1528-4BFF-8020-91484DC5E5C4}" ShortID="533552315" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Timer_GrandfatherClock" ID="{4CCAAA67-5B84-4EC8-A917-F863F18D62A9}" ShortID="684428109">
+											<PropertyList>
+												<Property Name="TrimEnd" Type="Real64" Value="0.671559918610295"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Timer_GrandfatherClock.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Timer_GrandfatherClock" ID="{4CCAAA67-5B84-4EC8-A917-F863F18D62A9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Timer_GrandfatherClock_V3" ID="{A56F58C4-F5BB-4F85-95E0-BC1499E6728B}" ShortID="700612552" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Timer_GrandfatherClock" ID="{E077FA87-7988-41AD-BF8C-A51F61C5E00B}" ShortID="307859853">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="1.88036777210885"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.95486364188533"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Timer_GrandfatherClock.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Timer_GrandfatherClock" ID="{E077FA87-7988-41AD-BF8C-A51F61C5E00B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Clock Down (odd)" ID="{FC1DF957-86E4-4D9C-8685-4BCAEAD88C45}" ShortID="54723832">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F2FB1950-B4C3-4E8A-BBED-C2E69D8FD5D3}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="253"/>
+													<Property Name="Min" Type="Real64" Value="-328"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Timer_GrandfatherClock_V5" ID="{1232EE5D-2876-40EA-A1F0-0B23721BE92A}" ShortID="921110303" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Timer_GrandfatherClock" ID="{56C9523D-F070-43C1-BBA3-F5BF103DDAC1}" ShortID="844123063">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="2.8877076500243"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.89504752793975"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Timer_GrandfatherClock.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Timer_GrandfatherClock" ID="{56C9523D-F070-43C1-BBA3-F5BF103DDAC1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Timer_GrandfatherClock_V7" ID="{28DBBC6A-52E4-4C05-84CA-FDB7FFFC86BD}" ShortID="742919396" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Timer_GrandfatherClock" ID="{8537DD5B-CFD8-4311-807B-649EB9F3344D}" ShortID="60258547">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="5.03669938957727"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.90972728377066"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Timer_GrandfatherClock.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Timer_GrandfatherClock" ID="{8537DD5B-CFD8-4311-807B-649EB9F3344D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Timer_GrandfatherClock_V9" ID="{D985DEC6-9BB2-417C-95F2-60F9D7B452E6}" ShortID="604072066" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Timer_GrandfatherClock" ID="{61176600-342A-4D6A-80C4-EA0D0E57F9CA}" ShortID="363395452">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="6.98422315354714"/>
+												<Property Name="TrimEnd" Type="Real64" Value="7.72293906401847"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Timer_GrandfatherClock.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Timer_GrandfatherClock" ID="{61176600-342A-4D6A-80C4-EA0D0E57F9CA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Timer_GrandfatherClock_V2" ID="{3A9849E7-AA1E-4FA6-91F4-642CD38D04C0}" ShortID="123314813" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Timer_GrandfatherClock" ID="{C56A0936-4132-46AD-A142-6D9B49092BC6}" ShortID="635758357">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="0.805871902332361"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.81321178024781"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Timer_GrandfatherClock.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Timer_GrandfatherClock" ID="{C56A0936-4132-46AD-A142-6D9B49092BC6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Timer_GrandfatherClock_V4" ID="{28DA3F75-F00F-4C5A-94F2-08656FF3087E}" ShortID="206176407" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Timer_GrandfatherClock" ID="{4605867A-A995-40FE-B6C3-807EECF43293}" ShortID="546956735">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="2.95486364188533"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.76073554421769"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Timer_GrandfatherClock.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Timer_GrandfatherClock" ID="{4605867A-A995-40FE-B6C3-807EECF43293}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{20CB70E0-5342-4360-8DF0-149133060509}" SchemaVersion="75">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{20CB70E0-5342-4360-8DF0-149133060509}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{20CB70E0-5342-4360-8DF0-149133060509}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Milestone_3" ID="{EABDCDB3-BBB1-4894-AC5F-B2EB0070B4E6}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Monster_Closer" ID="{205114D0-453D-40EE-8A3E-78B302D7D09E}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Clock_Tick_Down" ID="{70BAE3CC-3820-41EF-92F8-B24EE8C4C8BB}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Player_Walking" ID="{2B4F444F-8B21-49B3-A076-912F0DE8A207}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Monster_step" ID="{A9D2C5F7-F50B-4E41-81F4-A48327494A83}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Clock_Tick_Up" ID="{297211A1-0D54-4ECE-859D-91E93AF1682A}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Door_Open" ID="{9B4A9B30-6348-4EF6-A27C-DDE68771EDB3}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Monster_Farther" ID="{F3A76281-CAD3-4FE7-A9B9-167106BC52DA}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

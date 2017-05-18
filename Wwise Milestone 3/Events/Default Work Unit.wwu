@@ -68,6 +68,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Clock_Tick_Up" ID="{297211A1-0D54-4ECE-859D-91E93AF1682A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{04352DB6-B970-48F5-91B8-2E44A488DF51}" ShortID="283858844" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0A0048DA-F81D-4CD3-9F66-469714E6D2B0}" Global="false">
+									<ObjectRef Name="Clock up (Even)" ID="{CAF81616-6066-4B7F-8784-A09024778DE0}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Clock_Tick_Down" ID="{70BAE3CC-3820-41EF-92F8-B24EE8C4C8BB}">
+					<ChildrenList>
+						<Action Name="Play" ID="{1DFB1430-8CF1-4991-8879-7C0C5D90D2DF}" ShortID="281869648" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{592205FF-34CA-401F-B28D-C6A8B7B9CD5F}" Global="false">
+									<ObjectRef Name="Clock Down (odd)" ID="{FC1DF957-86E4-4D9C-8685-4BCAEAD88C45}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
