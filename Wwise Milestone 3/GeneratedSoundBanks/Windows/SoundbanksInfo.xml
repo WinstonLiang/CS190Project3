@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2888957619" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Milestone_3</ObjectPath>
+			<ShortName>Milestone_3</ShortName>
+			<Path>Milestone_3.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1918342182" Name="Clock_Tick_Down" ObjectPath="\Events\Default Work Unit\Clock_Tick_Down"/>
+				<Event Id="100586061" Name="Clock_Tick_Up" ObjectPath="\Events\Default Work Unit\Clock_Tick_Up"/>
+				<Event Id="535830432" Name="Door_Open" ObjectPath="\Events\Default Work Unit\Door_Open"/>
+				<Event Id="4052350654" Name="Monster_Closer" ObjectPath="\Events\Default Work Unit\Monster_Closer" MaxAttenuation="0.000000"/>
+				<Event Id="1814518170" Name="Monster_Farther" ObjectPath="\Events\Default Work Unit\Monster_Farther" MaxAttenuation="0.000000"/>
+				<Event Id="1925514878" Name="Monster_step" ObjectPath="\Events\Default Work Unit\Monster_step"/>
+				<Event Id="2308042502" Name="Player_Walking" ObjectPath="\Events\Default Work Unit\Player_Walking"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="30230954" Language="SFX">
+					<ShortName>SFX_Footsteps_WetConcrete_V1.wav</ShortName>
+					<Path>SFX\SFX_Footsteps_WetConcrete_V1_1CBA3882.wem</Path>
+				</File>
+				<File Id="60258547" Language="SFX">
+					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
+					<Path>SFX\SFX_Timer_GrandfatherClock_F0D97F27.wem</Path>
+				</File>
+				<File Id="89533266" Language="SFX">
+					<ShortName>SFX_Door_GearChange.wav</ShortName>
+					<Path>SFX\SFX_Door_GearChange_468388CE.wem</Path>
+				</File>
+				<File Id="159538527" Language="SFX">
+					<ShortName>SFX_Footsteps_WetConcrete_V1.wav</ShortName>
+					<Path>SFX\SFX_Footsteps_WetConcrete_V1_EAFF3A59.wem</Path>
+				</File>
+				<File Id="187253810" Language="SFX">
+					<ShortName>SFX_Door_GearHeavy.wav</ShortName>
+					<Path>SFX\SFX_Door_GearHeavy_75328B90.wem</Path>
+				</File>
+				<File Id="260994041" Language="SFX">
+					<ShortName>SFX_Door_Drag.wav</ShortName>
+					<Path>SFX\SFX_Door_Drag_5C89AD4D.wem</Path>
+				</File>
+				<File Id="270095210" Language="SFX">
+					<ShortName>79569__razzvio__metal-sheet-bang.wav</ShortName>
+					<Path>SFX\79569__razzvio__metal-sheet-bang_B2163C21.wem</Path>
+				</File>
+				<File Id="293861222" Language="SFX">
+					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
+					<Path>SFX\SFX_Timer_GrandfatherClock_921C08CB.wem</Path>
+				</File>
+				<File Id="300983609" Language="SFX">
+					<ShortName>SFX_Door_MultipleDrag.wav</ShortName>
+					<Path>SFX\SFX_Door_MultipleDrag_4AFBB5B5.wem</Path>
+				</File>
+				<File Id="307859853" Language="SFX">
+					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
+					<Path>SFX\SFX_Timer_GrandfatherClock_CDBC3063.wem</Path>
+				</File>
+				<File Id="360077993" Language="SFX">
+					<ShortName>79569__razzvio__metal-sheet-bang.wav</ShortName>
+					<Path>SFX\79569__razzvio__metal-sheet-bang_C774E7B1.wem</Path>
+				</File>
+				<File Id="363395452" Language="SFX">
+					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
+					<Path>SFX\SFX_Timer_GrandfatherClock_AA384259.wem</Path>
+				</File>
+				<File Id="414673257" Language="SFX">
+					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
+					<Path>SFX\SFX_Timer_GrandfatherClock_759CA21B.wem</Path>
+				</File>
+				<File Id="507594868" Language="SFX">
+					<ShortName>79569__razzvio__metal-sheet-bang.wav</ShortName>
+					<Path>SFX\79569__razzvio__metal-sheet-bang_1515EC1E.wem</Path>
+				</File>
+				<File Id="535209269" Language="SFX">
+					<ShortName>SFX_Footsteps_WetConcrete_V1.wav</ShortName>
+					<Path>SFX\SFX_Footsteps_WetConcrete_V1_DBC34BDB.wem</Path>
+				</File>
+				<File Id="546956735" Language="SFX">
+					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
+					<Path>SFX\SFX_Timer_GrandfatherClock_1D22B995.wem</Path>
+				</File>
+				<File Id="586645235" Language="SFX">
+					<ShortName>SFX_Door_PipeRoll.wav</ShortName>
+					<Path>SFX\SFX_Door_PipeRoll_8DBDD3BA.wem</Path>
+				</File>
+				<File Id="635758357" Language="SFX">
+					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
+					<Path>SFX\SFX_Timer_GrandfatherClock_05F225A4.wem</Path>
+				</File>
+				<File Id="636877582" Language="SFX">
+					<ShortName>SFX_Footsteps_WetConcrete_V1.wav</ShortName>
+					<Path>SFX\SFX_Footsteps_WetConcrete_V1_E81D6330.wem</Path>
+				</File>
+				<File Id="664318253" Language="SFX">
+					<ShortName>SFX_Door_MultipleDrag.wav</ShortName>
+					<Path>SFX\SFX_Door_MultipleDrag_90EFE5F1.wem</Path>
+				</File>
+				<File Id="669278220" Language="SFX">
+					<ShortName>SFX_Door_GearMetal.wav</ShortName>
+					<Path>SFX\SFX_Door_GearMetal_4819E5B3.wem</Path>
+				</File>
+				<File Id="684428109" Language="SFX">
+					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
+					<Path>SFX\SFX_Timer_GrandfatherClock_FFE9DD8C.wem</Path>
+				</File>
+				<File Id="717217387" Language="SFX">
+					<ShortName>SFX_Monster_Thud.wav</ShortName>
+					<Path>SFX\SFX_Monster_Thud_9E69E797.wem</Path>
+				</File>
+				<File Id="759330069" Language="SFX">
+					<ShortName>SFX_Footsteps_WetConcrete_V1.wav</ShortName>
+					<Path>SFX\SFX_Footsteps_WetConcrete_V1_3B38E7A1.wem</Path>
+				</File>
+				<File Id="844123063" Language="SFX">
+					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
+					<Path>SFX\SFX_Timer_GrandfatherClock_0BB05023.wem</Path>
+				</File>
+				<File Id="862865505" Language="SFX">
+					<ShortName>SFX_Door_Steam.wav</ShortName>
+					<Path>SFX\SFX_Door_Steam_7503AD45.wem</Path>
+				</File>
+				<File Id="869576447" Language="SFX">
+					<ShortName>SFX_Footsteps_WetConcrete_V1.wav</ShortName>
+					<Path>SFX\SFX_Footsteps_WetConcrete_V1_5B83C24C.wem</Path>
+				</File>
+				<File Id="956120217" Language="SFX">
+					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
+					<Path>SFX\SFX_Timer_GrandfatherClock_675C74A7.wem</Path>
+				</File>
+				<File Id="977595785" Language="SFX">
+					<ShortName>SFX_Footsteps_WetConcrete_V1.wav</ShortName>
+					<Path>SFX\SFX_Footsteps_WetConcrete_V1_B257FB8E.wem</Path>
+				</File>
+				<File Id="978612318" Language="SFX">
+					<ShortName>SFX_Door_BigChain.wav</ShortName>
+					<Path>SFX\SFX_Door_BigChain_82CB548A.wem</Path>
+				</File>
+				<File Id="995254731" Language="SFX">
+					<ShortName>SFX_Door_MultipleDrag.wav</ShortName>
+					<Path>SFX\SFX_Door_MultipleDrag_F2F36DCF.wem</Path>
+				</File>
+				<File Id="1027574177" Language="SFX">
+					<ShortName>79569__razzvio__metal-sheet-bang.wav</ShortName>
+					<Path>SFX\79569__razzvio__metal-sheet-bang_951F535A.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
