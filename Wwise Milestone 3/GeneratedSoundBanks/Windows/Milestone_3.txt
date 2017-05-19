@@ -9,6 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2929953817	Monster_Coming			\Default Work Unit\Monster_Coming	
+	3127135492	DeadEnd_Listen			\Default Work Unit\DeadEnd_Listen	
 
 Effect plug-ins	ID	Name	Type				Notes
 	3164629247	Holy	Wwise RoomVerb			

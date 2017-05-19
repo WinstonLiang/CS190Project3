@@ -125,31 +125,36 @@ public class Movement : MonoBehaviour {
 
         if(RoomCoords.coordinates.ContainsKey(tryCoordinate))
         {
-                currentRoom = RoomCoords.coordinates[tryCoordinate];
-                direction = opposite;
-                //switch (direction)
-                //{
-                //    case "up":
-                //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.UpDoor.spot.transform.position, currentSpeed);
-                //        break;
-                //    case "down":
-                //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.DownDoor.spot.transform.position, currentSpeed);
-                //        break;
-                //    case "right":
-                //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.RightDoor.spot.transform.position, currentSpeed);
-                //        break;
-                //    case "left":
-                //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.LeftDoor.spot.transform.position, currentSpeed);
-                //        break;
-                //    default:
-                //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.transform.position, currentSpeed);
-                //        break;
-                //}
+            currentRoom = RoomCoords.coordinates[tryCoordinate];
+            direction = opposite;
+            this.GetComponent<_WALK>().Walk();
+
+            AkSoundEngine.SetRTPCValue("Distance", 0);
+            //switch (direction)
+            //{
+            //    case "up":
+            //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.UpDoor.spot.transform.position, currentSpeed);
+            //        break;
+            //    case "down":
+            //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.DownDoor.spot.transform.position, currentSpeed);
+            //        break;
+            //    case "right":
+            //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.RightDoor.spot.transform.position, currentSpeed);
+            //        break;
+            //    case "left":
+            //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.LeftDoor.spot.transform.position, currentSpeed);
+            //        break;
+            //    default:
+            //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.transform.position, currentSpeed);
+            //        break;
+            //}
         }
         else
         {
             // Dead end debug
             Debug.Log("TRY AGAIN SOMEWHERE ELSE");
+            AkSoundEngine.SetRTPCValue("Distance", 10);
+            this.GetComponent<_CHECK_DEADEND>().SetDeadend();
         }
         
     }

@@ -448,6 +448,36 @@
 					</GroupingInfo>
 				</SwitchContainer>
 				<RandomSequenceContainer Name="Door Open" ID="{C5CA4B7D-DEDA-4C8B-AD66-E1C2E8DA1449}" ShortID="899245881">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{C7E7332C-E12F-4550-AE54-587398A3DAB1}" ShortID="167678854">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{1A340DDF-B187-4CA7-8F2F-E9C7244EF359}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>-5</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>

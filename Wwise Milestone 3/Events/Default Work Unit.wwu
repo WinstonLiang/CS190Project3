@@ -55,6 +55,26 @@
 								</Element>
 							</ElementList>
 						</Action>
+						<Action Name="Play" ID="{0106D628-A005-4868-9FB7-44244FB7D283}" ShortID="483804748" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{827E3912-10A8-4810-A47F-1F5821A737C0}" Global="false">
+									<ObjectRef Name="WetConcrete" ID="{9EBE8295-4E6D-4A76-BB41-074A51EB3EFC}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{5A09E44C-985B-4FF2-8D62-E2E6BC5BA4E1}" ShortID="297020854" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{19128CA9-C6BA-46F2-BFF4-DD200FAC079D}" Global="false">
+									<ObjectRef Name="WetConcrete" ID="{9EBE8295-4E6D-4A76-BB41-074A51EB3EFC}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Monster_step" ID="{A9D2C5F7-F50B-4E41-81F4-A48327494A83}">
@@ -85,6 +105,17 @@
 							<ElementList>
 								<Element ID="{592205FF-34CA-401F-B28D-C6A8B7B9CD5F}" Global="false">
 									<ObjectRef Name="Clock Down (odd)" ID="{FC1DF957-86E4-4D9C-8685-4BCAEAD88C45}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dead_end" ID="{6E2CB405-1D58-4909-BAC1-7DF2CB54D943}">
+					<ChildrenList>
+						<Action Name="Play" ID="{714A2E6B-E8FD-4E03-83D3-7E5426D018AB}" ShortID="213666576" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8BB3EA80-7CD6-43FA-AB39-AEEB63E13E94}" Global="false">
+									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>

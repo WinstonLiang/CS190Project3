@@ -29,6 +29,7 @@ public class GlobalTimer : MonoBehaviour {
             {
                 thing.GetComponent<Movement>().SwitchMove();
             }
+            this.GetComponent<_WALK>().Walk();
         }
         if(timer >= 10)
         {
