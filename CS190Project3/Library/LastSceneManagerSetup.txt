@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/Sarah-Anne/Documents/GitHub/CS190_P2/CS190_Returning-Home/Assets/Scenes/PLAY_SPACE.unity
+- path: Assets/_SCENES/ProtoNightmare.unity
   isLoaded: 1
   isActive: 1
