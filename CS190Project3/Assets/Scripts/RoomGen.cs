@@ -11,6 +11,8 @@ public class RoomGen : MonoBehaviour {
     public bool pre = true;
     public Dictionary<string, ROOM> coordinates;
 
+    public ROOM exit;
+
     // This cannot be automagically added!
     // Each ROOM object must be manually added per scene!
     public List<ROOM> rooms;

@@ -1504,12 +1504,12 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>77</YPos>
+														<YPos>25</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
 														<XPos>10</XPos>
-														<YPos>62</YPos>
+														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -1532,12 +1532,12 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-10.0933</YPos>
+														<YPos>-6</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
 														<XPos>10</XPos>
-														<YPos>-8.34325</YPos>
+														<YPos>-20</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -1557,12 +1557,9 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Monster Footsteps" ID="{532B3266-36BB-48B0-B1D8-F7FBF0B123C1}" ShortID="115705009">
 									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-9</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1649,6 +1646,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Monster_Steps_V4" ID="{2D97E6B1-424C-41B3-8EF2-FCB5A7FEAC5F}" ShortID="358305296" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
@@ -1750,6 +1754,36 @@
 					</ChildrenList>
 				</BlendContainer>
 				<BlendContainer Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" ShortID="350976489">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{71B80CE8-803C-4840-9E47-B2EAF421FB30}" ShortID="927341949">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{95676B57-2513-4D0E-AEA2-E3A0BAA34EF0}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
@@ -2195,6 +2229,79 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="Birds 6038_08" ID="{A77C9192-A3A1-46F1-948B-512BD11DF6E7}" ShortID="21326171" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{7A745302-B5AE-4304-950D-90D367A45F85}" ShortID="992498055">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="IsExit" ID="{9EA3E8CE-2BB1-4199-9E36-CE83FDFD718A}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{237BCCD6-28C3-4BCF-BE1B-258D51F84DB1}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>-20</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>2</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Birds 6038_08" ID="{633C5FE8-93B6-4352-994F-38B96343F85F}" ShortID="596962673">
+							<Language>SFX</Language>
+							<AudioFile>Birds 6038_08.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Birds 6038_08" ID="{633C5FE8-93B6-4352-994F-38B96343F85F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_Australia, Resident__7010_06_01" ID="{A5BEEFE1-BB50-4945-8B8A-4B816CC6C60D}" ShortID="372418039" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_Australia, Resident__7010_06_01" ID="{2C5D56AC-EC67-439C-A5C5-876BC52DAA12}" ShortID="237083867">
+							<Language>SFX</Language>
+							<AudioFile>AMB_Australia, Resident._7010_06_01.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_Australia, Resident__7010_06_01" ID="{2C5D56AC-EC67-439C-A5C5-876BC52DAA12}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

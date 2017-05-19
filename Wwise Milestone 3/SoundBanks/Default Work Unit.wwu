@@ -7,6 +7,8 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Monster_Closer" ID="{205114D0-453D-40EE-8A3E-78B302D7D09E}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Clock_Tick_Down" ID="{70BAE3CC-3820-41EF-92F8-B24EE8C4C8BB}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Near_Outside" ID="{FA82711C-AE2B-4843-8B00-6141B6034B9D}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Dead_end" ID="{6E2CB405-1D58-4909-BAC1-7DF2CB54D943}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Player_Walking" ID="{2B4F444F-8B21-49B3-A076-912F0DE8A207}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Monster_step" ID="{A9D2C5F7-F50B-4E41-81F4-A48327494A83}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Clock_Tick_Up" ID="{297211A1-0D54-4ECE-859D-91E93AF1682A}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>

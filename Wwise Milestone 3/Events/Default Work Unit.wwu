@@ -121,6 +121,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Near_Outside" ID="{FA82711C-AE2B-4843-8B00-6141B6034B9D}">
+					<ChildrenList>
+						<Action Name="Play" ID="{42A598B1-A2CC-4267-8ABC-FB68F8DA7B54}" ShortID="694616449" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A4AB9D9A-5249-41FA-9946-3476EB689743}" Global="false">
+									<ObjectRef Name="Birds 6038_08" ID="{A77C9192-A3A1-46F1-948B-512BD11DF6E7}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

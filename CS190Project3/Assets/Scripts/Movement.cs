@@ -11,9 +11,13 @@ public class Movement : MonoBehaviour {
     public Camera followme;
     public GameObject shroud;
 
+    public GameObject monster;
+
     public float currentSpeed;
 
     string currentPosition;
+
+    bool playedSound;
 
     int x = 0;
     int y = 0;
@@ -24,6 +28,7 @@ public class Movement : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        playedSound = false;
         currentSpeed = 2;
         currentPosition = currentRoom.coordinate;
 
@@ -36,26 +41,46 @@ public class Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        if (!playedSound)
+            CheckSpace();
+
         float step = 2 * Time.deltaTime;
 
         float playerStep = currentSpeed * Time.deltaTime;
 
-        if (Input.GetKeyDown("up"))
-        {
-            direction = "up";
-        }
-        if (Input.GetKeyDown("down"))
-        {
-            direction = "down";
-        }
-        if (Input.GetKeyDown("right"))
-        {
-            direction = "right";
-        }
-        if (Input.GetKeyDown("left"))
-        {
-            direction = "left";
-        }
+
+            if (Input.GetKeyDown("up"))
+            {
+                direction = "up";
+                if (!RoomCoords.GetComponent<GlobalTimer>().outside)
+                {
+                    playedSound = false;
+                }
+            }
+            if (Input.GetKeyDown("down"))
+            {
+                direction = "down";
+                if (!RoomCoords.GetComponent<GlobalTimer>().outside)
+                {
+                    playedSound = false;
+                }
+            }
+            if (Input.GetKeyDown("right"))
+            {
+                direction = "right";
+                if (!RoomCoords.GetComponent<GlobalTimer>().outside)
+                {
+                    playedSound = false;
+                }
+            }
+            if (Input.GetKeyDown("left"))
+            {
+                direction = "left";
+                if (!RoomCoords.GetComponent<GlobalTimer>().outside)
+                {
+                    playedSound = false;
+                }
+            }
 
         switch (direction)
         {
@@ -89,6 +114,9 @@ public class Movement : MonoBehaviour {
 
         //followme.transform.position = Vector3.MoveTowards(followme.transform.position, new Vector3(x, y, -10), step);
         //shroud.transform.position = Vector3.MoveTowards(shroud.transform.position, new Vector3(x, y, -5), step);
+
+        if(currentRoom.coordinate == RoomCoords.exit.coordinate)
+            AkSoundEngine.SetRTPCValue("IsExit", 2);
     }
 
     public void SwitchMove()
@@ -135,9 +163,8 @@ public class Movement : MonoBehaviour {
         {
             currentRoom = RoomCoords.coordinates[tryCoordinate];
             direction = opposite;
-            this.GetComponent<_WALK>().Walk();
-
-            AkSoundEngine.SetRTPCValue("Distance", 0);
+            GetComponent<_WALK>().Walk();
+            
             //switch (direction)
             //{
             //    case "up":
@@ -161,9 +188,83 @@ public class Movement : MonoBehaviour {
         {
             // Dead end debug
             Debug.Log("TRY AGAIN SOMEWHERE ELSE");
-            AkSoundEngine.SetRTPCValue("Distance", 10);
-            this.GetComponent<_CHECK_DEADEND>().SetDeadend();
         }
-        
+
+        int monsterX = 0;
+        int monsterY = 0;
+
+        string monsterPosition = monster.GetComponent<MonsterMovement>().currentRoom.coordinate;
+
+        Int32.TryParse(monsterPosition[0].ToString(), out monsterX);
+        Int32.TryParse(monsterPosition[1].ToString(), out monsterY);
+
+        float distanceToMonster = (float)Math.Sqrt((x - monsterX) ^ 2 + (y - monsterY) ^ 2);
+
+        AkSoundEngine.SetRTPCValue("Monster_Coming", distanceToMonster);
+
+        if (distanceToMonster == 0)
+            Debug.Log("YOU DIED");
+    }
+
+    void CheckSpace()
+    {
+        GetComponent<_STOP_DEADEND>().SetDeadend();
+        GetComponent<_IS_NEAR_EXIT>().TheLight();
+
+        int x = 0;
+        int y = 0;
+
+        currentPosition = currentRoom.coordinate;
+
+        Int32.TryParse(currentPosition[0].ToString(), out x);
+        Int32.TryParse(currentPosition[1].ToString(), out y);
+
+        switch (direction)
+        {
+            case "up":
+                y += 1;
+                break;
+            case "down":
+                y -= 1;
+                break;
+            case "right":
+                x += 1;
+                break;
+            case "left":
+                x -= 1;
+                break;
+            default:
+                break;
+        }
+
+        string tryCoordinate = x.ToString() + y.ToString();
+
+        if (!RoomCoords.GetComponent<GlobalTimer>().outside)
+        {
+            if (RoomCoords.coordinates.ContainsKey(tryCoordinate))
+            {
+                AkSoundEngine.SetRTPCValue("DeadEnd_Listen", 0);
+            }
+            else
+            {
+                AkSoundEngine.SetRTPCValue("DeadEnd_Listen", 10);
+                GetComponent<_CHECK_DEADEND>().SetDeadend();
+            }
+        }
+        else
+        {
+            AkSoundEngine.SetRTPCValue("DeadEnd_Listen", 0);
+        }
+
+        if (RoomCoords.exit.coordinate == tryCoordinate)
+        {
+            AkSoundEngine.SetRTPCValue("IsExit", 1);
+        }
+        else
+        {
+            AkSoundEngine.SetRTPCValue("IsExit", 0);
+        }
+
+        playedSound = true;
     }
 }
