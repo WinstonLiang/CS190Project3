@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="75" WwiseVersion="v2016.2.3" WwiseBuild="6077">
+<WwiseDocument Type="Project" SchemaVersion="75" WwiseVersion="v2016.2.2" WwiseBuild="6022">
 	<ProjectInfo>
 		<Project Name="Project 3 Milestone 3" ID="{9821FDC7-4374-42E0-80E7-93AEB062BEA0}">
 			<Platforms>
@@ -17,14 +17,7 @@
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 					</ValueList>
 				</Property>
-				<Property Name="GlobalVoiceInstancesLimit" Type="int16">
-					<ValueList>
-						<Value Platform="Windows">256</Value>
-					</ValueList>
-				</Property>
-				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
-				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
-				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\CS190Project3\Assets\StreamingAssets\Audio\GeneratedSoundBanks\"/>
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
@@ -50,17 +43,8 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
-				<Property Name="VolumeThreshold" Type="Real64">
-					<ValueList>
-						<Value Platform="Windows">-80</Value>
-					</ValueList>
-				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2016.2|Build=6022|VersionName=v2016.2.2|Config=Release"/>
 			</PropertyList>
-			<MiscSettings>
-				<MiscSettingEntry Name="Cache"><![CDATA[.cache]]></MiscSettingEntry>
-				<MiscSettingEntry Name="Originals"><![CDATA[Originals]]></MiscSettingEntry>
-			</MiscSettings>
 			<SharedValues>
 				<SharedPropertyList ClassName="AudioSource" PluginType="0" CompanyID="1" PluginID="0">
 					<PropertyList>

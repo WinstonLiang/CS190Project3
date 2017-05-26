@@ -62,10 +62,15 @@ public class GlobalTimer : MonoBehaviour {
                 }
                 foreach (GameObject thing in moving)
                 {
-                    thing.GetComponent<Movement>().SwitchMove();
+
                     if (thing.name == "SamplePlayer") // TODO: Replace with actual name later
+                    {
+                        thing.GetComponent<Movement>().SwitchMove();
                         if (thing.GetComponent<Movement>().currentRoom == Rooms.GetComponent<RoomGen>().exit)
                             outside = true;
+                    }
+                    else
+                        thing.GetComponent<MonsterMovement>().SwitchMove();
                 }
                 GetComponent<_WALK>().Walk();
             }

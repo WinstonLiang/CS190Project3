@@ -83,7 +83,8 @@ public class Movement : MonoBehaviour {
             }
             if (!Input.GetKey("up") && !Input.GetKey("down") && !Input.GetKey("left") && !Input.GetKey("right"))
             {
-                 direction = "center";
+                direction = "center";
+                //playedSound = false;
             }
 
         switch (direction)
@@ -251,26 +252,25 @@ public class Movement : MonoBehaviour {
         {
             if (RoomCoords.coordinates.ContainsKey(tryCoordinate))
             {
-                AkSoundEngine.SetRTPCValue("DeadEnd_Listen", 0);
+                GetComponent<_STOP_DEADEND>().SetDeadend();
             }
             else
             {
-                AkSoundEngine.SetRTPCValue("DeadEnd_Listen", 10);
                 GetComponent<_CHECK_DEADEND>().SetDeadend();
             }
         }
         else
         {
-            AkSoundEngine.SetRTPCValue("DeadEnd_Listen", 0);
+            GetComponent<_STOP_DEADEND>().SetDeadend();
         }
 
         if (RoomCoords.exit.coordinate == tryCoordinate)
         {
-            AkSoundEngine.SetRTPCValue("IsExit", 1);
+            AkSoundEngine.SetRTPCValue("Outside_Listen", 3);
         }
         else
         {
-            AkSoundEngine.SetRTPCValue("IsExit", 0);
+            AkSoundEngine.SetRTPCValue("Outside_Listen", 0);
         }
 
         playedSound = true;

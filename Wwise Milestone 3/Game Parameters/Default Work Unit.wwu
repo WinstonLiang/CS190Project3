@@ -16,16 +16,31 @@
 						<Property Name="Max" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="IsDeadEnd" ID="{06B91A36-8D5C-4AA3-BD61-C01B5820E4FC}">
+				<GameParameter Name="Outside_Listen" ID="{C083275C-AD4C-40C3-B4E2-8371669B7374}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="3"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="IsExit" ID="{9EA3E8CE-2BB1-4199-9E36-CE83FDFD718A}">
+				<GameParameter Name="Wet_Room_Listen" ID="{0C6D0A5B-B9EA-4CB5-B67D-EF3B29B61D5A}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
 						<Property Name="Max" Type="Real64" Value="2"/>
+						<Property Name="Min" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Flesh_Room_Listen" ID="{4A46B55B-FE81-494F-A094-9950786988E9}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="2"/>
+						<Property Name="Min" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Machine_Listen" ID="{FFBF65CA-F3C1-4FAF-B415-22BAB6A79793}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="2"/>
+						<Property Name="Min" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>
