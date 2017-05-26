@@ -29,7 +29,7 @@ public class Movement : MonoBehaviour {
     // Use this for initialization
     void Start () {
         playedSound = false;
-        currentSpeed = 2;
+        currentSpeed = 0.1f;
         currentPosition = currentRoom.coordinate;
 
         Int32.TryParse(currentPosition[0].ToString(), out x);
@@ -81,28 +81,36 @@ public class Movement : MonoBehaviour {
                     playedSound = false;
                 }
             }
+            if (!Input.GetKey("up") && !Input.GetKey("down") && !Input.GetKey("left") && !Input.GetKey("right"))
+            {
+                 direction = "center";
+            }
 
         switch (direction)
         {
             case "up":
-                //transform.position = Vector3.MoveTowards(transform.position, currentRoom.UpDoor.spot.transform.position, currentSpeed);
-                transform.position = currentRoom.UpDoor.spot.transform.position;
+                transform.position = Vector3.MoveTowards(transform.position, currentRoom.UpDoor.spot.transform.position, currentSpeed);
+                //transform.position = currentRoom.UpDoor.spot.transform.position;
                 break;
             case "down":
-                //transform.position = Vector3.MoveTowards(transform.position, currentRoom.DownDoor.spot.transform.position, currentSpeed);
-                transform.position = currentRoom.DownDoor.spot.transform.position;
+                transform.position = Vector3.MoveTowards(transform.position, currentRoom.DownDoor.spot.transform.position, currentSpeed);
+                //transform.position = currentRoom.DownDoor.spot.transform.position;
                 break;
             case "right":
-                //transform.position = Vector3.MoveTowards(transform.position, currentRoom.RightDoor.spot.transform.position, currentSpeed);
-                transform.position = currentRoom.RightDoor.spot.transform.position;
+                transform.position = Vector3.MoveTowards(transform.position, currentRoom.RightDoor.spot.transform.position, currentSpeed);
+                //transform.position = currentRoom.RightDoor.spot.transform.position;
                 break;
             case "left":
-                //transform.position = Vector3.MoveTowards(transform.position, currentRoom.LeftDoor.spot.transform.position, currentSpeed);
-                transform.position = currentRoom.LeftDoor.spot.transform.position;
+                transform.position = Vector3.MoveTowards(transform.position, currentRoom.LeftDoor.spot.transform.position, currentSpeed);
+                //transform.position = currentRoom.LeftDoor.spot.transform.position;
+                break;
+             case "center":
+                transform.position = Vector3.MoveTowards(transform.position, new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0), currentSpeed);
+                //transform.position = new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0);
                 break;
             default:
-                //transform.position = Vector3.MoveTowards(transform.position, new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0), currentSpeed);
-                transform.position = new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0);
+                transform.position = Vector3.MoveTowards(transform.position, new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0), currentSpeed);
+                //transform.position = new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0);
                 break;
         }
 
@@ -162,7 +170,7 @@ public class Movement : MonoBehaviour {
         if(RoomCoords.coordinates.ContainsKey(tryCoordinate))
         {
             currentRoom = RoomCoords.coordinates[tryCoordinate];
-            direction = opposite;
+            direction = "center";
             GetComponent<_WALK>().Walk();
             
             //switch (direction)

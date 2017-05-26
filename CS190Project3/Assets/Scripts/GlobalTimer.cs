@@ -38,13 +38,28 @@ public class GlobalTimer : MonoBehaviour {
                     GetComponent<_TOCK_ODD>().Tick();
                 }
             }
-
+            if (timer >= 4 && !GONG)
+            {
+                 foreach (ROOM r in Rooms.GetComponent<RoomGen>().rooms)
+                 {
+                      r.UpDoor.GetComponent<Animator>().SetInteger("DoorState", 1);
+                      r.LeftDoor.GetComponent<Animator>().SetInteger("DoorState", 1);
+                      r.DownDoor.GetComponent<Animator>().SetInteger("DoorState", 1);
+                      r.RightDoor.GetComponent<Animator>().SetInteger("DoorState", 1);
+                 }
+            }
             if (timer >= 5 && !GONG)
             {
                 // Signal for all to move Debug
                 //Debug.Log("GONG");
                 GONG = true;
-
+                foreach (ROOM r in Rooms.GetComponent<RoomGen>().rooms)
+                {
+                     r.UpDoor.GetComponent<Animator>().SetInteger("DoorState", -1);
+                     r.LeftDoor.GetComponent<Animator>().SetInteger("DoorState", -1);
+                     r.DownDoor.GetComponent<Animator>().SetInteger("DoorState", -1);
+                     r.RightDoor.GetComponent<Animator>().SetInteger("DoorState", -1);
+                }
                 foreach (GameObject thing in moving)
                 {
                     thing.GetComponent<Movement>().SwitchMove();
@@ -53,6 +68,16 @@ public class GlobalTimer : MonoBehaviour {
                             outside = true;
                 }
                 GetComponent<_WALK>().Walk();
+            }
+            if (timer >= 6.5 && GONG)
+            {
+                 foreach (ROOM r in Rooms.GetComponent<RoomGen>().rooms)
+                 {
+                      r.UpDoor.GetComponent<Animator>().SetInteger("DoorState", 0);
+                      r.LeftDoor.GetComponent<Animator>().SetInteger("DoorState", 0);
+                      r.DownDoor.GetComponent<Animator>().SetInteger("DoorState", 0);
+                      r.RightDoor.GetComponent<Animator>().SetInteger("DoorState", 0);
+                 }
             }
             if (timer >= 10)
             {
