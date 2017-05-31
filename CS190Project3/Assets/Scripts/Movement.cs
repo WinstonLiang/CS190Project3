@@ -15,6 +15,8 @@ public class Movement : MonoBehaviour {
 
     public float currentSpeed;
 
+    public List<Sprite> gameFrames;
+
     string currentPosition;
 
     bool playedSound;
@@ -120,6 +122,7 @@ public class Movement : MonoBehaviour {
 
         followme.transform.position = new Vector3(x, y, -10);
         shroud.transform.position = new Vector3(x, y, -5);
+        shroud.GetComponent<SpriteRenderer>().sprite = gameFrames[currentRoom.roomType];
 
         //followme.transform.position = Vector3.MoveTowards(followme.transform.position, new Vector3(x, y, -10), step);
         //shroud.transform.position = Vector3.MoveTowards(shroud.transform.position, new Vector3(x, y, -5), step);
