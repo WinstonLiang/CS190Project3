@@ -15,9 +15,16 @@ public class ROOM : MonoBehaviour {
     public GameObject floor;
     public List<Sprite> floors;
 
+    public GameObject dripping;
 	// Use this for initialization
 	void Start () {
-          floor.GetComponent<SpriteRenderer>().sprite = floors[Random.Range(0, floors.Count)];
+          floor.GetComponent<SpriteRenderer>().sprite = floors[roomType];
+          switch (roomType)
+          {
+               case 0:
+                    dripping.GetComponent<ParticleSystem>().Play();
+                    break;
+          }
 	}
 	
 	// Update is called once per frame
