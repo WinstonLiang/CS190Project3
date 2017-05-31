@@ -8,24 +8,29 @@
 						<ObjectRef Name="Room_Wet_Enter" ID="{7B5FF6CD-DBCF-4060-8A7D-54DEF66FDA49}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Monster_Closer" ID="{205114D0-453D-40EE-8A3E-78B302D7D09E}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Clock_Tick" ID="{70BAE3CC-3820-41EF-92F8-B24EE8C4C8BB}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Room_Ghost_Stand" ID="{AFD07309-2D7F-420F-9F8B-86B6C32E5487}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Outside_Too_Far" ID="{9186C9A2-C557-4246-AA12-C762DD5F6609}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Outside_Close_Enough" ID="{00D81FA4-F2B6-428F-8AC1-C204E8996935}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Room_Ghost_Enter" ID="{576CA5A3-BA14-435D-B98C-D57FDA0FEC32}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Bell_Ring" ID="{804EE2DC-1F8A-4378-936E-56A3044022F0}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Outside_Closer" ID="{BD4219C4-C431-438E-A4A8-53EA98FF635F}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Flesh_Enter" ID="{0FD9BC42-217A-43EC-9A0E-EA3F299E684F}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Machine_Listen" ID="{2D59BAE0-385F-44B8-BC1F-9B1E25204AFA}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Flesh_Walk" ID="{28755E14-63BA-4537-97B9-61BD15E8D107}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Dead_End" ID="{E41B38E7-FB6F-4573-BC15-441D733D19C5}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ouside_Farther" ID="{F3C750BA-CA6F-4720-BAF6-679634A1D848}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Flesh_Listen" ID="{14F86B4C-AA07-47F7-A57C-75E0858CF439}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Machine_Walk" ID="{25EDF5E4-A4D9-481B-AB2F-B5ED0ED66B57}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Flesh_Stand" ID="{90FB1424-F7F8-4864-9988-C79B0FF39F3E}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Wet_Walk" ID="{2B4F444F-8B21-49B3-A076-912F0DE8A207}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Outside_Start" ID="{14925F6A-15F0-4A9A-83D5-E208F8CBA9F7}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Room_Ghost_Walk" ID="{CE18775F-D3C6-4A19-A1A4-8604741B560B}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Machine_Enter" ID="{6FEFE50C-A447-4B62-82F6-D1DE00E7DA68}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Wet_Stand" ID="{710B3859-9BFB-4CA4-ACFB-8214C6A703ED}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Room_DeadEnd_Listen" ID="{8C778444-2348-4CE3-AAC5-4F32A56CA78B}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Wet_Listen" ID="{D33C78B6-9455-4D1F-B3F8-7D7AB8676EFC}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Game_Start" ID="{5FAB0695-FA35-4D8E-9B24-E7F3CE0F3BAA}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Monster_step" ID="{A9D2C5F7-F50B-4E41-81F4-A48327494A83}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Door_Open" ID="{9B4A9B30-6348-4EF6-A27C-DDE68771EDB3}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Room_Ghost_Listen" ID="{F1EF8F08-AFFF-4F39-A256-14DA88734169}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Machine_Stand" ID="{1E4B28D8-A254-4F61-8E61-07D900F5A2F1}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Monster_Farther" ID="{F3A76281-CAD3-4FE7-A9B9-167106BC52DA}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

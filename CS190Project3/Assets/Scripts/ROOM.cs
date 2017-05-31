@@ -31,4 +31,19 @@ public class ROOM : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void Standing()
+    {
+        GetComponent<_STOP_DEADEND>().SetDeadend();
+    }
+
+    public void Enter()
+    {
+        GetComponent<_WALK>().Walk();
+    }
+
+    public void Listen()
+    {
+        GetComponent<_CHECK_DEADEND>().SetDeadend();
+    }
 }

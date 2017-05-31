@@ -44,7 +44,10 @@ public class Movement : MonoBehaviour {
 	void Update () {
 
         if (!playedSound)
+        {
             CheckSpace();
+            currentRoom.Standing();
+        }
 
         float step = 2 * Time.deltaTime;
 
@@ -144,57 +147,31 @@ public class Movement : MonoBehaviour {
         Int32.TryParse(currentPosition[0].ToString(), out x);
         Int32.TryParse(currentPosition[1].ToString(), out y);
 
-        string opposite;
-
         switch(direction)
         {
             case "up":
                 y += 1;
-                opposite = "down";
                 break;
             case "down":
                 y -= 1;
-                opposite = "up";
                 break;
             case "right":
                 x += 1;
-                opposite = "left";
                 break;
             case "left":
                 x -= 1;
-                opposite = "right";
                 break;
             default:
-                opposite = "center";
                 break;
         }
 
         string tryCoordinate = x.ToString() + y.ToString();
 
-        if(RoomCoords.coordinates.ContainsKey(tryCoordinate))
+        if (RoomCoords.coordinates.ContainsKey(tryCoordinate))
         {
             currentRoom = RoomCoords.coordinates[tryCoordinate];
             direction = "center";
-            GetComponent<_WALK>().Walk();
-            
-            //switch (direction)
-            //{
-            //    case "up":
-            //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.UpDoor.spot.transform.position, currentSpeed);
-            //        break;
-            //    case "down":
-            //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.DownDoor.spot.transform.position, currentSpeed);
-            //        break;
-            //    case "right":
-            //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.RightDoor.spot.transform.position, currentSpeed);
-            //        break;
-            //    case "left":
-            //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.LeftDoor.spot.transform.position, currentSpeed);
-            //        break;
-            //    default:
-            //        transform.position = Vector3.MoveTowards(transform.position, currentRoom.transform.position, currentSpeed);
-            //        break;
-            //}
+            currentRoom.Enter();
         }
         else
         {
@@ -220,8 +197,6 @@ public class Movement : MonoBehaviour {
 
     void CheckSpace()
     {
-        GetComponent<_STOP_DEADEND>().SetDeadend();
-        GetComponent<_IS_NEAR_EXIT>().TheLight();
 
         int x = 0;
         int y = 0;
@@ -255,7 +230,7 @@ public class Movement : MonoBehaviour {
         {
             if (RoomCoords.coordinates.ContainsKey(tryCoordinate))
             {
-                GetComponent<_STOP_DEADEND>().SetDeadend();
+                RoomCoords.coordinates[tryCoordinate].Listen();
             }
             else
             {
@@ -264,15 +239,28 @@ public class Movement : MonoBehaviour {
         }
         else
         {
-            GetComponent<_STOP_DEADEND>().SetDeadend();
+            GetComponent<_OUTSIDE>().TheBirds();
         }
 
         if (RoomCoords.exit.coordinate == tryCoordinate)
         {
-            AkSoundEngine.SetRTPCValue("Outside_Listen", 3);
+            GetComponent<_OUTSIDE>().TheBirds();
         }
         else
         {
+            int exitX = 0;
+            int exitY = 0;
+
+            Int32.TryParse(RoomCoords.exit.coordinate[0].ToString(), out exitX);
+            Int32.TryParse(RoomCoords.exit.coordinate[1].ToString(), out exitY);
+
+            float distanceToExit = (float)Math.Sqrt((x - exitX) ^ 2 + (y - exitY) ^ 2);
+
+            if(Math.Floor(distanceToExit) > 3)
+                GetComponent<_WALK>().Walk();
+            else
+                GetComponent<_IS_NEAR_EXIT>().TheLight();
+
             AkSoundEngine.SetRTPCValue("Outside_Listen", 0);
         }
 

@@ -23,19 +23,24 @@
 			<IncludedEvents>
 				<Event Id="1207309839" Name="Bell_Ring" ObjectPath="\Events\Default Work Unit\Bell_Ring"/>
 				<Event Id="2719257531" Name="Clock_Tick" ObjectPath="\Events\Default Work Unit\Clock_Tick"/>
-				<Event Id="1310435349" Name="Dead_End" ObjectPath="\Events\Default Work Unit\Dead_End"/>
 				<Event Id="535830432" Name="Door_Open" ObjectPath="\Events\Default Work Unit\Door_Open"/>
 				<Event Id="733168346" Name="Game_Start" ObjectPath="\Events\Default Work Unit\Game_Start"/>
 				<Event Id="4052350654" Name="Monster_Closer" ObjectPath="\Events\Default Work Unit\Monster_Closer"/>
 				<Event Id="1814518170" Name="Monster_Farther" ObjectPath="\Events\Default Work Unit\Monster_Farther"/>
 				<Event Id="1925514878" Name="Monster_step" ObjectPath="\Events\Default Work Unit\Monster_step"/>
 				<Event Id="2525378283" Name="Ouside_Farther" ObjectPath="\Events\Default Work Unit\Ouside_Farther"/>
+				<Event Id="2632241442" Name="Outside_Close_Enough" ObjectPath="\Events\Default Work Unit\Outside_Close_Enough"/>
 				<Event Id="514601847" Name="Outside_Closer" ObjectPath="\Events\Default Work Unit\Outside_Closer"/>
-				<Event Id="1707241591" Name="Outside_Start" ObjectPath="\Events\Default Work Unit\Outside_Start"/>
+				<Event Id="2888590795" Name="Outside_Too_Far" ObjectPath="\Events\Default Work Unit\Outside_Too_Far"/>
+				<Event Id="1240585254" Name="Room_DeadEnd_Listen" ObjectPath="\Events\Default Work Unit\Room_DeadEnd_Listen"/>
 				<Event Id="2724478592" Name="Room_Flesh_Enter" ObjectPath="\Events\Default Work Unit\Room_Flesh_Enter"/>
 				<Event Id="2580524235" Name="Room_Flesh_Listen" ObjectPath="\Events\Default Work Unit\Room_Flesh_Listen"/>
 				<Event Id="699286366" Name="Room_Flesh_Stand" ObjectPath="\Events\Default Work Unit\Room_Flesh_Stand"/>
 				<Event Id="3699824517" Name="Room_Flesh_Walk" ObjectPath="\Events\Default Work Unit\Room_Flesh_Walk"/>
+				<Event Id="1673855015" Name="Room_Ghost_Enter" ObjectPath="\Events\Default Work Unit\Room_Ghost_Enter"/>
+				<Event Id="1153766490" Name="Room_Ghost_Listen" ObjectPath="\Events\Default Work Unit\Room_Ghost_Listen"/>
+				<Event Id="3986959673" Name="Room_Ghost_Stand" ObjectPath="\Events\Default Work Unit\Room_Ghost_Stand"/>
+				<Event Id="2293682072" Name="Room_Ghost_Walk" ObjectPath="\Events\Default Work Unit\Room_Ghost_Walk"/>
 				<Event Id="1130508301" Name="Room_Machine_Enter" ObjectPath="\Events\Default Work Unit\Room_Machine_Enter"/>
 				<Event Id="4113313796" Name="Room_Machine_Listen" ObjectPath="\Events\Default Work Unit\Room_Machine_Listen"/>
 				<Event Id="3419782079" Name="Room_Machine_Stand" ObjectPath="\Events\Default Work Unit\Room_Machine_Stand"/>
@@ -53,6 +58,10 @@
 				<File Id="30230954" Language="SFX">
 					<ShortName>SFX_Footsteps_WetConcrete_V1.wav</ShortName>
 					<Path>SFX\SFX_Footsteps_WetConcrete_V1_986AF7C0.wem</Path>
+				</File>
+				<File Id="30252143" Language="SFX">
+					<ShortName>New Wet Walking.wav</ShortName>
+					<Path>SFX\New Wet Walking_D11AEE5B.wem</Path>
 				</File>
 				<File Id="33571887" Language="SFX">
 					<ShortName>SFX_Room_Wet_Dripping_V1.wav</ShortName>
@@ -78,9 +87,17 @@
 					<ShortName>Grandfather_Bell.wav</ShortName>
 					<Path>SFX\Grandfather_Bell_66860AEB.wem</Path>
 				</File>
+				<File Id="107179695" Language="SFX">
+					<ShortName>Loopable_Wind_Howl.wav</ShortName>
+					<Path>SFX\Loopable_Wind_Howl_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="121047549" Language="SFX">
 					<ShortName>SFX_DeadEnd_Vocal.wav</ShortName>
 					<Path>SFX\SFX_DeadEnd_Vocal_9E69E797.wem</Path>
+				</File>
+				<File Id="121741999" Language="SFX">
+					<ShortName>New Wet Walking.wav</ShortName>
+					<Path>SFX\New Wet Walking_2A7FE70B.wem</Path>
 				</File>
 				<File Id="131603468" Language="SFX">
 					<ShortName>Fleshywall  sounds.wav</ShortName>
@@ -113,6 +130,10 @@
 				<File Id="293861222" Language="SFX">
 					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
 					<Path>SFX\SFX_Timer_GrandfatherClock_921C08CB.wem</Path>
+				</File>
+				<File Id="295463219" Language="SFX">
+					<ShortName>New Wet Walking.wav</ShortName>
+					<Path>SFX\New Wet Walking_94CA7108.wem</Path>
 				</File>
 				<File Id="300983609" Language="SFX">
 					<ShortName>SFX_Door_MultipleDrag.wav</ShortName>
@@ -148,7 +169,7 @@
 				</File>
 				<File Id="395132726" Language="SFX">
 					<ShortName>Machine Loop.wav</ShortName>
-					<Path>SFX\Machine Loop_9E69E797.wem</Path>
+					<Path>SFX\Machine Loop_81EBD635.wem</Path>
 				</File>
 				<File Id="414673257" Language="SFX">
 					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
@@ -162,9 +183,17 @@
 					<ShortName>Fleshy sounds.wav</ShortName>
 					<Path>SFX\Fleshy sounds_82FE1631.wem</Path>
 				</File>
+				<File Id="480911680" Language="SFX">
+					<ShortName>New Wet Walking.wav</ShortName>
+					<Path>SFX\New Wet Walking_1908E871.wem</Path>
+				</File>
 				<File Id="481479529" Language="SFX">
 					<ShortName>SFX_Door_GearMetal.wav</ShortName>
 					<Path>SFX\SFX_Door_GearMetal_D65ED5A8.wem</Path>
+				</File>
+				<File Id="501049682" Language="SFX">
+					<ShortName>New Wet Walking.wav</ShortName>
+					<Path>SFX\New Wet Walking_9C41C9CB.wem</Path>
 				</File>
 				<File Id="501855142" Language="SFX">
 					<ShortName>SFX_Room_Wet_Dripping_V1.wav</ShortName>
@@ -194,6 +223,10 @@
 					<ShortName>Fan Spin Loop.wav</ShortName>
 					<Path>SFX\Fan Spin Loop_4AD930C9.wem</Path>
 				</File>
+				<File Id="618433709" Language="SFX">
+					<ShortName>New Wet Walking.wav</ShortName>
+					<Path>SFX\New Wet Walking_62A25E2E.wem</Path>
+				</File>
 				<File Id="625940956" Language="SFX">
 					<ShortName>264509__richerlandtv__wet-meat-clean (1).wav</ShortName>
 					<Path>SFX\264509__richerlandtv__wet-meat-clean (1)_4B8CC0C5.wem</Path>
@@ -220,7 +253,7 @@
 				</File>
 				<File Id="698656854" Language="SFX">
 					<ShortName>Wind.wav</ShortName>
-					<Path>SFX\Wind_9E69E797.wem</Path>
+					<Path>SFX\Wind_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="699444984" Language="SFX">
 					<ShortName>Boots Running Metal.wav</ShortName>
@@ -242,6 +275,10 @@
 					<ShortName>Boots Running Metal.wav</ShortName>
 					<Path>SFX\Boots Running Metal_7D2F9C6E.wem</Path>
 				</File>
+				<File Id="755248143" Language="SFX">
+					<ShortName>New Wet Walking.wav</ShortName>
+					<Path>SFX\New Wet Walking_57570433.wem</Path>
+				</File>
 				<File Id="759274494" Language="SFX">
 					<ShortName>SFX_Door_MultipleDrag.wav</ShortName>
 					<Path>SFX\SFX_Door_MultipleDrag_86B39A15.wem</Path>
@@ -253,6 +290,10 @@
 				<File Id="774723420" Language="SFX">
 					<ShortName>Boots Running Metal.wav</ShortName>
 					<Path>SFX\Boots Running Metal_4B691424.wem</Path>
+				</File>
+				<File Id="804711779" Language="SFX">
+					<ShortName>New Wet Walking.wav</ShortName>
+					<Path>SFX\New Wet Walking_0D3B1D76.wem</Path>
 				</File>
 				<File Id="808076968" Language="SFX">
 					<ShortName>SFX_DeadEnd_Electric.wav</ShortName>
@@ -268,7 +309,7 @@
 				</File>
 				<File Id="847441279" Language="SFX">
 					<ShortName>74806__mrmayo__creek-1.wav</ShortName>
-					<Path>SFX\74806__mrmayo__creek-1_9E69E797.wem</Path>
+					<Path>SFX\74806__mrmayo__creek-1_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="861566122" Language="SFX">
 					<ShortName>SFX_Room_Wet_Dripping_V1.wav</ShortName>
@@ -300,7 +341,7 @@
 				</File>
 				<File Id="962482610" Language="SFX">
 					<ShortName>Birds W Wind loop.wav</ShortName>
-					<Path>SFX\Birds W Wind loop_9E69E797.wem</Path>
+					<Path>SFX\Birds W Wind loop_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="977595785" Language="SFX">
 					<ShortName>SFX_Footsteps_WetConcrete_V1.wav</ShortName>
