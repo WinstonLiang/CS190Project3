@@ -5,9 +5,9 @@
 			<ChildrenList>
 				<Event Name="Door_Open" ID="{9B4A9B30-6348-4EF6-A27C-DDE68771EDB3}">
 					<ChildrenList>
-						<Action Name="Play" ID="{B634D714-BD07-4876-AC34-1A53FAF327D8}" ShortID="627638458" Type="Play" Scope="One" Global="false">
+						<Action Name="Play" ID="{7C3ED4DC-BDD9-4F86-8372-57828D0AE45B}" ShortID="22601962" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{0D738259-D35A-4CAF-9CE6-E17340ACA2CF}" Global="false">
+								<Element ID="{4E71A8E5-40F2-49C3-977D-A17ADB481784}" Global="false">
 									<ObjectRef Name="Door Open" ID="{C5CA4B7D-DEDA-4C8B-AD66-E1C2E8DA1449}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
@@ -46,31 +46,11 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Player_Walking" ID="{2B4F444F-8B21-49B3-A076-912F0DE8A207}">
+				<Event Name="Room_Wet_Walk" ID="{2B4F444F-8B21-49B3-A076-912F0DE8A207}">
 					<ChildrenList>
 						<Action Name="Play" ID="{E2591538-A636-4290-9351-852F5EB08A06}" ShortID="498144823" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{E46892FF-2D1E-474D-83D5-D7C5E569EE0E}" Global="false">
-									<ObjectRef Name="WetConcrete" ID="{9EBE8295-4E6D-4A76-BB41-074A51EB3EFC}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
-								</Element>
-							</ElementList>
-						</Action>
-						<Action Name="Play" ID="{0106D628-A005-4868-9FB7-44244FB7D283}" ShortID="483804748" Type="Play" Scope="One" Global="false">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ElementList>
-								<Element ID="{827E3912-10A8-4810-A47F-1F5821A737C0}" Global="false">
-									<ObjectRef Name="WetConcrete" ID="{9EBE8295-4E6D-4A76-BB41-074A51EB3EFC}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
-								</Element>
-							</ElementList>
-						</Action>
-						<Action Name="Play" ID="{5A09E44C-985B-4FF2-8D62-E2E6BC5BA4E1}" ShortID="297020854" Type="Play" Scope="One" Global="false">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ElementList>
-								<Element ID="{19128CA9-C6BA-46F2-BFF4-DD200FAC079D}" Global="false">
 									<ObjectRef Name="WetConcrete" ID="{9EBE8295-4E6D-4A76-BB41-074A51EB3EFC}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
@@ -86,47 +66,333 @@
 								</Element>
 							</ElementList>
 						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Clock_Tick_Up" ID="{297211A1-0D54-4ECE-859D-91E93AF1682A}">
-					<ChildrenList>
-						<Action Name="Play" ID="{04352DB6-B970-48F5-91B8-2E44A488DF51}" ShortID="283858844" Type="Play" Scope="One" Global="false">
+						<Action Name="Play" ID="{5F2162C3-1E54-4B74-AE7C-EFDBF7D669B3}" ShortID="9817681" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{0A0048DA-F81D-4CD3-9F66-469714E6D2B0}" Global="false">
-									<ObjectRef Name="Clock up (Even)" ID="{CAF81616-6066-4B7F-8784-A09024778DE0}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								<Element ID="{546B7315-965B-403B-87B9-F48A076F7EED}" Global="false">
+									<ObjectRef Name="Outside Ambiance" ID="{AD98CD8A-4B38-479C-8169-8D619165C985}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Clock_Tick_Down" ID="{70BAE3CC-3820-41EF-92F8-B24EE8C4C8BB}">
+				<Event Name="Clock_Tick" ID="{70BAE3CC-3820-41EF-92F8-B24EE8C4C8BB}">
 					<ChildrenList>
 						<Action Name="Play" ID="{1DFB1430-8CF1-4991-8879-7C0C5D90D2DF}" ShortID="281869648" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{592205FF-34CA-401F-B28D-C6A8B7B9CD5F}" Global="false">
-									<ObjectRef Name="Clock Down (odd)" ID="{FC1DF957-86E4-4D9C-8685-4BCAEAD88C45}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+									<ObjectRef Name="Timer" ID="{4DBFEB7E-EE0A-45C6-AAF2-41184DF816A1}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Dead_end" ID="{6E2CB405-1D58-4909-BAC1-7DF2CB54D943}">
+				<Event Name="Outside_Closer" ID="{BD4219C4-C431-438E-A4A8-53EA98FF635F}">
 					<ChildrenList>
-						<Action Name="Play" ID="{714A2E6B-E8FD-4E03-83D3-7E5426D018AB}" ShortID="213666576" Type="Play" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{1B788D4A-A070-4867-915A-D00FA0EC2A38}" ShortID="716345753" Type="SetGameParameter" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Absolute" Type="bool" Value="False"/>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="0.3"/>
+							</PropertyList>
 							<ElementList>
-								<Element ID="{8BB3EA80-7CD6-43FA-AB39-AEEB63E13E94}" Global="false">
+								<Element ID="{988963D1-1D76-411C-AE15-5ECBCA6D1A69}" Global="false">
+									<ObjectRef Name="Outside_Listen" ID="{C083275C-AD4C-40C3-B4E2-8371669B7374}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ouside_Farther" ID="{F3C750BA-CA6F-4720-BAF6-679634A1D848}">
+					<ChildrenList>
+						<Action Name="Set Game Parameter" ID="{2CDE39DE-CDB7-4D6A-8907-5D97E0C49B20}" ShortID="260569361" Type="SetGameParameter" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Absolute" Type="bool" Value="False"/>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="-0.3"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{8AFA0199-39EE-4055-8C88-C7FF1BC08F74}" Global="false">
+									<ObjectRef Name="Outside_Listen" ID="{C083275C-AD4C-40C3-B4E2-8371669B7374}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Room_Wet_Enter" ID="{7B5FF6CD-DBCF-4060-8A7D-54DEF66FDA49}">
+					<ChildrenList>
+						<Action Name="Set Game Parameter" ID="{14C83A0F-B827-4615-9169-BA5AFDF920C9}" ShortID="142602416" Type="SetGameParameter" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{58F13446-7328-47FA-A850-A69A76BAFC9D}" Global="false">
+									<ObjectRef Name="Wet_Room_Listen" ID="{0C6D0A5B-B9EA-4CB5-B67D-EF3B29B61D5A}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Room_Wet_Listen" ID="{D33C78B6-9455-4D1F-B3F8-7D7AB8676EFC}">
+					<ChildrenList>
+						<Action Name="Set Game Parameter" ID="{64B7AD16-DEA7-4D46-AD6E-E209D40282E4}" ShortID="67258269" Type="SetGameParameter" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{3E8C0E33-B2D6-4A01-917A-6E01F1910AEE}" Global="false">
+									<ObjectRef Name="Wet_Room_Listen" ID="{0C6D0A5B-B9EA-4CB5-B67D-EF3B29B61D5A}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="UnMute" ID="{00424415-C147-441F-847C-FB8C9F02ECF1}" ShortID="311965462" Type="UnMute" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5B300B7B-B8F7-4107-90CD-D4D5389F8F70}" Global="false">
+									<ObjectRef Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Bell_Ring" ID="{804EE2DC-1F8A-4378-936E-56A3044022F0}">
+					<ChildrenList>
+						<Action Name="Play" ID="{E7B7C798-C3A9-42BF-AC8F-050E5AB91D59}" ShortID="40664906" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{793DD15E-D176-4087-95FF-4F570ED7A02A}" Global="false">
+									<ObjectRef Name="Bell Ring" ID="{41CF05A9-7E8D-40E0-B72F-A51B6DC073FF}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Outside_Start" ID="{14925F6A-15F0-4A9A-83D5-E208F8CBA9F7}">
+					<ChildrenList>
+						<Action Name="Play" ID="{76140E75-3667-4ED4-BF09-424B669073FA}" ShortID="64434149" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{18216890-AC20-45C6-9AC3-2118E888591E}" Global="false">
+									<ObjectRef Name="Outside Ambiance" ID="{AD98CD8A-4B38-479C-8169-8D619165C985}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Room_Flesh_Listen" ID="{14F86B4C-AA07-47F7-A57C-75E0858CF439}">
+					<ChildrenList>
+						<Action Name="Set Game Parameter" ID="{27CE7893-97E8-4881-B464-792E42777FA6}" ShortID="143063562" Type="SetGameParameter" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{F767244F-FD3E-4195-87D2-B517F763D55A}" Global="false">
+									<ObjectRef Name="Flesh_Room_Listen" ID="{4A46B55B-FE81-494F-A094-9950786988E9}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="UnMute" ID="{181FA66B-190D-4D63-8C48-A70B0C7DE3C3}" ShortID="103505324" Type="UnMute" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{16E7C7BF-D1FF-4DDD-9B4B-231464A5B7D4}" Global="false">
+									<ObjectRef Name="Flesh" ID="{B0E39566-2A85-4A79-BA31-BE667C5D5C24}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Room_Flesh_Enter" ID="{0FD9BC42-217A-43EC-9A0E-EA3F299E684F}">
+					<ChildrenList>
+						<Action Name="Set Game Parameter" ID="{6C1894A9-D152-4949-9622-8F73CA0514B3}" ShortID="63158703" Type="SetGameParameter" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{F31979BB-9859-4D1A-8DDE-17766848FF8A}" Global="false">
+									<ObjectRef Name="Flesh_Room_Listen" ID="{4A46B55B-FE81-494F-A094-9950786988E9}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Room_Flesh_Walk" ID="{28755E14-63BA-4537-97B9-61BD15E8D107}">
+					<ChildrenList>
+						<Action Name="Play" ID="{EA7C59A9-0ACD-4220-9E13-3695F8D5A77F}" ShortID="1069575139" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{EA3A58BF-56C5-42AF-A4B5-98F820F31359}" Global="false">
+									<ObjectRef Name="Flesh" ID="{B0E39566-2A85-4A79-BA31-BE667C5D5C24}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Game_Start" ID="{5FAB0695-FA35-4D8E-9B24-E7F3CE0F3BAA}">
+					<ChildrenList>
+						<Action Name="Play" ID="{756735C3-34FF-4753-87C3-6C8320ED2AFE}" ShortID="962735261" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D842B923-1ED3-473D-8536-95C46CD3B81B}" Global="false">
+									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{39ACDDA3-FCD8-45F8-B1AC-162DDF5CC1C2}" ShortID="515848603" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{296A7BE6-E029-41D2-BBBB-9B075FE912E3}" Global="false">
+									<ObjectRef Name="Living Room" ID="{C450D665-AB20-4233-8809-9D184A8A9373}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{735A7BE6-C696-4D82-BFCF-060AD5A11667}" ShortID="658776966" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{7BDE6507-07FF-4641-8800-FD66B1418D04}" Global="false">
+									<ObjectRef Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{BAFD4FCC-EA4B-4F96-8E8E-B78A04D867D8}" ShortID="97312575" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D5A1D619-2297-4E40-8992-86E1EDF766CF}" Global="false">
+									<ObjectRef Name="Machine Room" ID="{07350BEF-30B2-4C41-90ED-CAD727C301C9}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Room_Wet_Stand" ID="{710B3859-9BFB-4CA4-ACFB-8214C6A703ED}">
+					<ChildrenList>
+						<Action Name="Mute" ID="{B817762A-B8C3-4D93-BA18-2A3A7D806F26}" ShortID="263827733" Type="Mute" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CE47FCD9-BE96-4E09-A0C7-84AC397903F4}" Global="false">
+									<ObjectRef Name="Living Room" ID="{C450D665-AB20-4233-8809-9D184A8A9373}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Mute" ID="{AF3BDA62-4B79-45B3-8A18-5821129599B0}" ShortID="1028854729" Type="Mute" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{EC7CF87A-894F-4869-A156-7A09F565473B}" Global="false">
+									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Mute" ID="{29C77C28-297B-4C76-9B05-1295F28C0DB7}" ShortID="139571277" Type="Mute" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{234A9731-335A-4ED8-AA92-56ECCDE98100}" Global="false">
+									<ObjectRef Name="Machine Room" ID="{07350BEF-30B2-4C41-90ED-CAD727C301C9}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Room_Flesh_Stand" ID="{90FB1424-F7F8-4864-9988-C79B0FF39F3E}">
+					<ChildrenList>
+						<Action Name="Mute" ID="{2B348CE4-1F16-49FB-A8C3-D57A043357ED}" ShortID="487172036" Type="Mute" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{59EAB598-CB9F-42F1-AC35-70A328054E68}" Global="false">
+									<ObjectRef Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Mute" ID="{8469F68B-4F25-4611-BEFD-69D9C3C63066}" ShortID="107688194" Type="Mute" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6A107147-27AA-447A-B615-FEDACB86304A}" Global="false">
+									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Mute" ID="{2D308436-2C6B-4DAC-AC94-BBA459DEAF89}" ShortID="293057612" Type="Mute" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{971386F5-D8FC-40C5-955B-40AF24241F3E}" Global="false">
+									<ObjectRef Name="Machine Room" ID="{07350BEF-30B2-4C41-90ED-CAD727C301C9}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Room_Machine_Walk" ID="{25EDF5E4-A4D9-481B-AB2F-B5ED0ED66B57}">
+					<ChildrenList>
+						<Action Name="Play" ID="{E74D4E49-FA7B-4656-A95E-BBE9933B1A2B}" ShortID="526324022" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{28C95565-D7FF-4308-9458-7D44B900DBEB}" Global="false">
+									<ObjectRef Name="Machine" ID="{87754A48-DBC8-43FF-AFCD-30B1FB0D5E8C}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Room_Machine_Listen" ID="{2D59BAE0-385F-44B8-BC1F-9B1E25204AFA}">
+					<ChildrenList>
+						<Action Name="Set Game Parameter" ID="{135652D3-3B4B-4A98-8BD0-E55BA36D85FC}" ShortID="504150907" Type="SetGameParameter" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{D7ABCEFF-24FA-419D-B4F5-CC7E0CC8D7F3}" Global="false">
+									<ObjectRef Name="Machine_Listen" ID="{FFBF65CA-F3C1-4FAF-B415-22BAB6A79793}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="UnMute" ID="{AC45DCD3-8F7F-4D6A-A02A-9B4C85A0837B}" ShortID="268377281" Type="UnMute" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C4156BF6-4055-4452-B41A-54FB6F2ACD47}" Global="false">
+									<ObjectRef Name="Machine" ID="{87754A48-DBC8-43FF-AFCD-30B1FB0D5E8C}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Room_Machine_Stand" ID="{1E4B28D8-A254-4F61-8E61-07D900F5A2F1}">
+					<ChildrenList>
+						<Action Name="Mute" ID="{CA87C57D-C36C-43C2-91E4-D18DBEA7D319}" ShortID="8381760" Type="Mute" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{33DEBB6E-58DF-44E2-BF73-982D34A8B876}" Global="false">
+									<ObjectRef Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Mute" ID="{F73A16E5-8F36-4993-9FF6-4D7A56A0854C}" ShortID="836980951" Type="Mute" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{01F74574-A797-4FF7-9093-75D2DE15A2B0}" Global="false">
+									<ObjectRef Name="Living Room" ID="{C450D665-AB20-4233-8809-9D184A8A9373}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Mute" ID="{DE295A3A-0D24-4664-9702-7B2238924785}" ShortID="272172789" Type="Mute" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D5BAAE4D-A7F8-4CE4-AB87-A6911DCB8CF5}" Global="false">
 									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Near_Outside" ID="{FA82711C-AE2B-4843-8B00-6141B6034B9D}">
+				<Event Name="Room_Machine_Enter" ID="{6FEFE50C-A447-4B62-82F6-D1DE00E7DA68}">
 					<ChildrenList>
-						<Action Name="Play" ID="{42A598B1-A2CC-4267-8ABC-FB68F8DA7B54}" ShortID="694616449" Type="Play" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{6697162F-5A11-4B9B-9AA9-07A1E332D8D3}" ShortID="1049774700" Type="SetGameParameter" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="2"/>
+							</PropertyList>
 							<ElementList>
-								<Element ID="{A4AB9D9A-5249-41FA-9946-3476EB689743}" Global="false">
-									<ObjectRef Name="Birds 6038_08" ID="{A77C9192-A3A1-46F1-948B-512BD11DF6E7}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								<Element ID="{A2A1EF65-E9EA-49BD-8ECB-A9341098463B}" Global="false">
+									<ObjectRef Name="Machine_Listen" ID="{FFBF65CA-F3C1-4FAF-B415-22BAB6A79793}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dead_End" ID="{E41B38E7-FB6F-4573-BC15-441D733D19C5}">
+					<ChildrenList>
+						<Action Name="Play" ID="{740757B4-8927-48B9-A83E-55333A10B27E}" ShortID="394940977" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1D192C16-4253-48FF-A803-1F393C11AB27}" Global="false">
+									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>

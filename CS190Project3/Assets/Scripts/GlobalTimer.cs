@@ -12,6 +12,7 @@ public class GlobalTimer : MonoBehaviour {
     public bool outside;
 
     bool GONG;
+    bool doorSound;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,7 @@ public class GlobalTimer : MonoBehaviour {
         GONG = false;
         second = 0;
         outside = false;
+        doorSound = false;
 	}
 	
 	// Update is called once per frame
@@ -37,6 +39,11 @@ public class GlobalTimer : MonoBehaviour {
                 {
                     GetComponent<_TOCK_ODD>().Tick();
                 }
+            }
+            if (timer >= 0f && !doorSound)
+            {
+                 GetComponent<_WALK>().Walk();
+                 doorSound = true;
             }
             if (timer >= 4 && !GONG)
             {
@@ -62,14 +69,19 @@ public class GlobalTimer : MonoBehaviour {
                 }
                 foreach (GameObject thing in moving)
                 {
-                    thing.GetComponent<Movement>().SwitchMove();
+
                     if (thing.name == "SamplePlayer") // TODO: Replace with actual name later
+                    {
+                        thing.GetComponent<Movement>().SwitchMove();
                         if (thing.GetComponent<Movement>().currentRoom == Rooms.GetComponent<RoomGen>().exit)
                             outside = true;
+                    }
+                    else
+                        thing.GetComponent<MonsterMovement>().SwitchMove();
                 }
-                GetComponent<_WALK>().Walk();
+                //GetComponent<_WALK>().Walk();
             }
-            if (timer >= 6.5 && GONG)
+            if (timer >= 6 && GONG)
             {
                  foreach (ROOM r in Rooms.GetComponent<RoomGen>().rooms)
                  {
@@ -84,6 +96,7 @@ public class GlobalTimer : MonoBehaviour {
                 // Signal that animations should have ended Debug
                 //Debug.Log("UNGONG");
                 GONG = false;
+                doorSound = false;
                 timer = 0;
                 second = 0;
             }
