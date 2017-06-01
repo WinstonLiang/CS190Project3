@@ -17,16 +17,22 @@ public class ROOM : MonoBehaviour {
     public List<Sprite> wetFloors;
 
     public GameObject dripping;
+    public GameObject ghosties;
 	// Use this for initialization
 	void Start () {
-          if (roomType != 0)
-          {
-               floor.GetComponent<SpriteRenderer>().sprite = floors[roomType];
-          }
-          else
+          if (roomType == 0)
           {
                floor.GetComponent<SpriteRenderer>().sprite = wetFloors[Random.Range(0, wetFloors.Capacity)];
                dripping.GetComponent<ParticleSystem>().Play();
+          }
+          else if (roomType == 3)
+          {
+               floor.GetComponent<SpriteRenderer>().sprite = floors[roomType];
+               ghosties.GetComponent<ParticleSystem>().Play();
+          }
+          else
+          {
+               floor.GetComponent<SpriteRenderer>().sprite = floors[roomType];
           }
 	}
 	

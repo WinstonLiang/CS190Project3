@@ -143,7 +143,7 @@ public class Movement : MonoBehaviour {
                   }
                   else
                   {
-                       shroud.GetComponent<SpriteRenderer>().sprite = gameFrames[4];
+                       shroud.GetComponent<SpriteRenderer>().sprite = gameFrames[5];
                        anim = false;
                   }
                   fan = Time.time + 0.05f;
