@@ -17,6 +17,9 @@ public class Movement : MonoBehaviour {
 
     public List<Sprite> gameFrames;
 
+    float fan = 0;
+    bool anim = false;
+
     string currentPosition;
 
     bool playedSound;
@@ -125,7 +128,27 @@ public class Movement : MonoBehaviour {
 
         followme.transform.position = new Vector3(x, y, -10);
         shroud.transform.position = new Vector3(x, y, -5);
-        shroud.GetComponent<SpriteRenderer>().sprite = gameFrames[currentRoom.roomType];
+        if (currentRoom.roomType != 2)
+        {
+             shroud.GetComponent<SpriteRenderer>().sprite = gameFrames[currentRoom.roomType];
+        }
+        else
+        {
+             if (fan <= Time.time)
+             {
+                  if (!anim)
+                  {
+                       shroud.GetComponent<SpriteRenderer>().sprite = gameFrames[2];
+                       anim = true;
+                  }
+                  else
+                  {
+                       shroud.GetComponent<SpriteRenderer>().sprite = gameFrames[4];
+                       anim = false;
+                  }
+                  fan = Time.time + 0.05f;
+             }
+        }
 
         //followme.transform.position = Vector3.MoveTowards(followme.transform.position, new Vector3(x, y, -10), step);
         //shroud.transform.position = Vector3.MoveTowards(shroud.transform.position, new Vector3(x, y, -5), step);
