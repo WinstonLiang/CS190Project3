@@ -44,15 +44,18 @@ public class ROOM : MonoBehaviour {
     public void Standing()
     {
         GetComponent<_STOP_DEADEND>().SetDeadend();
+        Debug.Log("I AM STANDING");
     }
 
     public void Enter()
     {
         GetComponent<_WALK>().Walk();
+        Debug.Log("I AM WALKING");
     }
 
     public void Listen()
     {
         GetComponent<_CHECK_DEADEND>().SetDeadend();
+        Debug.Log("I AM LISTENING");
     }
 }

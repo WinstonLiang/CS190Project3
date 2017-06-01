@@ -28,6 +28,7 @@ public class Movement : MonoBehaviour {
     int y = 0;
 
     float constant = 4.5f;
+    float timer = 0;
 
     string direction;
 
@@ -40,23 +41,20 @@ public class Movement : MonoBehaviour {
         Int32.TryParse(currentPosition[0].ToString(), out x);
         Int32.TryParse(currentPosition[1].ToString(), out y);
 
+        timer = 0;
+
         // transform.position = new Vector3(x * constant, y * constant, 0);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (!playedSound)
+        if (!playedSound && timer >= 1)
         {
             CheckSpace();
-            currentRoom.Standing();
+            // currentRoom.Standing();
         }
-
-        float step = 2 * Time.deltaTime;
-
-        float playerStep = currentSpeed * Time.deltaTime;
-
-
+ 
             if (Input.GetKeyDown("up"))
             {
                 direction = "up";
@@ -92,34 +90,28 @@ public class Movement : MonoBehaviour {
             if (!Input.GetKey("up") && !Input.GetKey("down") && !Input.GetKey("left") && !Input.GetKey("right"))
             {
                 direction = "center";
-                //playedSound = false;
+                playedSound = false;
             }
 
         switch (direction)
         {
             case "up":
                 transform.position = Vector3.MoveTowards(transform.position, currentRoom.UpDoor.spot.transform.position, currentSpeed);
-                //transform.position = currentRoom.UpDoor.spot.transform.position;
                 break;
             case "down":
                 transform.position = Vector3.MoveTowards(transform.position, currentRoom.DownDoor.spot.transform.position, currentSpeed);
-                //transform.position = currentRoom.DownDoor.spot.transform.position;
                 break;
             case "right":
                 transform.position = Vector3.MoveTowards(transform.position, currentRoom.RightDoor.spot.transform.position, currentSpeed);
-                //transform.position = currentRoom.RightDoor.spot.transform.position;
                 break;
             case "left":
                 transform.position = Vector3.MoveTowards(transform.position, currentRoom.LeftDoor.spot.transform.position, currentSpeed);
-                //transform.position = currentRoom.LeftDoor.spot.transform.position;
                 break;
              case "center":
                 transform.position = Vector3.MoveTowards(transform.position, new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0), currentSpeed);
-                //transform.position = new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0);
                 break;
             default:
                 transform.position = Vector3.MoveTowards(transform.position, new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0), currentSpeed);
-                //transform.position = new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0);
                 break;
         }
 
@@ -155,6 +147,8 @@ public class Movement : MonoBehaviour {
 
         if(currentRoom.coordinate == RoomCoords.exit.coordinate)
             AkSoundEngine.SetRTPCValue("IsExit", 2);
+
+        timer += Time.deltaTime;
     }
 
     public void SwitchMove()
@@ -237,13 +231,18 @@ public class Movement : MonoBehaviour {
 
         if (!RoomCoords.GetComponent<GlobalTimer>().outside)
         {
-            if (RoomCoords.coordinates.ContainsKey(tryCoordinate))
+            if (!RoomCoords.coordinates.ContainsKey(tryCoordinate))
+            {
+                Debug.Log("THIS IS DEAD END");
+                GetComponent<_CHECK_DEADEND>().SetDeadend();
+            }
+            else if (RoomCoords.coordinates[tryCoordinate] != currentRoom)
             {
                 RoomCoords.coordinates[tryCoordinate].Listen();
             }
-            else
+            else if (RoomCoords.coordinates[tryCoordinate] == currentRoom)
             {
-                GetComponent<_CHECK_DEADEND>().SetDeadend();
+                currentRoom.Standing();
             }
         }
         else
@@ -275,5 +274,6 @@ public class Movement : MonoBehaviour {
         }
 
         playedSound = true;
+		timer = 0;
     }
 }
