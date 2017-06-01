@@ -20,6 +20,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2724478592	Room_Flesh_Enter			\Default Work Unit\Room_Flesh_Enter	
 	2888590795	Outside_Too_Far			\Default Work Unit\Outside_Too_Far	
 	2890001562	Room_Machine_Walk			\Default Work Unit\Room_Machine_Walk	
+	3106607740	Monster_Too_Far			\Default Work Unit\Monster_Too_Far	
 	3419782079	Room_Machine_Stand			\Default Work Unit\Room_Machine_Stand	
 	3699824517	Room_Flesh_Walk			\Default Work Unit\Room_Flesh_Walk	
 	3764520922	Room_Wet_Enter			\Default Work Unit\Room_Wet_Enter	
@@ -40,6 +41,7 @@ Switch	ID	Name	Switch Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	872139848	Outside_Listen			\Default Work Unit\Outside_Listen	
 	1208321470	Machine_Listen			\Default Work Unit\Machine_Listen	
+	1515277218	Ghost_Room_Listen			\Default Work Unit\Ghost_Room_Listen	
 	2745897719	Wet_Room_Listen			\Default Work Unit\Wet_Room_Listen	
 	2870592521	Flesh_Room_Listen			\Default Work Unit\Flesh_Room_Listen	
 	2929953817	Monster_Coming			\Default Work Unit\Monster_Coming	
@@ -52,6 +54,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	2945072214	My_Closet	Wwise RoomVerb			
 	3036946058	Inside_Your_Head	Wwise RoomVerb			
 	3164629247	Holy	Wwise RoomVerb			
+	3216246379	Space_Dreaming	Wwise RoomVerb			
 	3442768367	Hall_Large_Dark	Wwise RoomVerb			
 	3559982155	Hall_Stop_Screaming	Wwise RoomVerb			
 
@@ -73,7 +76,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	165504174	SFX_Footsteps_Flesh_V8	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Fleshy sounds_18C616B0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Flesh\SFX_Footsteps_Flesh_V8		18292
 	174280832	SFX_Footsteps_Machine_V1	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Boots Running Metal_04222783.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Machine\SFX_Footsteps_Machine_V1		58796
 	260994041	SFX_Door_Drag	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Door_Drag_5C89AD4D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door Open\MetalDoor V1\SFX_Door_Drag		541216
-	270095210	SFX_Monster_Steps_V4	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\79569__razzvio__metal-sheet-bang_1515EC1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster Steps\Monster Steps Blend\Monster Footsteps\SFX_Monster_Steps_V4		691780
+	270095210	SFX_Monster_Steps_V4	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\79569__razzvio__metal-sheet-bang_AFAA5574.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster Steps\Monster Steps Blend\Monster Footsteps\SFX_Monster_Steps_V4		691780
 	279464207	SFX_Footsteps_Machine_V5	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Boots Running Metal_DDED7E62.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Machine\SFX_Footsteps_Machine_V5		57096
 	293861222	SFX_Timer_GrandfatherClock_V6	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Timer_GrandfatherClock_921C08CB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Timer\Clock up (Even)\SFX_Timer_GrandfatherClock_V6		177760
 	295463219	SFX_Footsteps_Ghost_V4	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\New Wet Walking_94CA7108.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Ghost\SFX_Footsteps_Ghost_V4		109064
@@ -82,18 +85,19 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	316652608	SFX_Footsteps_Flesh_V2	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Fleshy sounds_FB6DAED6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Flesh\SFX_Footsteps_Flesh_V2		19828
 	336833243	Grandfather_Bell V3	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Grandfather_Bell_21EFDF98.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bell Ring\Grandfather_Bell V3		389340
 	357707710	SFX_Door_GearHeavy	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Door_GearHeavy_E273428B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door Open\MetalDoor V1\SFX_Door_GearHeavy		1104468
-	360077993	SFX_Monster_Steps_V3	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\79569__razzvio__metal-sheet-bang_C774E7B1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster Steps\Monster Steps Blend\Monster Footsteps\SFX_Monster_Steps_V3		851716
+	360077993	SFX_Monster_Steps_V3	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\79569__razzvio__metal-sheet-bang_7E1BFF0F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster Steps\Monster Steps Blend\Monster Footsteps\SFX_Monster_Steps_V3		851716
 	363395452	SFX_Timer_GrandfatherClock_V9	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Timer_GrandfatherClock_AA384259.wem		\Actor-Mixer Hierarchy\Default Work Unit\Timer\Clock Down (odd)\SFX_Timer_GrandfatherClock_V9		130372
 	375899693	SFX_Footsteps_Machine_V7	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Boots Running Metal_932837CD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Machine\SFX_Footsteps_Machine_V7		55400
 	395132726	SFX_Machine_Hum	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Machine Loop_81EBD635.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Types\Machine Room\SFX_Machine_Hum		3012864
 	414673257	SFX_Timer_GrandfatherClock_V8	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Timer_GrandfatherClock_759CA21B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Timer\Clock up (Even)\SFX_Timer_GrandfatherClock_V8		201452
 	429337745	SFX_Footsteps_Machine_V3	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Boots Running Metal_C27DA3E7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Machine\SFX_Footsteps_Machine_V3		57096
 	436334296	SFX_Footsteps_Flesh_V7	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Fleshy sounds_82FE1631.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Flesh\SFX_Footsteps_Flesh_V7		17076
+	460083365	SFX_Room_Ghost_Whispering	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Ghost Whispers_A66860C9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Types\Ghost Room\SFX_Room_Ghost_Whispering		15523140
 	480911680	SFX_Footsteps_Ghost_V6	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\New Wet Walking_1908E871.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Ghost\SFX_Footsteps_Ghost_V6		127232
 	481479529	SFX_Door_GearMetal	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Door_GearMetal_D65ED5A8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door Open\Metal DoorV2\SFX_Door_GearMetal		725604
 	501049682	SFX_Footsteps_Ghost_V7	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\New Wet Walking_9C41C9CB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Ghost\SFX_Footsteps_Ghost_V7		136316
 	501855142	SFX_Room_Wet_Dripping_V3	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Room_Wet_Dripping_V1_C28995EC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Types\Wet Room\Moist Room\Room Dripping\SFX_Room_Wet_Dripping_V3		142960
-	507594868	SFX_Monster_Steps_V1	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\79569__razzvio__metal-sheet-bang_B2163C21.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster Steps\Monster Steps Blend\Monster Footsteps\SFX_Monster_Steps_V1		799736
+	507594868	SFX_Monster_Steps_V1	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\79569__razzvio__metal-sheet-bang_87454797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster Steps\Monster Steps Blend\Monster Footsteps\SFX_Monster_Steps_V1		799736
 	535209269	SFX_Footsteps_WetConcrete_V5	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Footsteps_WetConcrete_V1_C58E64A7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\WetConcrete\SFX_Footsteps_WetConcrete_V5		56644
 	546956735	SFX_Timer_GrandfatherClock_V4	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Timer_GrandfatherClock_1D22B995.wem		\Actor-Mixer Hierarchy\Default Work Unit\Timer\Clock Down (odd)\SFX_Timer_GrandfatherClock_V4		142220
 	553322931	SFX_Footsteps_Flesh_V4	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Fleshy sounds_5BEC5F53.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Flesh\SFX_Footsteps_Flesh_V4		9084
@@ -105,6 +109,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	636877582	SFX_Footsteps_WetConcrete_V2	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Footsteps_WetConcrete_V1_20FB7427.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\WetConcrete\SFX_Footsteps_WetConcrete_V2		31596
 	665135174	SFX_Footsteps_Flesh_V1	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Fleshy sounds_1CA0EFE9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Flesh\SFX_Footsteps_Flesh_V1		11956
 	669278220	SFX_Door_GearMetal	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Door_GearMetal_4819E5B3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door Open\MetalDoor V1\SFX_Door_GearMetal		718832
+	671404581	SFX_Room_Ghost_Moan	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\362678__osiruswaltz__demon-ghost-groaning-1_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Room Types\Ghost Room\SFX_Room_Ghost_Moan		17821424
 	684428109	SFX_Timer_GrandfatherClock_V1	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Timer_GrandfatherClock_FFE9DD8C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Timer\Clock up (Even)\SFX_Timer_GrandfatherClock_V1		118528
 	698656854	SFX_Exit_Wind	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Wind_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Outside Ambiance\SFX_Exit_Wind		9945152
 	699444984	SFX_Footsteps_Machine_V6	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Boots Running Metal_1BB14863.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Machine\SFX_Footsteps_Machine_V6		55400
@@ -132,5 +137,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	977595785	SFX_Footsteps_WetConcrete_V7	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Footsteps_WetConcrete_V1_B257FB8E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\WetConcrete\SFX_Footsteps_WetConcrete_V7		23900
 	980264799	SFX_Footsteps_Flesh_V6	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\Fleshy sounds_FB225CDA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player Footstep\Flesh\SFX_Footsteps_Flesh_V6		27676
 	995254731	SFX_Door_MultipleDrag	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\SFX_Door_MultipleDrag_7A0C914D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door Open\Metal DoorV3\SFX_Door_MultipleDrag		244420
-	1027574177	SFX_Monster_Steps_V2	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\79569__razzvio__metal-sheet-bang_951F535A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster Steps\Monster Steps Blend\Monster Footsteps\SFX_Monster_Steps_V2		967668
+	1027574177	SFX_Monster_Steps_V2	C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\.cache\Windows\SFX\79569__razzvio__metal-sheet-bang_1AEB9C3A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster Steps\Monster Steps Blend\Monster Footsteps\SFX_Monster_Steps_V2		967668
 

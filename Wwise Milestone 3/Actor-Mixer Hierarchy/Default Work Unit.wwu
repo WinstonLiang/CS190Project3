@@ -1107,7 +1107,7 @@
 										<RTPC Name="" ID="{C901379D-4ED5-4086-AD71-5491DA8BB6B6}" ShortID="191706801">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="Flesh_Room_Listen" ID="{4A46B55B-FE81-494F-A094-9950786988E9}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+													<ObjectRef Name="Wet_Room_Listen" ID="{0C6D0A5B-B9EA-4CB5-B67D-EF3B29B61D5A}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{C101C2B8-A6A1-4F29-AE48-19C5CB9108BE}">
@@ -1140,7 +1140,7 @@
 										<RTPC Name="" ID="{97E76624-EAE7-40D8-99F6-7AB1ED7D8494}" ShortID="427775308">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="Flesh_Room_Listen" ID="{4A46B55B-FE81-494F-A094-9950786988E9}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+													<ObjectRef Name="Wet_Room_Listen" ID="{0C6D0A5B-B9EA-4CB5-B67D-EF3B29B61D5A}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{6BFFD7C0-EA45-4A5F-A3D7-64A855A3EFE9}">
@@ -1172,7 +1172,7 @@
 										<RTPC Name="" ID="{189729AD-4312-40B6-A6DC-131ED18EFC33}" ShortID="842530599">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="Flesh_Room_Listen" ID="{4A46B55B-FE81-494F-A094-9950786988E9}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+													<ObjectRef Name="Wet_Room_Listen" ID="{0C6D0A5B-B9EA-4CB5-B67D-EF3B29B61D5A}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{0B088BAF-92D3-426F-B764-90E42D935611}">
@@ -4779,13 +4779,13 @@
 												</PropertyList>
 												<PointList>
 													<Point>
-														<XPos>0</XPos>
-														<YPos>77</YPos>
+														<XPos>1</XPos>
+														<YPos>76</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>10</XPos>
-														<YPos>62</YPos>
+														<XPos>3</XPos>
+														<YPos>32</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -4807,13 +4807,13 @@
 												</PropertyList>
 												<PointList>
 													<Point>
-														<XPos>0</XPos>
-														<YPos>-10.0933</YPos>
+														<XPos>1</XPos>
+														<YPos>-14.56914</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>10</XPos>
-														<YPos>-1.50633</YPos>
+														<XPos>3</XPos>
+														<YPos>4.57967</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -4861,7 +4861,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="79569__razzvio__metal-sheet-bang" ID="{7BFD0393-8218-4CBD-89E7-A9E7E32BE60F}" ShortID="507594868">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.362663589245222"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.94664166261743"/>
 														<Property Name="TrimBegin" Type="Real64" Value="1.40532140832524"/>
 														<Property Name="TrimEnd" Type="Real64" Value="5.93861627389051"/>
 													</PropertyList>
@@ -4885,7 +4885,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="79569__razzvio__metal-sheet-bang" ID="{E75A9AC5-7C25-4617-87A7-9C24AB3DEBC9}" ShortID="1027574177">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.475995960884354"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.37997980442177"/>
 														<Property Name="TrimBegin" Type="Real64" Value="5.93861627389051"/>
 														<Property Name="TrimEnd" Type="Real64" Value="11.4239030612245"/>
 													</PropertyList>
@@ -4909,7 +4909,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="79569__razzvio__metal-sheet-bang" ID="{2013E585-6A2F-4D30-A856-6E1212DD47AB}" ShortID="360077993">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.294664166261743"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.74264339366699"/>
 														<Property Name="TrimBegin" Type="Real64" Value="11.4239030612245"/>
 														<Property Name="TrimEnd" Type="Real64" Value="16.2518620930515"/>
 													</PropertyList>
@@ -4933,7 +4933,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="79569__razzvio__metal-sheet-bang" ID="{2C6F60FE-833F-41D6-B642-067075956B45}" ShortID="270095210">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.929325447440881"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.69998557458698"/>
 														<Property Name="TrimBegin" Type="Real64" Value="16.2518620930515"/>
 														<Property Name="TrimEnd" Type="Real64" Value="20.1731621517655"/>
 													</PropertyList>

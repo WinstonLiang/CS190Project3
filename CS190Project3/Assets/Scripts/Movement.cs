@@ -202,18 +202,6 @@ public class Movement : MonoBehaviour {
             Debug.Log("TRY AGAIN SOMEWHERE ELSE");
         }
 
-        float monsterDistance = Vector3.Distance(transform.position / constant, monster.transform.position / constant) * 2;
-        // So the monster looks for the approximate change in position between the player and itself.
-        // Reducing said change by the constant 4.5 that all rooms are in size.
-        // Multiplied by 2 to get a more apparent "closeness" to the player.
-
-        //Debug.Log(distanceToMonster);
-        Debug.Log(monsterDistance);
-
-        AkSoundEngine.SetRTPCValue("Monster_Coming", monsterDistance);
-
-        if (monsterDistance <= 1)
-            Debug.Log("YOU DIED");
     }
 
     void CheckSpace()

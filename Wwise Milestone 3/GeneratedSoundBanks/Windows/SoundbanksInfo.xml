@@ -28,6 +28,7 @@
 				<Event Id="4052350654" Name="Monster_Closer" ObjectPath="\Events\Default Work Unit\Monster_Closer"/>
 				<Event Id="1814518170" Name="Monster_Farther" ObjectPath="\Events\Default Work Unit\Monster_Farther"/>
 				<Event Id="1925514878" Name="Monster_step" ObjectPath="\Events\Default Work Unit\Monster_step"/>
+				<Event Id="3106607740" Name="Monster_Too_Far" ObjectPath="\Events\Default Work Unit\Monster_Too_Far"/>
 				<Event Id="2525378283" Name="Ouside_Farther" ObjectPath="\Events\Default Work Unit\Ouside_Farther"/>
 				<Event Id="2632241442" Name="Outside_Close_Enough" ObjectPath="\Events\Default Work Unit\Outside_Close_Enough"/>
 				<Event Id="514601847" Name="Outside_Closer" ObjectPath="\Events\Default Work Unit\Outside_Closer"/>
@@ -121,7 +122,7 @@
 				</File>
 				<File Id="270095210" Language="SFX">
 					<ShortName>79569__razzvio__metal-sheet-bang.wav</ShortName>
-					<Path>SFX\79569__razzvio__metal-sheet-bang_1515EC1E.wem</Path>
+					<Path>SFX\79569__razzvio__metal-sheet-bang_AFAA5574.wem</Path>
 				</File>
 				<File Id="279464207" Language="SFX">
 					<ShortName>Boots Running Metal.wav</ShortName>
@@ -157,7 +158,7 @@
 				</File>
 				<File Id="360077993" Language="SFX">
 					<ShortName>79569__razzvio__metal-sheet-bang.wav</ShortName>
-					<Path>SFX\79569__razzvio__metal-sheet-bang_C774E7B1.wem</Path>
+					<Path>SFX\79569__razzvio__metal-sheet-bang_7E1BFF0F.wem</Path>
 				</File>
 				<File Id="363395452" Language="SFX">
 					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
@@ -183,6 +184,10 @@
 					<ShortName>Fleshy sounds.wav</ShortName>
 					<Path>SFX\Fleshy sounds_82FE1631.wem</Path>
 				</File>
+				<File Id="460083365" Language="SFX">
+					<ShortName>Ghost Whispers.wav</ShortName>
+					<Path>SFX\Ghost Whispers_A66860C9.wem</Path>
+				</File>
 				<File Id="480911680" Language="SFX">
 					<ShortName>New Wet Walking.wav</ShortName>
 					<Path>SFX\New Wet Walking_1908E871.wem</Path>
@@ -201,7 +206,7 @@
 				</File>
 				<File Id="507594868" Language="SFX">
 					<ShortName>79569__razzvio__metal-sheet-bang.wav</ShortName>
-					<Path>SFX\79569__razzvio__metal-sheet-bang_B2163C21.wem</Path>
+					<Path>SFX\79569__razzvio__metal-sheet-bang_87454797.wem</Path>
 				</File>
 				<File Id="535209269" Language="SFX">
 					<ShortName>SFX_Footsteps_WetConcrete_V1.wav</ShortName>
@@ -246,6 +251,10 @@
 				<File Id="669278220" Language="SFX">
 					<ShortName>SFX_Door_GearMetal.wav</ShortName>
 					<Path>SFX\SFX_Door_GearMetal_4819E5B3.wem</Path>
+				</File>
+				<File Id="671404581" Language="SFX">
+					<ShortName>362678__osiruswaltz__demon-ghost-groaning-1.wav</ShortName>
+					<Path>SFX\362678__osiruswaltz__demon-ghost-groaning-1_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="684428109" Language="SFX">
 					<ShortName>SFX_Timer_GrandfatherClock.wav</ShortName>
@@ -357,7 +366,7 @@
 				</File>
 				<File Id="1027574177" Language="SFX">
 					<ShortName>79569__razzvio__metal-sheet-bang.wav</ShortName>
-					<Path>SFX\79569__razzvio__metal-sheet-bang_951F535A.wem</Path>
+					<Path>SFX\79569__razzvio__metal-sheet-bang_1AEB9C3A.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

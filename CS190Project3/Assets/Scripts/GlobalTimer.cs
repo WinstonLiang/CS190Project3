@@ -14,6 +14,10 @@ public class GlobalTimer : MonoBehaviour {
     bool GONG;
     bool doorSound;
 
+    GameObject Player, Monster;
+
+    float monsterDistance = 4;
+
 	// Use this for initialization
 	void Start () {
         timer = 0;
@@ -75,11 +79,40 @@ public class GlobalTimer : MonoBehaviour {
                         thing.GetComponent<Movement>().SwitchMove();
                         if (thing.GetComponent<Movement>().currentRoom == Rooms.GetComponent<RoomGen>().exit)
                             outside = true;
+                        Player = thing;
                     }
                     else
+                    {
                         thing.GetComponent<MonsterMovement>().SwitchMove();
+                        Monster = thing;
+                    }
                 }
                 //GetComponent<_WALK>().Walk();
+
+                float oldDistance = monsterDistance;
+
+                monsterDistance = Vector3.Distance(Player.transform.position / 4.5f, Monster.transform.position / 4.5f);
+                // So the monster looks for the approximate change in position between the player and itself.
+                // Reducing said change by the constant 4.5 that all rooms are in size.
+                // Multiplied by 2 to get a more apparent "closeness" to the player.
+
+                //Debug.Log(distanceToMonster);
+                Debug.Log(monsterDistance);
+
+                if (monsterDistance > 3)
+                    GetComponent<MONSTER_TOO_FAR>().Bye();
+                if (monsterDistance <= 3)
+                {
+                    if (oldDistance > monsterDistance)
+                        GetComponent<MONSTER_CLOSER>().Step();
+                    else if (oldDistance < monsterDistance)
+                        GetComponent<MONSTER_FARTHER>().Step();
+                }
+
+                // AkSoundEngine.SetRTPCValue("Monster_Coming", monsterDistance);
+
+                if (monsterDistance <= 1)
+                    Debug.Log("YOU DIED");
             }
             if (timer >= 6 && GONG)
             {

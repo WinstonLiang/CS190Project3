@@ -26,6 +26,7 @@
 						<ObjectRef Name="Room_Wet_Stand" ID="{710B3859-9BFB-4CA4-ACFB-8214C6A703ED}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_DeadEnd_Listen" ID="{8C778444-2348-4CE3-AAC5-4F32A56CA78B}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Wet_Listen" ID="{D33C78B6-9455-4D1F-B3F8-7D7AB8676EFC}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Monster_Too_Far" ID="{31180720-E276-4D26-AFF2-710A87A89A38}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Game_Start" ID="{5FAB0695-FA35-4D8E-9B24-E7F3CE0F3BAA}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Monster_step" ID="{A9D2C5F7-F50B-4E41-81F4-A48327494A83}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Door_Open" ID="{9B4A9B30-6348-4EF6-A27C-DDE68771EDB3}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>

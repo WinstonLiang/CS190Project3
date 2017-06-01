@@ -12,8 +12,9 @@
 				</GameParameter>
 				<GameParameter Name="Monster_Coming" ID="{8DF9A529-59C7-40A8-BB27-1835E2A1BB99}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="3"/>
+						<Property Name="Min" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="Outside_Listen" ID="{C083275C-AD4C-40C3-B4E2-8371669B7374}">

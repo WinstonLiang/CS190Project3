@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="75">
-	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2192168960" DateHigh="30595865"/>
+	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="4282496000" DateHigh="30595875"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1875263488" DateHigh="30586022"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1895263488" DateHigh="30586022"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Attenuations\Default Work Unit.wwu" DateLow="4147632128" DateHigh="30592057"/>
@@ -20,20 +20,20 @@
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1915263488" DateHigh="30586022"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1915263488" DateHigh="30586022"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Effects\Factory McDSP Effects.wwu" DateLow="1935263488" DateHigh="30586022"/>
-	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Events\Default Work Unit.wwu" DateLow="1737201664" DateHigh="30595866"/>
-	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Game Parameters\Default Work Unit.wwu" DateLow="2220464640" DateHigh="30595660"/>
+	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Events\Default Work Unit.wwu" DateLow="3767528704" DateHigh="30595876"/>
+	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Game Parameters\Default Work Unit.wwu" DateLow="1457463296" DateHigh="30595874"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1895263488" DateHigh="30586022"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="4147632128" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="4147632128" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Mixing Sessions\Default Work Unit.wwu" DateLow="4147632128" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Modulators\Default Work Unit.wwu" DateLow="4147632128" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Presets\Default Work Unit.wwu" DateLow="4147632128" DateHigh="30592057"/>
-	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Project 3 Milestone 3.Sarah-Anne.wsettings" DateLow="879338756" DateHigh="30595868"/>
+	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Project 3 Milestone 3.Sarah-Anne.wsettings" DateLow="2766124317" DateHigh="30595878"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Project 3 Milestone 3.wproj" DateLow="4147632128" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Queries\Default Work Unit.wwu" DateLow="4147632128" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Queries\Factory Queries.wwu" DateLow="1875263488" DateHigh="30586022"/>
-	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\SoundBanks\Default Work Unit.wwu" DateLow="1737201664" DateHigh="30595866"/>
-	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Soundcaster Sessions\Default Work Unit.wwu" DateLow="4147632128" DateHigh="30592057"/>
+	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\SoundBanks\Default Work Unit.wwu" DateLow="4187528704" DateHigh="30595876"/>
+	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Soundcaster Sessions\Default Work Unit.wwu" DateLow="2767528704" DateHigh="30595876"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\States\Default Work Unit.wwu" DateLow="4147632128" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Switches\Default Work Unit.wwu" DateLow="2192168960" DateHigh="30595865"/>
 	<ValidationCacheItem File="C:\Users\Sarah-Anne\Documents\GitHub\CS190Project3\Wwise Milestone 3\Triggers\Default Work Unit.wwu" DateLow="4147632128" DateHigh="30592057"/>

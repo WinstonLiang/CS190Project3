@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID MONSTER_CLOSER = 4052350654U;
         static const AkUniqueID MONSTER_FARTHER = 1814518170U;
         static const AkUniqueID MONSTER_STEP = 1925514878U;
+        static const AkUniqueID MONSTER_TOO_FAR = 3106607740U;
         static const AkUniqueID OUSIDE_FARTHER = 2525378283U;
         static const AkUniqueID OUTSIDE_CLOSE_ENOUGH = 2632241442U;
         static const AkUniqueID OUTSIDE_CLOSER = 514601847U;
