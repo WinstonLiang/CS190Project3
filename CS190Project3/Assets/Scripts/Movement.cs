@@ -267,8 +267,7 @@ public class Movement : MonoBehaviour {
 
             if(Math.Floor(distanceToExit) > 3)
                 GetComponent<_WALK>().Walk();
-            else
-                GetComponent<_IS_NEAR_EXIT>().TheLight();
+                //GetComponent<_IS_NEAR_EXIT>().TheLight();
 
             AkSoundEngine.SetRTPCValue("Outside_Listen", 0);
         }

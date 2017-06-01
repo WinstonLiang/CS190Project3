@@ -111,7 +111,7 @@ public class GlobalTimer : MonoBehaviour {
 
                 // AkSoundEngine.SetRTPCValue("Monster_Coming", monsterDistance);
 
-                if (monsterDistance <= 1)
+                if (monsterDistance < 1)
                     Debug.Log("YOU DIED");
             }
             if (timer >= 6 && GONG)
