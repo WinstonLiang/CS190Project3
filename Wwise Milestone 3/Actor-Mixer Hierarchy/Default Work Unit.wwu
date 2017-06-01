@@ -1046,8 +1046,8 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
-						<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
-						<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+						<GroupRef Name="Floor_Types" ID="{2E6889B0-D593-4F9D-A2C9-0B11CE917184}"/>
+						<DefaultSwitchRef Name="Wet" ID="{7F3C3023-32BB-42C1-85B4-F10A6ED43AB2}"/>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
 								<ItemRef Name="Machine" ID="{87754A48-DBC8-43FF-AFCD-30B1FB0D5E8C}"/>
@@ -1062,6 +1062,32 @@
 								<ItemRef Name="WetConcrete" ID="{9EBE8295-4E6D-4A76-BB41-074A51EB3EFC}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Wet" ID="{7F3C3023-32BB-42C1-85B4-F10A6ED43AB2}"/>
+								<ItemList>
+									<ItemRef Name="WetConcrete" ID="{9EBE8295-4E6D-4A76-BB41-074A51EB3EFC}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Ghost" ID="{6E16077C-DF32-4A17-BE9E-EDE6AE144843}"/>
+								<ItemList>
+									<ItemRef Name="Ghost" ID="{B1DD1A75-C415-4CBF-8F6C-A522517BE890}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Machine" ID="{F32DE8B7-013A-4960-9D8B-C2BEFA8A8868}"/>
+								<ItemList>
+									<ItemRef Name="Machine" ID="{87754A48-DBC8-43FF-AFCD-30B1FB0D5E8C}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Flesh" ID="{47EFDEF0-1BA5-45CE-83EB-C34841E78882}"/>
+								<ItemList>
+									<ItemRef Name="Flesh" ID="{B0E39566-2A85-4A79-BA31-BE667C5D5C24}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 				<SwitchContainer Name="Room Types" ID="{ABCC6769-3C33-4A78-9520-82FC6BEE4810}" ShortID="146164790">
@@ -4841,9 +4867,6 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>79569__razzvio__metal-sheet-bang.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="270095210"/>
-													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -4916,9 +4939,6 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>79569__razzvio__metal-sheet-bang.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="507594868"/>
-													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5067,7 +5087,7 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>45</YPos>
+														<YPos>63</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>

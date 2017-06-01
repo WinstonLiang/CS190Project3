@@ -37,7 +37,7 @@ public class Movement : MonoBehaviour {
         Int32.TryParse(currentPosition[0].ToString(), out x);
         Int32.TryParse(currentPosition[1].ToString(), out y);
 
-        transform.position = new Vector3(x * constant, y * constant, 0);
+        // transform.position = new Vector3(x * constant, y * constant, 0);
 	}
 	
 	// Update is called once per frame
@@ -179,19 +179,17 @@ public class Movement : MonoBehaviour {
             Debug.Log("TRY AGAIN SOMEWHERE ELSE");
         }
 
-        int monsterX = 0;
-        int monsterY = 0;
+        float monsterDistance = Vector3.Distance(transform.position / constant, monster.transform.position / constant) * 2;
+        // So the monster looks for the approximate change in position between the player and itself.
+        // Reducing said change by the constant 4.5 that all rooms are in size.
+        // Multiplied by 2 to get a more apparent "closeness" to the player.
 
-        string monsterPosition = monster.GetComponent<MonsterMovement>().currentRoom.coordinate;
+        //Debug.Log(distanceToMonster);
+        Debug.Log(monsterDistance);
 
-        Int32.TryParse(monsterPosition[0].ToString(), out monsterX);
-        Int32.TryParse(monsterPosition[1].ToString(), out monsterY);
+        AkSoundEngine.SetRTPCValue("Monster_Coming", monsterDistance);
 
-        float distanceToMonster = (float)Math.Sqrt((x - monsterX) ^ 2 + (y - monsterY) ^ 2);
-
-        AkSoundEngine.SetRTPCValue("Monster_Coming", distanceToMonster);
-
-        if (distanceToMonster == 0)
+        if (monsterDistance <= 1)
             Debug.Log("YOU DIED");
     }
 
@@ -239,6 +237,7 @@ public class Movement : MonoBehaviour {
         }
         else
         {
+            AkSoundEngine.SetRTPCValue("Outside_Listen", 3);
             GetComponent<_OUTSIDE>().TheBirds();
         }
 

@@ -51,7 +51,7 @@
 						<Action Name="Play" ID="{E2591538-A636-4290-9351-852F5EB08A06}" ShortID="498144823" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{E46892FF-2D1E-474D-83D5-D7C5E569EE0E}" Global="false">
-									<ObjectRef Name="WetConcrete" ID="{9EBE8295-4E6D-4A76-BB41-074A51EB3EFC}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+									<ObjectRef Name="Player Footstep" ID="{41E5DAB3-7B30-4144-8378-53C33FFA57B1}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -63,13 +63,6 @@
 							<ElementList>
 								<Element ID="{3A272DF3-FD41-4A12-ADD3-84C57376AF4D}" Global="false">
 									<ObjectRef Name="Monster Steps Blend" ID="{45B03253-21AA-41E8-83DC-CC5C1D1C0FE1}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
-								</Element>
-							</ElementList>
-						</Action>
-						<Action Name="Play" ID="{5F2162C3-1E54-4B74-AE7C-EFDBF7D669B3}" ShortID="9817681" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{546B7315-965B-403B-87B9-F48A076F7EED}" Global="false">
-									<ObjectRef Name="Outside Ambiance" ID="{AD98CD8A-4B38-479C-8169-8D619165C985}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -130,6 +123,12 @@
 									<ObjectRef Name="Wet_Room_Listen" ID="{0C6D0A5B-B9EA-4CB5-B67D-EF3B29B61D5A}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
+						</Action>
+						<Action Name="Set Switch" ID="{DA57D29C-0892-4D64-9AEC-57A9B6F5FDAD}" ShortID="669415763" Type="SetSwitch" Scope="All" Global="false">
+							<SetItemParam>
+								<Group Name="Floor_Types" ID="{2E6889B0-D593-4F9D-A2C9-0B11CE917184}"/>
+								<GroupItem Name="Wet" ID="{7F3C3023-32BB-42C1-85B4-F10A6ED43AB2}"/>
+							</SetItemParam>
 						</Action>
 					</ChildrenList>
 				</Event>
@@ -277,6 +276,12 @@
 								</Element>
 							</ElementList>
 						</Action>
+						<Action Name="Set Switch" ID="{29E32622-CD00-4BCD-A8DA-27D41BE440E8}" ShortID="280557828" Type="SetSwitch" Scope="All" Global="false">
+							<SetItemParam>
+								<Group Name="Floor_Types" ID="{2E6889B0-D593-4F9D-A2C9-0B11CE917184}"/>
+								<GroupItem Name="Flesh" ID="{47EFDEF0-1BA5-45CE-83EB-C34841E78882}"/>
+							</SetItemParam>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Room_Flesh_Walk" ID="{28755E14-63BA-4537-97B9-61BD15E8D107}">
@@ -284,7 +289,7 @@
 						<Action Name="Play" ID="{EA7C59A9-0ACD-4220-9E13-3695F8D5A77F}" ShortID="1069575139" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{EA3A58BF-56C5-42AF-A4B5-98F820F31359}" Global="false">
-									<ObjectRef Name="Flesh" ID="{B0E39566-2A85-4A79-BA31-BE667C5D5C24}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+									<ObjectRef Name="Player Footstep" ID="{41E5DAB3-7B30-4144-8378-53C33FFA57B1}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -317,6 +322,20 @@
 							<ElementList>
 								<Element ID="{0B74C2D9-49F5-40A4-A04F-A94CC8CA4CA9}" Global="false">
 									<ObjectRef Name="Machine Room" ID="{07350BEF-30B2-4C41-90ED-CAD727C301C9}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{FFA63971-4BF6-44F2-90DC-9035A67F38E1}" ShortID="732390002" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{094B44A0-2816-4F6B-B8C5-2B6EFB75EB3C}" Global="false">
+									<ObjectRef Name="Ghost" ID="{B1DD1A75-C415-4CBF-8F6C-A522517BE890}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{25281D5A-738B-4E61-989F-D35172E16FB1}" ShortID="1042226742" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C576836B-1E64-4E76-8CFF-0DBC248BBF17}" Global="false">
+									<ObjectRef Name="Outside Ambiance" ID="{AD98CD8A-4B38-479C-8169-8D619165C985}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -416,17 +435,6 @@
 							<ElementList>
 								<Element ID="{CA3A7E45-EF05-4841-9385-E28B589E95DA}" Global="false">
 									<ObjectRef Name="Living Room" ID="{C450D665-AB20-4233-8809-9D184A8A9373}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Room_Machine_Walk" ID="{25EDF5E4-A4D9-481B-AB2F-B5ED0ED66B57}">
-					<ChildrenList>
-						<Action Name="Play" ID="{E74D4E49-FA7B-4656-A95E-BBE9933B1A2B}" ShortID="526324022" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{28C95565-D7FF-4308-9458-7D44B900DBEB}" Global="false">
-									<ObjectRef Name="Machine" ID="{87754A48-DBC8-43FF-AFCD-30B1FB0D5E8C}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -553,6 +561,12 @@
 								</Element>
 							</ElementList>
 						</Action>
+						<Action Name="Set Switch" ID="{511BBDC3-1699-4035-9B14-40722FCEF3F2}" ShortID="271723194" Type="SetSwitch" Scope="All" Global="false">
+							<SetItemParam>
+								<Group Name="Floor_Types" ID="{2E6889B0-D593-4F9D-A2C9-0B11CE917184}"/>
+								<GroupItem Name="Machine" ID="{F32DE8B7-013A-4960-9D8B-C2BEFA8A8868}"/>
+							</SetItemParam>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Outside_Too_Far" ID="{9186C9A2-C557-4246-AA12-C762DD5F6609}">
@@ -608,7 +622,8 @@
 						</Action>
 						<Action Name="Set Game Parameter" ID="{C1B8931A-83AD-48CC-9759-AB44444C1449}" ShortID="213382045" Type="SetGameParameter" Scope="One" Global="false">
 							<PropertyList>
-								<Property Name="GameParameterValue" Type="Real64" Value="9.5"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
 								<Element ID="{37D648DE-72EB-4974-9773-4EFABA305290}" Global="false">
@@ -630,6 +645,12 @@
 									<ObjectRef Name="Ghost_Room_Listen" ID="{1E09DD11-13C1-46D0-800D-97D8584C6EF8}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
+						</Action>
+						<Action Name="Set Switch" ID="{2B9A4183-CC38-4F50-8CEF-85B241AEC0A9}" ShortID="563920434" Type="SetSwitch" Scope="All" Global="false">
+							<SetItemParam>
+								<Group Name="Floor_Types" ID="{2E6889B0-D593-4F9D-A2C9-0B11CE917184}"/>
+								<GroupItem Name="Ghost" ID="{6E16077C-DF32-4A17-BE9E-EDE6AE144843}"/>
+							</SetItemParam>
 						</Action>
 					</ChildrenList>
 				</Event>
@@ -680,10 +701,10 @@
 				</Event>
 				<Event Name="Room_Ghost_Walk" ID="{CE18775F-D3C6-4A19-A1A4-8604741B560B}">
 					<ChildrenList>
-						<Action Name="Play" ID="{BD3A4BAC-D8D4-4C03-8160-EC3EE8609F82}" ShortID="150847342" Type="Play" Scope="One" Global="false">
+						<Action Name="Play" ID="{B8C7C650-0888-44CE-8F67-84E793FF1B14}" ShortID="608867938" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{D431719F-EE4B-401F-A357-844EEA5269E3}" Global="false">
-									<ObjectRef Name="Ghost" ID="{B1DD1A75-C415-4CBF-8F6C-A522517BE890}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								<Element ID="{0433A039-E617-46A6-A047-ACC81A496F6B}" Global="false">
+									<ObjectRef Name="Player Footstep" ID="{41E5DAB3-7B30-4144-8378-53C33FFA57B1}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -740,6 +761,28 @@
 							<ElementList>
 								<Element ID="{AF286893-078B-4DAA-9E66-8A31CFA03F7F}" Global="false">
 									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Room_Machine_Walk" ID="{AB8AFDE6-E657-4F70-AAFE-565560F9146B}">
+					<ChildrenList>
+						<Action Name="Play" ID="{E40FCFFF-CDCA-464B-BC9D-1F0E09DDA85F}" ShortID="505580258" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3C76FC9B-59CA-4AC6-BA3F-995C9342F6C9}" Global="false">
+									<ObjectRef Name="Player Footstep" ID="{41E5DAB3-7B30-4144-8378-53C33FFA57B1}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Monster_Too_Far" ID="{31180720-E276-4D26-AFF2-710A87A89A38}">
+					<ChildrenList>
+						<Action Name="Pause" ID="{1645E667-C55D-48FE-A9E8-ED2DB4A1EFA6}" ShortID="319185277" Type="Pause" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0022985E-2D62-4676-A5C0-7C3111C85EAC}" Global="false">
+									<ObjectRef Name="Monster Steps Blend" ID="{45B03253-21AA-41E8-83DC-CC5C1D1C0FE1}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>

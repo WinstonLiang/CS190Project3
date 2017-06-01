@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3C6F03FA-BBA3-4B51-AACB-EC06EB548290}" SchemaVersion="75">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{3C6F03FA-BBA3-4B51-AACB-EC06EB548290}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3C6F03FA-BBA3-4B51-AACB-EC06EB548290}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Floor_Types" ID="{2E6889B0-D593-4F9D-A2C9-0B11CE917184}">
+					<ChildrenList>
+						<Switch Name="Flesh" ID="{47EFDEF0-1BA5-45CE-83EB-C34841E78882}"/>
+						<Switch Name="Ghost" ID="{6E16077C-DF32-4A17-BE9E-EDE6AE144843}"/>
+						<Switch Name="Machine" ID="{F32DE8B7-013A-4960-9D8B-C2BEFA8A8868}"/>
+						<Switch Name="Wet" ID="{7F3C3023-32BB-42C1-85B4-F10A6ED43AB2}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

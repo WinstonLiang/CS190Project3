@@ -37,8 +37,6 @@ public class MonsterMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position = new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0);
-        if (RoomCoords.GetComponent<GlobalTimer>().outside)
-            GetComponent<_IS_NEAR_EXIT>().TheLight();
 	}
 
     public void SwitchMove()
@@ -63,8 +61,8 @@ public class MonsterMovement : MonoBehaviour {
             bool updown = true;
             bool rando = false;
 
-            float distanceToPlayer = (float)Math.Sqrt((playerX - monsterX) ^ 2 + (playerY - monsterY) ^ 2);
-            if (distanceToPlayer != 0)
+            float distanceToPlayer = Vector3.Distance(transform.position / constant, player.transform.position / constant) * 2;
+            if (distanceToPlayer >= 0.75)
             {
                 if (Math.Abs(playerX - monsterX) < Math.Abs(playerY - monsterY))
                     updown = true;
@@ -76,10 +74,12 @@ public class MonsterMovement : MonoBehaviour {
                 }
 
                 if (rando)
+                {
                     if (UnityEngine.Random.Range(0.0f, 1.0f) > 0.5)
                         updown = true;
                     else
                         updown = false;
+                }
 
                 if (updown) // Try closing the Y distance.
                 {
