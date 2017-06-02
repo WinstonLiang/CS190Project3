@@ -29,6 +29,7 @@ public class GlobalTimer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
         if (!outside)
         {
             timer += Time.deltaTime;
@@ -78,10 +79,12 @@ public class GlobalTimer : MonoBehaviour {
                     {
                         thing.GetComponent<Movement>().SwitchMove();
                         if (thing.GetComponent<Movement>().currentRoom == Rooms.GetComponent<RoomGen>().exit)
-                            outside = true;
+						{
+							outside = true;
+						}
                         Player = thing;
                     }
-                    else
+                    if (thing.name == "SampleMonster")
                     {
                         thing.GetComponent<MonsterMovement>().SwitchMove();
                         Monster = thing;
@@ -110,9 +113,14 @@ public class GlobalTimer : MonoBehaviour {
                 }
 
                 // AkSoundEngine.SetRTPCValue("Monster_Coming", monsterDistance);
+				
+				bool sameRoom = Monster.GetComponent<MonsterMovement>().currentRoom == Player.GetComponent<Movement>().currentRoom;
 
-                if (monsterDistance < 1)
+                if (monsterDistance < 1 || sameRoom)
+				{
                     Debug.Log("YOU DIED");
+					Player.GetComponent<Movement>().dead = true;
+				}
             }
             if (timer >= 6 && GONG)
             {

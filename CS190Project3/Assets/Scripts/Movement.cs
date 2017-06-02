@@ -11,11 +11,13 @@ public class Movement : MonoBehaviour {
     public Camera followme;
     public GameObject shroud;
 
-    public GameObject monster;
+    public GameObject monster, dead_text, live_text;
 
     public float currentSpeed;
 
     public List<Sprite> gameFrames;
+	
+	public bool dead, outside;
 
     float fan = 0;
     bool anim = false;
@@ -149,6 +151,11 @@ public class Movement : MonoBehaviour {
             AkSoundEngine.SetRTPCValue("IsExit", 2);
 
         timer += Time.deltaTime;
+		
+		if(dead)
+			dead_text.SetActive(true);
+		if(outside)
+			live_text.SetActive(true);
     }
 
     public void SwitchMove()
@@ -245,32 +252,34 @@ public class Movement : MonoBehaviour {
                 currentRoom.Standing();
             }
         }
-        else
+        else if (!outside)
         {
             AkSoundEngine.SetRTPCValue("Outside_Listen", 3);
             GetComponent<_OUTSIDE>().TheBirds();
+			outside = true;
         }
 
-        if (RoomCoords.exit.coordinate == tryCoordinate)
-        {
-            GetComponent<_OUTSIDE>().TheBirds();
-        }
-        else
-        {
-            int exitX = 0;
-            int exitY = 0;
+        // if (RoomCoords.exit.coordinate == tryCoordinate && !outside)
+        // {
+            // GetComponent<_OUTSIDE>().TheBirds();
+			// outside = true;
+        // }
+        // else
+        // {
+            // int exitX = 0;
+            // int exitY = 0;
 
-            Int32.TryParse(RoomCoords.exit.coordinate[0].ToString(), out exitX);
-            Int32.TryParse(RoomCoords.exit.coordinate[1].ToString(), out exitY);
+            // Int32.TryParse(RoomCoords.exit.coordinate[0].ToString(), out exitX);
+            // Int32.TryParse(RoomCoords.exit.coordinate[1].ToString(), out exitY);
 
-            float distanceToExit = (float)Math.Sqrt((x - exitX) ^ 2 + (y - exitY) ^ 2);
+            // float distanceToExit = (float)Math.Sqrt((x - exitX) ^ 2 + (y - exitY) ^ 2);
 
-            if(Math.Floor(distanceToExit) > 3)
-                GetComponent<_WALK>().Walk();
-                //GetComponent<_IS_NEAR_EXIT>().TheLight();
+            // if(Math.Floor(distanceToExit) > 3)
+                // GetComponent<_WALK>().Walk();
+                // //GetComponent<_IS_NEAR_EXIT>().TheLight();
 
-            AkSoundEngine.SetRTPCValue("Outside_Listen", 0);
-        }
+            // AkSoundEngine.SetRTPCValue("Outside_Listen", 0);
+        // }
 
         playedSound = true;
 		timer = 0;
