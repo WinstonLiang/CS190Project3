@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchContainer Name="Player Footstep" ID="{41E5DAB3-7B30-4144-8378-53C33FFA57B1}" ShortID="239295669">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
@@ -1091,6 +1098,13 @@
 					</GroupingInfo>
 				</SwitchContainer>
 				<SwitchContainer Name="Room Types" ID="{ABCC6769-3C33-4A78-9520-82FC6BEE4810}" ShortID="146164790">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
@@ -5020,6 +5034,13 @@
 					</ChildrenList>
 				</BlendContainer>
 				<BlendContainer Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" ShortID="350976489">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>

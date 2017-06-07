@@ -16,14 +16,14 @@
 				</Event>
 				<Event Name="Monster_Closer" ID="{205114D0-453D-40EE-8A3E-78B302D7D09E}">
 					<ChildrenList>
-						<Action Name="Set Game Parameter" ID="{38B3F846-E8DF-4867-8100-5C2DCE443766}" ShortID="1062765114" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{38B3F846-E8DF-4867-8100-5C2DCE443766}" ShortID="1062765114" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="Absolute" Type="bool" Value="False"/>
 								<Property Name="FadeTime" Type="Real64" Value="5"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{D1627DA1-F3F8-404B-86F5-E47FF90D038C}" Global="false">
+								<Element ID="{D1627DA1-F3F8-404B-86F5-E47FF90D038C}" Global="true">
 									<ObjectRef Name="Monster_Coming" ID="{8DF9A529-59C7-40A8-BB27-1835E2A1BB99}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
@@ -32,14 +32,14 @@
 				</Event>
 				<Event Name="Monster_Farther" ID="{F3A76281-CAD3-4FE7-A9B9-167106BC52DA}">
 					<ChildrenList>
-						<Action Name="Set Game Parameter" ID="{00702B3E-02E1-4A7B-B840-A7F2ECD77B26}" ShortID="892365019" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{00702B3E-02E1-4A7B-B840-A7F2ECD77B26}" ShortID="892365019" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="Absolute" Type="bool" Value="False"/>
 								<Property Name="FadeTime" Type="Real64" Value="5"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="-1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{89E97653-AD6C-4CC9-9FA7-DD431FA65A8E}" Global="false">
+								<Element ID="{89E97653-AD6C-4CC9-9FA7-DD431FA65A8E}" Global="true">
 									<ObjectRef Name="Monster_Coming" ID="{8DF9A529-59C7-40A8-BB27-1835E2A1BB99}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
@@ -81,14 +81,14 @@
 				</Event>
 				<Event Name="Outside_Closer" ID="{BD4219C4-C431-438E-A4A8-53EA98FF635F}">
 					<ChildrenList>
-						<Action Name="Set Game Parameter" ID="{1B788D4A-A070-4867-915A-D00FA0EC2A38}" ShortID="716345753" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{1B788D4A-A070-4867-915A-D00FA0EC2A38}" ShortID="716345753" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="Absolute" Type="bool" Value="False"/>
 								<Property Name="FadeTime" Type="Real64" Value="3"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{988963D1-1D76-411C-AE15-5ECBCA6D1A69}" Global="false">
+								<Element ID="{988963D1-1D76-411C-AE15-5ECBCA6D1A69}" Global="true">
 									<ObjectRef Name="Outside_Listen" ID="{C083275C-AD4C-40C3-B4E2-8371669B7374}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
@@ -97,14 +97,14 @@
 				</Event>
 				<Event Name="Ouside_Farther" ID="{F3C750BA-CA6F-4720-BAF6-679634A1D848}">
 					<ChildrenList>
-						<Action Name="Set Game Parameter" ID="{2CDE39DE-CDB7-4D6A-8907-5D97E0C49B20}" ShortID="260569361" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{2CDE39DE-CDB7-4D6A-8907-5D97E0C49B20}" ShortID="260569361" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="Absolute" Type="bool" Value="False"/>
 								<Property Name="FadeTime" Type="Real64" Value="5"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="-1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{8AFA0199-39EE-4055-8C88-C7FF1BC08F74}" Global="false">
+								<Element ID="{8AFA0199-39EE-4055-8C88-C7FF1BC08F74}" Global="true">
 									<ObjectRef Name="Outside_Listen" ID="{C083275C-AD4C-40C3-B4E2-8371669B7374}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
@@ -113,13 +113,13 @@
 				</Event>
 				<Event Name="Room_Wet_Enter" ID="{7B5FF6CD-DBCF-4060-8A7D-54DEF66FDA49}">
 					<ChildrenList>
-						<Action Name="Set Game Parameter" ID="{14C83A0F-B827-4615-9169-BA5AFDF920C9}" ShortID="142602416" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{14C83A0F-B827-4615-9169-BA5AFDF920C9}" ShortID="142602416" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{58F13446-7328-47FA-A850-A69A76BAFC9D}" Global="false">
+								<Element ID="{58F13446-7328-47FA-A850-A69A76BAFC9D}" Global="true">
 									<ObjectRef Name="Wet_Room_Listen" ID="{0C6D0A5B-B9EA-4CB5-B67D-EF3B29B61D5A}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
@@ -134,65 +134,65 @@
 				</Event>
 				<Event Name="Room_Wet_Listen" ID="{D33C78B6-9455-4D1F-B3F8-7D7AB8676EFC}">
 					<ChildrenList>
-						<Action Name="Set Game Parameter" ID="{64B7AD16-DEA7-4D46-AD6E-E209D40282E4}" ShortID="67258269" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{64B7AD16-DEA7-4D46-AD6E-E209D40282E4}" ShortID="67258269" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeCurve" Type="int16" Value="3"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{3E8C0E33-B2D6-4A01-917A-6E01F1910AEE}" Global="false">
+								<Element ID="{3E8C0E33-B2D6-4A01-917A-6E01F1910AEE}" Global="true">
 									<ObjectRef Name="Wet_Room_Listen" ID="{0C6D0A5B-B9EA-4CB5-B67D-EF3B29B61D5A}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Resume" ID="{2F691511-F966-41DE-8505-2D134DFF7744}" ShortID="318190768" Type="Resume" Scope="One" Global="false">
+						<Action Name="Resume" ID="{2F691511-F966-41DE-8505-2D134DFF7744}" ShortID="318190768" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeCurve" Type="int16" Value="3"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{BCF7FFDF-1552-458C-9E3D-552720AD404F}" Global="false">
+								<Element ID="{BCF7FFDF-1552-458C-9E3D-552720AD404F}" Global="true">
 									<ObjectRef Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{6288CDE5-7427-47BB-94A2-5A23A4A19638}" ShortID="471419258" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{6288CDE5-7427-47BB-94A2-5A23A4A19638}" ShortID="471419258" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{B84630B0-C1E7-4D55-99A2-88A023411DBB}" Global="false">
+								<Element ID="{B84630B0-C1E7-4D55-99A2-88A023411DBB}" Global="true">
 									<ObjectRef Name="Machine Room" ID="{07350BEF-30B2-4C41-90ED-CAD727C301C9}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{7FB87C12-2512-4522-BA10-56D2630AAEF9}" ShortID="1046738046" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{7FB87C12-2512-4522-BA10-56D2630AAEF9}" ShortID="1046738046" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{1957617E-82A9-4DD2-BC3E-AE465A863B40}" Global="false">
+								<Element ID="{1957617E-82A9-4DD2-BC3E-AE465A863B40}" Global="true">
 									<ObjectRef Name="Ghost Room" ID="{8287FA16-6986-4076-8E36-E68ECD219C72}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{83D2C73B-9ECC-4A5C-ABB5-167DF57E4280}" ShortID="975211930" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{83D2C73B-9ECC-4A5C-ABB5-167DF57E4280}" ShortID="975211930" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{A2D4EA58-6DA1-4703-BB6D-CB111673A754}" Global="false">
+								<Element ID="{A2D4EA58-6DA1-4703-BB6D-CB111673A754}" Global="true">
 									<ObjectRef Name="Living Room" ID="{C450D665-AB20-4233-8809-9D184A8A9373}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{2C547A94-FD53-4475-9EC4-FEA2A8E2D872}" ShortID="293100572" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{2C547A94-FD53-4475-9EC4-FEA2A8E2D872}" ShortID="293100572" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{F0BCAD22-2AC5-4325-B4DF-2AD2703DA13F}" Global="false">
+								<Element ID="{F0BCAD22-2AC5-4325-B4DF-2AD2703DA13F}" Global="true">
 									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
@@ -212,64 +212,64 @@
 				</Event>
 				<Event Name="Room_Flesh_Listen" ID="{14F86B4C-AA07-47F7-A57C-75E0858CF439}">
 					<ChildrenList>
-						<Action Name="Set Game Parameter" ID="{27CE7893-97E8-4881-B464-792E42777FA6}" ShortID="143063562" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{27CE7893-97E8-4881-B464-792E42777FA6}" ShortID="143063562" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeCurve" Type="int16" Value="3"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{F767244F-FD3E-4195-87D2-B517F763D55A}" Global="false">
+								<Element ID="{F767244F-FD3E-4195-87D2-B517F763D55A}" Global="true">
 									<ObjectRef Name="Flesh_Room_Listen" ID="{4A46B55B-FE81-494F-A094-9950786988E9}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Resume" ID="{BC6C01B6-E472-444B-9B48-DA2A14C9D90C}" ShortID="427944311" Type="Resume" Scope="One" Global="false">
+						<Action Name="Resume" ID="{BC6C01B6-E472-444B-9B48-DA2A14C9D90C}" ShortID="427944311" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{1BF6D007-5536-49D6-8ABB-2CB6DC931FF7}" Global="false">
+								<Element ID="{1BF6D007-5536-49D6-8ABB-2CB6DC931FF7}" Global="true">
 									<ObjectRef Name="Living Room" ID="{C450D665-AB20-4233-8809-9D184A8A9373}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{A083BF98-5D5E-495D-B7FD-4E50FB70C9FD}" ShortID="780627493" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{A083BF98-5D5E-495D-B7FD-4E50FB70C9FD}" ShortID="780627493" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{EBD5DFD8-EBA5-4A6D-9B26-9BA35E447245}" Global="false">
+								<Element ID="{EBD5DFD8-EBA5-4A6D-9B26-9BA35E447245}" Global="true">
 									<ObjectRef Name="Machine Room" ID="{07350BEF-30B2-4C41-90ED-CAD727C301C9}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{6C65065B-76E3-4146-B9B4-7E2DEC1042C1}" ShortID="1038383768" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{6C65065B-76E3-4146-B9B4-7E2DEC1042C1}" ShortID="1038383768" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{D7FB1DAE-62A2-4350-B1C0-2144B1E54B9C}" Global="false">
+								<Element ID="{D7FB1DAE-62A2-4350-B1C0-2144B1E54B9C}" Global="true">
 									<ObjectRef Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{E9716F37-2046-49E5-A286-9D2758248602}" ShortID="786523942" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{E9716F37-2046-49E5-A286-9D2758248602}" ShortID="786523942" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{9A8A785B-7C77-41C8-A70A-ECD0D235E7AB}" Global="false">
+								<Element ID="{9A8A785B-7C77-41C8-A70A-ECD0D235E7AB}" Global="true">
 									<ObjectRef Name="Ghost Room" ID="{8287FA16-6986-4076-8E36-E68ECD219C72}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{211678E5-B905-4470-B516-BAD845A5CF41}" ShortID="552991205" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{211678E5-B905-4470-B516-BAD845A5CF41}" ShortID="552991205" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{89C2F19B-F1C9-42BA-9AA7-0D6BA4FFFFBB}" Global="false">
+								<Element ID="{89C2F19B-F1C9-42BA-9AA7-0D6BA4FFFFBB}" Global="true">
 									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
@@ -278,13 +278,13 @@
 				</Event>
 				<Event Name="Room_Flesh_Enter" ID="{0FD9BC42-217A-43EC-9A0E-EA3F299E684F}">
 					<ChildrenList>
-						<Action Name="Set Game Parameter" ID="{6C1894A9-D152-4949-9622-8F73CA0514B3}" ShortID="63158703" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{6C1894A9-D152-4949-9622-8F73CA0514B3}" ShortID="63158703" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{F31979BB-9859-4D1A-8DDE-17766848FF8A}" Global="false">
+								<Element ID="{F31979BB-9859-4D1A-8DDE-17766848FF8A}" Global="true">
 									<ObjectRef Name="Flesh_Room_Listen" ID="{4A46B55B-FE81-494F-A094-9950786988E9}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
@@ -352,51 +352,55 @@
 								</Element>
 							</ElementList>
 						</Action>
+						<Action Name="Set Game Parameter" ID="{9BCB48FA-42E6-40B4-B315-AF246F1DC7F1}" ShortID="201878985" Type="SetGameParameter" Scope="One" Global="true">
+							<ElementList>
+								<Element ID="{A41BD09A-386D-43B2-AD1B-5EEB65B33E54}" Global="true">
+									<ObjectRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+								</Element>
+							</ElementList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Room_Wet_Stand" ID="{710B3859-9BFB-4CA4-ACFB-8214C6A703ED}">
 					<ChildrenList>
-						<Action Name="Pause" ID="{BC5D8E61-1073-425A-A4DA-A0E56066BCBD}" ShortID="503373609" Type="Pause" Scope="One" Global="false">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
+						<Action Name="Pause" ID="{BC5D8E61-1073-425A-A4DA-A0E56066BCBD}" ShortID="503373609" Type="Pause" Scope="One" Global="true">
 							<ElementList>
-								<Element ID="{25B3EDA9-3060-4D6C-B554-5B06395A4EC7}" Global="false">
+								<Element ID="{25B3EDA9-3060-4D6C-B554-5B06395A4EC7}" Global="true">
 									<ObjectRef Name="Living Room" ID="{C450D665-AB20-4233-8809-9D184A8A9373}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{D6D8EA2D-96C0-4602-AC06-0E808CC8E82B}" ShortID="361527840" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{D6D8EA2D-96C0-4602-AC06-0E808CC8E82B}" ShortID="361527840" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{3A5264D3-03FE-4AA0-B2A4-3C06C979B6D2}" Global="false">
+								<Element ID="{3A5264D3-03FE-4AA0-B2A4-3C06C979B6D2}" Global="true">
 									<ObjectRef Name="Machine Room" ID="{07350BEF-30B2-4C41-90ED-CAD727C301C9}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{DAF8EE2D-D378-449E-A9C7-CFAC50BF96CE}" ShortID="1013033855" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{DAF8EE2D-D378-449E-A9C7-CFAC50BF96CE}" ShortID="1013033855" Type="Pause" Scope="One" Global="true">
 							<ElementList>
-								<Element ID="{4ED6F6CD-656F-403F-86C1-58AFBB233D2C}" Global="false">
+								<Element ID="{4ED6F6CD-656F-403F-86C1-58AFBB233D2C}" Global="true">
 									<ObjectRef Name="Ghost Room" ID="{8287FA16-6986-4076-8E36-E68ECD219C72}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{F3B51D51-EC2F-4952-942A-BCA7905456EC}" ShortID="654309708" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{F3B51D51-EC2F-4952-942A-BCA7905456EC}" ShortID="654309708" Type="Pause" Scope="One" Global="true">
 							<ElementList>
-								<Element ID="{897650EF-65BB-45DB-9C35-43A0ED2123D4}" Global="false">
+								<Element ID="{897650EF-65BB-45DB-9C35-43A0ED2123D4}" Global="true">
 									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Resume" ID="{2ED24F13-D91C-416C-9100-144197017C72}" ShortID="788495320" Type="Resume" Scope="One" Global="false">
+						<Action Name="Resume" ID="{2ED24F13-D91C-416C-9100-144197017C72}" ShortID="788495320" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{CBB6023E-793C-44AF-80CD-689F662DC8E5}" Global="false">
+								<Element ID="{CBB6023E-793C-44AF-80CD-689F662DC8E5}" Global="true">
 									<ObjectRef Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
@@ -405,50 +409,50 @@
 				</Event>
 				<Event Name="Room_Flesh_Stand" ID="{90FB1424-F7F8-4864-9988-C79B0FF39F3E}">
 					<ChildrenList>
-						<Action Name="Pause" ID="{9DBF6579-8227-4DD9-AC83-B84DE925642C}" ShortID="251732826" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{9DBF6579-8227-4DD9-AC83-B84DE925642C}" ShortID="251732826" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{BB539BC4-44A4-4022-ADC4-A0F48896F30D}" Global="false">
+								<Element ID="{BB539BC4-44A4-4022-ADC4-A0F48896F30D}" Global="true">
 									<ObjectRef Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{506733CE-8D0D-4277-9A79-CFC8EEED6F30}" ShortID="386835855" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{506733CE-8D0D-4277-9A79-CFC8EEED6F30}" ShortID="386835855" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{C0316952-7A3A-486F-BDB6-89A34FA50E5A}" Global="false">
+								<Element ID="{C0316952-7A3A-486F-BDB6-89A34FA50E5A}" Global="true">
 									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{C23FB094-08E8-4C90-9B66-C84537740901}" ShortID="500820171" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{C23FB094-08E8-4C90-9B66-C84537740901}" ShortID="500820171" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{3836FCE7-90F4-4C0A-8C74-993410958FE9}" Global="false">
+								<Element ID="{3836FCE7-90F4-4C0A-8C74-993410958FE9}" Global="true">
 									<ObjectRef Name="Machine Room" ID="{07350BEF-30B2-4C41-90ED-CAD727C301C9}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{927F7B34-5EA0-468F-8868-B4C1B5662389}" ShortID="527682473" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{927F7B34-5EA0-468F-8868-B4C1B5662389}" ShortID="527682473" Type="Pause" Scope="One" Global="true">
 							<ElementList>
-								<Element ID="{FAECAB3B-61D7-42C9-BCDF-E66233B8E214}" Global="false">
+								<Element ID="{FAECAB3B-61D7-42C9-BCDF-E66233B8E214}" Global="true">
 									<ObjectRef Name="Ghost Room" ID="{8287FA16-6986-4076-8E36-E68ECD219C72}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Resume" ID="{3E5DE0F4-CACB-4B9B-9AB6-A9E743E8E7AE}" ShortID="864994021" Type="Resume" Scope="One" Global="false">
+						<Action Name="Resume" ID="{3E5DE0F4-CACB-4B9B-9AB6-A9E743E8E7AE}" ShortID="864994021" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{CA3A7E45-EF05-4841-9385-E28B589E95DA}" Global="false">
+								<Element ID="{CA3A7E45-EF05-4841-9385-E28B589E95DA}" Global="true">
 									<ObjectRef Name="Living Room" ID="{C450D665-AB20-4233-8809-9D184A8A9373}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
@@ -457,64 +461,64 @@
 				</Event>
 				<Event Name="Room_Machine_Listen" ID="{2D59BAE0-385F-44B8-BC1F-9B1E25204AFA}">
 					<ChildrenList>
-						<Action Name="Set Game Parameter" ID="{135652D3-3B4B-4A98-8BD0-E55BA36D85FC}" ShortID="504150907" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{135652D3-3B4B-4A98-8BD0-E55BA36D85FC}" ShortID="504150907" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeCurve" Type="int16" Value="3"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{D7ABCEFF-24FA-419D-B4F5-CC7E0CC8D7F3}" Global="false">
+								<Element ID="{D7ABCEFF-24FA-419D-B4F5-CC7E0CC8D7F3}" Global="true">
 									<ObjectRef Name="Machine_Listen" ID="{FFBF65CA-F3C1-4FAF-B415-22BAB6A79793}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Resume" ID="{84D2CA31-BF2D-480A-A7FA-5021084B29CD}" ShortID="748785044" Type="Resume" Scope="One" Global="false">
+						<Action Name="Resume" ID="{84D2CA31-BF2D-480A-A7FA-5021084B29CD}" ShortID="748785044" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{E418F439-BCD6-4190-B195-9E971ACB1357}" Global="false">
+								<Element ID="{E418F439-BCD6-4190-B195-9E971ACB1357}" Global="true">
 									<ObjectRef Name="Machine Room" ID="{07350BEF-30B2-4C41-90ED-CAD727C301C9}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{865D8755-9956-40AB-9486-75856790A6FE}" ShortID="527305555" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{865D8755-9956-40AB-9486-75856790A6FE}" ShortID="527305555" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{880A7E6D-C607-4D5F-8A2B-14C7B758A9E0}" Global="false">
+								<Element ID="{880A7E6D-C607-4D5F-8A2B-14C7B758A9E0}" Global="true">
 									<ObjectRef Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{999AE756-D240-46E1-A680-4547A06B8F9C}" ShortID="1008441735" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{999AE756-D240-46E1-A680-4547A06B8F9C}" ShortID="1008441735" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{8EB9F64F-90C0-4CD1-A6C1-7F1060C94033}" Global="false">
+								<Element ID="{8EB9F64F-90C0-4CD1-A6C1-7F1060C94033}" Global="true">
 									<ObjectRef Name="Living Room" ID="{C450D665-AB20-4233-8809-9D184A8A9373}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{A10CF17B-4315-4946-9C12-2140C0A40391}" ShortID="982448252" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{A10CF17B-4315-4946-9C12-2140C0A40391}" ShortID="982448252" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{BD9C3035-69DC-4DA0-9ABB-18E81911F364}" Global="false">
+								<Element ID="{BD9C3035-69DC-4DA0-9ABB-18E81911F364}" Global="true">
 									<ObjectRef Name="Ghost Room" ID="{8287FA16-6986-4076-8E36-E68ECD219C72}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{CE82B227-59F5-414A-B34B-334237E22F38}" ShortID="69364996" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{CE82B227-59F5-414A-B34B-334237E22F38}" ShortID="69364996" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{195608ED-A00A-4FDF-98E5-02067471735D}" Global="false">
+								<Element ID="{195608ED-A00A-4FDF-98E5-02067471735D}" Global="true">
 									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
@@ -523,47 +527,47 @@
 				</Event>
 				<Event Name="Room_Machine_Stand" ID="{1E4B28D8-A254-4F61-8E61-07D900F5A2F1}">
 					<ChildrenList>
-						<Action Name="Pause" ID="{4013D8D4-4AAB-4827-8E62-2DE6D9146DA5}" ShortID="682946553" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{4013D8D4-4AAB-4827-8E62-2DE6D9146DA5}" ShortID="682946553" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{50CF6F94-69DF-459B-B290-C2FAD93448EF}" Global="false">
+								<Element ID="{50CF6F94-69DF-459B-B290-C2FAD93448EF}" Global="true">
 									<ObjectRef Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{6DC0FA7D-3195-4397-8E2D-46A37AA3DB67}" ShortID="341826313" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{6DC0FA7D-3195-4397-8E2D-46A37AA3DB67}" ShortID="341826313" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{5D823A18-7B27-43A4-A64A-02D23594D418}" Global="false">
+								<Element ID="{5D823A18-7B27-43A4-A64A-02D23594D418}" Global="true">
 									<ObjectRef Name="Living Room" ID="{C450D665-AB20-4233-8809-9D184A8A9373}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{FB5B0A8F-1112-445E-9142-595CB40FB2E8}" ShortID="937255357" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{FB5B0A8F-1112-445E-9142-595CB40FB2E8}" ShortID="937255357" Type="Pause" Scope="One" Global="true">
 							<ElementList>
-								<Element ID="{48AAD210-5B9E-44D6-8E64-D8A3E03BE46A}" Global="false">
+								<Element ID="{48AAD210-5B9E-44D6-8E64-D8A3E03BE46A}" Global="true">
 									<ObjectRef Name="Ghost Room" ID="{8287FA16-6986-4076-8E36-E68ECD219C72}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{404CD92E-8853-4513-825F-3E022BE72045}" ShortID="321555970" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{404CD92E-8853-4513-825F-3E022BE72045}" ShortID="321555970" Type="Pause" Scope="One" Global="true">
 							<ElementList>
-								<Element ID="{586FDEAD-F26A-45CB-8DA5-4AEB3A1DA24B}" Global="false">
+								<Element ID="{586FDEAD-F26A-45CB-8DA5-4AEB3A1DA24B}" Global="true">
 									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Resume" ID="{73032FFA-5A45-44BD-B894-6256E2526E1C}" ShortID="638390239" Type="Resume" Scope="One" Global="false">
+						<Action Name="Resume" ID="{73032FFA-5A45-44BD-B894-6256E2526E1C}" ShortID="638390239" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{26E25E80-8173-409B-96A1-A89960AB2A16}" Global="false">
+								<Element ID="{26E25E80-8173-409B-96A1-A89960AB2A16}" Global="true">
 									<ObjectRef Name="Machine Room" ID="{07350BEF-30B2-4C41-90ED-CAD727C301C9}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
@@ -572,13 +576,13 @@
 				</Event>
 				<Event Name="Room_Machine_Enter" ID="{6FEFE50C-A447-4B62-82F6-D1DE00E7DA68}">
 					<ChildrenList>
-						<Action Name="Set Game Parameter" ID="{6697162F-5A11-4B9B-9AA9-07A1E332D8D3}" ShortID="1049774700" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{6697162F-5A11-4B9B-9AA9-07A1E332D8D3}" ShortID="1049774700" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{A2A1EF65-E9EA-49BD-8ECB-A9341098463B}" Global="false">
+								<Element ID="{A2A1EF65-E9EA-49BD-8ECB-A9341098463B}" Global="true">
 									<ObjectRef Name="Machine_Listen" ID="{FFBF65CA-F3C1-4FAF-B415-22BAB6A79793}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
@@ -593,9 +597,9 @@
 				</Event>
 				<Event Name="Outside_Too_Far" ID="{9186C9A2-C557-4246-AA12-C762DD5F6609}">
 					<ChildrenList>
-						<Action Name="Pause" ID="{BDF787A3-FC3C-4159-9B6A-F11973C62FF9}" ShortID="790863263" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{BDF787A3-FC3C-4159-9B6A-F11973C62FF9}" ShortID="790863263" Type="Pause" Scope="One" Global="true">
 							<ElementList>
-								<Element ID="{0502C7CA-12E2-4A80-8773-F79274FD7BC6}" Global="false">
+								<Element ID="{0502C7CA-12E2-4A80-8773-F79274FD7BC6}" Global="true">
 									<ObjectRef Name="Outside Ambiance" ID="{AD98CD8A-4B38-479C-8169-8D619165C985}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
@@ -604,9 +608,9 @@
 				</Event>
 				<Event Name="Outside_Close_Enough" ID="{00D81FA4-F2B6-428F-8AC1-C204E8996935}">
 					<ChildrenList>
-						<Action Name="Resume" ID="{EB690F27-8923-4A27-AB02-94AB0FB17EE7}" ShortID="171972286" Type="Resume" Scope="One" Global="false">
+						<Action Name="Resume" ID="{EB690F27-8923-4A27-AB02-94AB0FB17EE7}" ShortID="171972286" Type="Resume" Scope="One" Global="true">
 							<ElementList>
-								<Element ID="{F59BB5CD-0671-4C1E-90F0-32F593ABD8BB}" Global="false">
+								<Element ID="{F59BB5CD-0671-4C1E-90F0-32F593ABD8BB}" Global="true">
 									<ObjectRef Name="Outside Ambiance" ID="{AD98CD8A-4B38-479C-8169-8D619165C985}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
@@ -622,64 +626,64 @@
 				</Event>
 				<Event Name="Room_DeadEnd_Listen" ID="{8C778444-2348-4CE3-AAC5-4F32A56CA78B}">
 					<ChildrenList>
-						<Action Name="Resume" ID="{083083A3-EBB6-42D4-B9FF-5D7838619CAD}" ShortID="440124446" Type="Resume" Scope="One" Global="false">
+						<Action Name="Resume" ID="{083083A3-EBB6-42D4-B9FF-5D7838619CAD}" ShortID="440124446" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{1C3205A8-F99C-4D33-93DB-1C8C9A3C1D21}" Global="false">
+								<Element ID="{1C3205A8-F99C-4D33-93DB-1C8C9A3C1D21}" Global="true">
 									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Set Game Parameter" ID="{C1B8931A-83AD-48CC-9759-AB44444C1449}" ShortID="213382045" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{C1B8931A-83AD-48CC-9759-AB44444C1449}" ShortID="213382045" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{37D648DE-72EB-4974-9773-4EFABA305290}" Global="false">
+								<Element ID="{37D648DE-72EB-4974-9773-4EFABA305290}" Global="true">
 									<ObjectRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{87A55095-D0C7-40B1-ACE4-367BE12C956C}" ShortID="831651191" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{87A55095-D0C7-40B1-ACE4-367BE12C956C}" ShortID="831651191" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{8664B7F4-1243-4768-A4AA-C60486C1EF02}" Global="false">
+								<Element ID="{8664B7F4-1243-4768-A4AA-C60486C1EF02}" Global="true">
 									<ObjectRef Name="Machine Room" ID="{07350BEF-30B2-4C41-90ED-CAD727C301C9}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{35730CB1-7FB9-4CBE-AAE3-E0875853D925}" ShortID="74992451" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{35730CB1-7FB9-4CBE-AAE3-E0875853D925}" ShortID="74992451" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{42472126-4024-4E79-8EDE-E2921C53BAEC}" Global="false">
+								<Element ID="{42472126-4024-4E79-8EDE-E2921C53BAEC}" Global="true">
 									<ObjectRef Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{D640B1C7-9861-473D-B431-B48FF5EB3DFB}" ShortID="112993769" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{D640B1C7-9861-473D-B431-B48FF5EB3DFB}" ShortID="112993769" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{85D9C4FA-5618-44B7-BDCF-9F6DE05A9546}" Global="false">
+								<Element ID="{85D9C4FA-5618-44B7-BDCF-9F6DE05A9546}" Global="true">
 									<ObjectRef Name="Ghost Room" ID="{8287FA16-6986-4076-8E36-E68ECD219C72}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{82031CC4-4808-4997-BD2B-9BBA55F329FB}" ShortID="122716414" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{82031CC4-4808-4997-BD2B-9BBA55F329FB}" ShortID="122716414" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{B061A78C-9748-43B5-8D22-319897E32EA6}" Global="false">
+								<Element ID="{B061A78C-9748-43B5-8D22-319897E32EA6}" Global="true">
 									<ObjectRef Name="Living Room" ID="{C450D665-AB20-4233-8809-9D184A8A9373}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
@@ -688,13 +692,13 @@
 				</Event>
 				<Event Name="Room_Ghost_Enter" ID="{576CA5A3-BA14-435D-B98C-D57FDA0FEC32}">
 					<ChildrenList>
-						<Action Name="Set Game Parameter" ID="{A1EF3CFE-59AC-409E-90E6-2473A187A4E1}" ShortID="1001569965" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{A1EF3CFE-59AC-409E-90E6-2473A187A4E1}" ShortID="1001569965" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{222E04DA-895A-4544-920A-EB47E0681C27}" Global="false">
+								<Element ID="{222E04DA-895A-4544-920A-EB47E0681C27}" Global="true">
 									<ObjectRef Name="Ghost_Room_Listen" ID="{1E09DD11-13C1-46D0-800D-97D8584C6EF8}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
@@ -709,46 +713,46 @@
 				</Event>
 				<Event Name="Room_Ghost_Stand" ID="{AFD07309-2D7F-420F-9F8B-86B6C32E5487}">
 					<ChildrenList>
-						<Action Name="Resume" ID="{473AB2D5-CF1B-40F0-96BF-71211B2193AC}" ShortID="322136704" Type="Resume" Scope="One" Global="false">
+						<Action Name="Resume" ID="{473AB2D5-CF1B-40F0-96BF-71211B2193AC}" ShortID="322136704" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{20E8C947-F021-44DE-BF70-5D22895240E2}" Global="false">
+								<Element ID="{20E8C947-F021-44DE-BF70-5D22895240E2}" Global="true">
 									<ObjectRef Name="Ghost Room" ID="{8287FA16-6986-4076-8E36-E68ECD219C72}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{A7C0511B-F172-44EB-9D20-C7FE9D992DAF}" ShortID="482310400" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{A7C0511B-F172-44EB-9D20-C7FE9D992DAF}" ShortID="482310400" Type="Pause" Scope="One" Global="true">
 							<ElementList>
-								<Element ID="{E7AD8DD2-7122-4046-B5D4-DBF0882C06D6}" Global="false">
+								<Element ID="{E7AD8DD2-7122-4046-B5D4-DBF0882C06D6}" Global="true">
 									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{C59AFD35-9977-4283-98C1-7208F30BB581}" ShortID="431474959" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{C59AFD35-9977-4283-98C1-7208F30BB581}" ShortID="431474959" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{19069E61-443C-44AD-A137-47DC30B07610}" Global="false">
+								<Element ID="{19069E61-443C-44AD-A137-47DC30B07610}" Global="true">
 									<ObjectRef Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{A4C2D1CA-271C-4799-8162-3BB40F7138BF}" ShortID="391901181" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{A4C2D1CA-271C-4799-8162-3BB40F7138BF}" ShortID="391901181" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{9017CCE9-6AD6-4DE5-BA49-D67FB2A4E924}" Global="false">
+								<Element ID="{9017CCE9-6AD6-4DE5-BA49-D67FB2A4E924}" Global="true">
 									<ObjectRef Name="Machine Room" ID="{07350BEF-30B2-4C41-90ED-CAD727C301C9}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{5493D3AC-CF4E-4D6C-9BF1-72CAFDC61415}" ShortID="732881742" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{5493D3AC-CF4E-4D6C-9BF1-72CAFDC61415}" ShortID="732881742" Type="Pause" Scope="One" Global="true">
 							<ElementList>
-								<Element ID="{152997B4-D00D-4B0A-886D-E02C49CF1507}" Global="false">
+								<Element ID="{152997B4-D00D-4B0A-886D-E02C49CF1507}" Global="true">
 									<ObjectRef Name="Living Room" ID="{C450D665-AB20-4233-8809-9D184A8A9373}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
@@ -768,63 +772,63 @@
 				</Event>
 				<Event Name="Room_Ghost_Listen" ID="{F1EF8F08-AFFF-4F39-A256-14DA88734169}">
 					<ChildrenList>
-						<Action Name="Set Game Parameter" ID="{706E520B-DE2D-4360-98C1-DD2F37C3EE45}" ShortID="172772452" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{706E520B-DE2D-4360-98C1-DD2F37C3EE45}" ShortID="172772452" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{D7D89BB5-206A-43F8-9FC3-7C9BA8DB2CD3}" Global="false">
+								<Element ID="{D7D89BB5-206A-43F8-9FC3-7C9BA8DB2CD3}" Global="true">
 									<ObjectRef Name="Ghost_Room_Listen" ID="{1E09DD11-13C1-46D0-800D-97D8584C6EF8}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Resume" ID="{C1BF4FC6-3132-41B9-B995-175D74038F8D}" ShortID="700840932" Type="Resume" Scope="One" Global="false">
+						<Action Name="Resume" ID="{C1BF4FC6-3132-41B9-B995-175D74038F8D}" ShortID="700840932" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{1CBBA4A7-63F9-490D-9966-2D0A2297E766}" Global="false">
+								<Element ID="{1CBBA4A7-63F9-490D-9966-2D0A2297E766}" Global="true">
 									<ObjectRef Name="Ghost Room" ID="{8287FA16-6986-4076-8E36-E68ECD219C72}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{EF6086DD-DBFE-479B-BC01-B243AF665428}" ShortID="997746386" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{EF6086DD-DBFE-479B-BC01-B243AF665428}" ShortID="997746386" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{B037599B-5BF4-49BA-9F82-14FD8F960EB5}" Global="false">
+								<Element ID="{B037599B-5BF4-49BA-9F82-14FD8F960EB5}" Global="true">
 									<ObjectRef Name="Machine Room" ID="{07350BEF-30B2-4C41-90ED-CAD727C301C9}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{63936637-A610-49D4-820A-FA9CF9D9E22D}" ShortID="479840796" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{63936637-A610-49D4-820A-FA9CF9D9E22D}" ShortID="479840796" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{DC583048-4424-41E6-AAC7-610D6519928B}" Global="false">
+								<Element ID="{DC583048-4424-41E6-AAC7-610D6519928B}" Global="true">
 									<ObjectRef Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{B96E2ADC-74F2-495A-8FF0-BDF0D973A535}" ShortID="611381841" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{B96E2ADC-74F2-495A-8FF0-BDF0D973A535}" ShortID="611381841" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{027E3C62-0960-485F-8C8D-5ACE8C846B63}" Global="false">
+								<Element ID="{027E3C62-0960-485F-8C8D-5ACE8C846B63}" Global="true">
 									<ObjectRef Name="Living Room" ID="{C450D665-AB20-4233-8809-9D184A8A9373}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Pause" ID="{DE2DD970-13F4-4685-98B6-C941D5440571}" ShortID="253131554" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{DE2DD970-13F4-4685-98B6-C941D5440571}" ShortID="253131554" Type="Pause" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{AF286893-078B-4DAA-9E66-8A31CFA03F7F}" Global="false">
+								<Element ID="{AF286893-078B-4DAA-9E66-8A31CFA03F7F}" Global="true">
 									<ObjectRef Name="Dead End" ID="{AF411F0A-FEB4-4D48-9A99-F902A4DA04E3}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
@@ -844,9 +848,9 @@
 				</Event>
 				<Event Name="Monster_Too_Far" ID="{31180720-E276-4D26-AFF2-710A87A89A38}">
 					<ChildrenList>
-						<Action Name="Pause" ID="{1645E667-C55D-48FE-A9E8-ED2DB4A1EFA6}" ShortID="319185277" Type="Pause" Scope="One" Global="false">
+						<Action Name="Pause" ID="{1645E667-C55D-48FE-A9E8-ED2DB4A1EFA6}" ShortID="319185277" Type="Pause" Scope="One" Global="true">
 							<ElementList>
-								<Element ID="{0022985E-2D62-4676-A5C0-7C3111C85EAC}" Global="false">
+								<Element ID="{0022985E-2D62-4676-A5C0-7C3111C85EAC}" Global="true">
 									<ObjectRef Name="Monster Steps Blend" ID="{45B03253-21AA-41E8-83DC-CC5C1D1C0FE1}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>
