@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="75">
-	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1884867889" DateHigh="30593061"/>
+	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1400254373" DateHigh="30597077"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1884867889" DateHigh="30593061"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1885024432" DateHigh="30593061"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Attenuations\Default Work Unit.wwu" DateLow="1885024432" DateHigh="30593061"/>
@@ -20,8 +20,8 @@
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1886430199" DateHigh="30593061"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1886430199" DateHigh="30593061"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Effects\Factory McDSP Effects.wwu" DateLow="1886274465" DateHigh="30593061"/>
-	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Events\Default Work Unit.wwu" DateLow="1886430199" DateHigh="30593061"/>
-	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Game Parameters\Default Work Unit.wwu" DateLow="1886430199" DateHigh="30593061"/>
+	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Events\Default Work Unit.wwu" DateLow="1400284399" DateHigh="30597077"/>
+	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Game Parameters\Default Work Unit.wwu" DateLow="889593227" DateHigh="30595880"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1886430199" DateHigh="30593061"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1886430199" DateHigh="30593061"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1886430199" DateHigh="30593061"/>
@@ -29,12 +29,12 @@
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Modulators\Default Work Unit.wwu" DateLow="1886430199" DateHigh="30593061"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Presets\Default Work Unit.wwu" DateLow="1904717488" DateHigh="30593061"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Project 3 Milestone 3.2xj00eL_HM.wsettings" DateLow="845332882" DateHigh="30593068"/>
-	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Project 3 Milestone 3.wproj" DateLow="1833984195" DateHigh="30593066"/>
+	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Project 3 Milestone 3.wproj" DateLow="3632730704" DateHigh="30594671"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Queries\Default Work Unit.wwu" DateLow="1904873560" DateHigh="30593061"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Queries\Factory Queries.wwu" DateLow="1909571021" DateHigh="30593061"/>
-	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\SoundBanks\Default Work Unit.wwu" DateLow="1909571021" DateHigh="30593061"/>
-	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1909727281" DateHigh="30593061"/>
+	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\SoundBanks\Default Work Unit.wwu" DateLow="889634812" DateHigh="30595880"/>
+	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Soundcaster Sessions\Default Work Unit.wwu" DateLow="889634812" DateHigh="30595880"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\States\Default Work Unit.wwu" DateLow="1909727281" DateHigh="30593061"/>
-	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Switches\Default Work Unit.wwu" DateLow="1909727281" DateHigh="30593061"/>
+	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Switches\Default Work Unit.wwu" DateLow="1602815962" DateHigh="30595871"/>
 	<ValidationCacheItem File="C:\Users\2xj00eL_HM\Documents\UCI\2016-17\q3\COMPSCI190\CS190Project3\CS190Project3\Wwise Milestone 3\Triggers\Default Work Unit.wwu" DateLow="1909727281" DateHigh="30593061"/>
 </ValidationCache>

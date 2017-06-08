@@ -34,6 +34,9 @@ public class Movement : MonoBehaviour {
 
     string direction;
 
+    bool fail = false;
+    float movingTimer = 1f;
+
     // Use this for initialization
     void Start () {
         playedSound = false;
@@ -50,71 +53,125 @@ public class Movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+          if (fail && movingTimer < 1f)
+          {
+               movingTimer += Time.deltaTime;
+               if (movingTimer < 0.5f)
+               {
+                    Debug.Log("towards_door");
+                    switch (direction)
+                    {
+                         case "up":
+                              transform.position = Vector3.MoveTowards(transform.position, currentRoom.UpDoor.transform.position, currentSpeed);
+                              break;
+                         case "down":
+                              transform.position = Vector3.MoveTowards(transform.position, currentRoom.DownDoor.transform.position, currentSpeed);
+                              break;
+                         case "right":
+                              transform.position = Vector3.MoveTowards(transform.position, currentRoom.RightDoor.transform.position, currentSpeed);
+                              break;
+                         case "left":
+                              transform.position = Vector3.MoveTowards(transform.position, currentRoom.LeftDoor.transform.position, currentSpeed);
+                              break;
+                    }
+               }
+               else
+               {
+                    Debug.Log("away_door");
+                    switch (direction)
+                    {
+                         case "up":
+                              transform.position = Vector3.MoveTowards(transform.position, currentRoom.UpDoor.spot.transform.position, currentSpeed);
+                              break;
+                         case "down":
+                              transform.position = Vector3.MoveTowards(transform.position, currentRoom.DownDoor.spot.transform.position, currentSpeed);
+                              break;
+                         case "right":
+                              transform.position = Vector3.MoveTowards(transform.position, currentRoom.RightDoor.spot.transform.position, currentSpeed);
+                              break;
+                         case "left":
+                              transform.position = Vector3.MoveTowards(transform.position, currentRoom.LeftDoor.spot.transform.position, currentSpeed);
+                              break;
+                    }
+               }
+          }
+          else
+          {
+               fail = false;
+          }
 
         if (!playedSound && timer >= 1)
         {
             CheckSpace();
             // currentRoom.Standing();
         }
- 
-            if (Input.GetKeyDown("up"))
-            {
-                direction = "up";
-                if (!RoomCoords.GetComponent<GlobalTimer>().outside)
-                {
-                    playedSound = false;
-                }
-            }
-            if (Input.GetKeyDown("down"))
-            {
-                direction = "down";
-                if (!RoomCoords.GetComponent<GlobalTimer>().outside)
-                {
-                    playedSound = false;
-                }
-            }
-            if (Input.GetKeyDown("right"))
-            {
-                direction = "right";
-                if (!RoomCoords.GetComponent<GlobalTimer>().outside)
-                {
-                    playedSound = false;
-                }
-            }
-            if (Input.GetKeyDown("left"))
-            {
-                direction = "left";
-                if (!RoomCoords.GetComponent<GlobalTimer>().outside)
-                {
-                    playedSound = false;
-                }
-            }
-            if (!Input.GetKey("up") && !Input.GetKey("down") && !Input.GetKey("left") && !Input.GetKey("right"))
-            {
-                direction = "center";
-                playedSound = false;
-            }
-
-        switch (direction)
+        if (!fail)
         {
-            case "up":
-                transform.position = Vector3.MoveTowards(transform.position, currentRoom.UpDoor.spot.transform.position, currentSpeed);
-                break;
-            case "down":
-                transform.position = Vector3.MoveTowards(transform.position, currentRoom.DownDoor.spot.transform.position, currentSpeed);
-                break;
-            case "right":
-                transform.position = Vector3.MoveTowards(transform.position, currentRoom.RightDoor.spot.transform.position, currentSpeed);
-                break;
-            case "left":
-                transform.position = Vector3.MoveTowards(transform.position, currentRoom.LeftDoor.spot.transform.position, currentSpeed);
-                break;
-             case "center":
-                transform.position = Vector3.MoveTowards(transform.position, new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0), currentSpeed);
-                break;
-            default:
-                transform.position = Vector3.MoveTowards(transform.position, new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0), currentSpeed);
-                break;
+             if (Input.GetKeyDown("up"))
+             {
+                  direction = "up";
+                  if (!RoomCoords.GetComponent<GlobalTimer>().outside)
+                  {
+                       playedSound = false;
+                  }
+             }
+             if (Input.GetKeyDown("down"))
+             {
+                  direction = "down";
+                  if (!RoomCoords.GetComponent<GlobalTimer>().outside)
+                  {
+                       playedSound = false;
+                  }
+             }
+             if (Input.GetKeyDown("right"))
+             {
+                  direction = "right";
+                  if (!RoomCoords.GetComponent<GlobalTimer>().outside)
+                  {
+                       playedSound = false;
+                  }
+             }
+             if (Input.GetKeyDown("left"))
+             {
+                  direction = "left";
+                  if (!RoomCoords.GetComponent<GlobalTimer>().outside)
+                  {
+                       playedSound = false;
+                  }
+             }
+             if (!Input.GetKey("up") && !Input.GetKey("down") && !Input.GetKey("left") && !Input.GetKey("right"))
+             {
+                  direction = "center";
+                  playedSound = false;
+             }
+        }
+        if (!fail)
+        {
+             switch (direction)
+             {
+                  case "up":
+                       transform.position = Vector3.MoveTowards(transform.position, currentRoom.UpDoor.spot.transform.position, currentSpeed);
+                       transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, 0f), 1000f * Time.deltaTime);
+                       break;
+                  case "down":
+                       transform.position = Vector3.MoveTowards(transform.position, currentRoom.DownDoor.spot.transform.position, currentSpeed);
+                       transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, 180f), 1000f * Time.deltaTime);
+                       break;
+                  case "right":
+                       transform.position = Vector3.MoveTowards(transform.position, currentRoom.RightDoor.spot.transform.position, currentSpeed);
+                       transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, -90f), 1000f * Time.deltaTime);
+                       break;
+                  case "left":
+                       transform.position = Vector3.MoveTowards(transform.position, currentRoom.LeftDoor.spot.transform.position, currentSpeed);
+                       transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, 90f), 1000f * Time.deltaTime);
+                       break;
+                  case "center":
+                       transform.position = Vector3.MoveTowards(transform.position, new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0), currentSpeed);
+                       break;
+                  default:
+                       transform.position = Vector3.MoveTowards(transform.position, new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0), currentSpeed);
+                       break;
+             }
         }
 
         float x = currentRoom.transform.position.x;
@@ -160,6 +217,7 @@ public class Movement : MonoBehaviour {
 
     public void SwitchMove()
     {
+         fail = true;
         // Debug to check movement and direction
         Debug.Log("I AM MOVING " + direction);
 
@@ -201,6 +259,8 @@ public class Movement : MonoBehaviour {
         {
             // Dead end debug
             Debug.Log("TRY AGAIN SOMEWHERE ELSE");
+            fail = true;
+            movingTimer = 0f;
         }
 
     }

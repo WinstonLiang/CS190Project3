@@ -13,6 +13,7 @@ public class GlobalTimer : MonoBehaviour {
 
     bool GONG;
     bool doorSound;
+    bool moved = false;
 
     GameObject Player, Monster;
 
@@ -26,7 +27,44 @@ public class GlobalTimer : MonoBehaviour {
         outside = false;
         doorSound = false;
 	}
-	
+
+     void FixedUpdate()
+     {
+          if (timer >= 4.25f && !GONG)
+          {
+               foreach (ROOM r in Rooms.GetComponent<RoomGen>().rooms)
+               {
+                    r.UpDoor.GetComponent<Animator>().SetInteger("DoorState", 1);
+                    r.LeftDoor.GetComponent<Animator>().SetInteger("DoorState", 1);
+                    r.DownDoor.GetComponent<Animator>().SetInteger("DoorState", 1);
+                    r.RightDoor.GetComponent<Animator>().SetInteger("DoorState", 1);
+               }
+          }
+          if (timer >= 5f && !GONG)
+          {
+               GONG = true;
+               Debug.Log("being_closing");
+               foreach (ROOM r in Rooms.GetComponent<RoomGen>().rooms)
+               {
+                    r.UpDoor.GetComponent<Animator>().SetInteger("DoorState", -1);
+                    r.LeftDoor.GetComponent<Animator>().SetInteger("DoorState", -1);
+                    r.DownDoor.GetComponent<Animator>().SetInteger("DoorState", -1);
+                    r.RightDoor.GetComponent<Animator>().SetInteger("DoorState", -1);
+               }
+          }
+          if (timer >= 5.5f && GONG)
+          {
+               foreach (ROOM r in Rooms.GetComponent<RoomGen>().rooms)
+               {
+                    r.UpDoor.GetComponent<Animator>().SetInteger("DoorState", 0);
+                    r.LeftDoor.GetComponent<Animator>().SetInteger("DoorState", 0);
+                    r.DownDoor.GetComponent<Animator>().SetInteger("DoorState", 0);
+                    r.RightDoor.GetComponent<Animator>().SetInteger("DoorState", 0);
+               }
+          }
+     }
+
+
 	// Update is called once per frame
 	void Update () {
 
@@ -50,28 +88,12 @@ public class GlobalTimer : MonoBehaviour {
                  GetComponent<_WALK>().Walk();
                  doorSound = true;
             }
-            if (timer >= 4 && !GONG)
-            {
-                 foreach (ROOM r in Rooms.GetComponent<RoomGen>().rooms)
-                 {
-                      r.UpDoor.GetComponent<Animator>().SetInteger("DoorState", 1);
-                      r.LeftDoor.GetComponent<Animator>().SetInteger("DoorState", 1);
-                      r.DownDoor.GetComponent<Animator>().SetInteger("DoorState", 1);
-                      r.RightDoor.GetComponent<Animator>().SetInteger("DoorState", 1);
-                 }
-            }
-            if (timer >= 5 && !GONG)
+
+            if (timer >= 5.25f && timer <= 6.5f && !moved)
             {
                 // Signal for all to move Debug
                 //Debug.Log("GONG");
-                GONG = true;
-                foreach (ROOM r in Rooms.GetComponent<RoomGen>().rooms)
-                {
-                     r.UpDoor.GetComponent<Animator>().SetInteger("DoorState", -1);
-                     r.LeftDoor.GetComponent<Animator>().SetInteger("DoorState", -1);
-                     r.DownDoor.GetComponent<Animator>().SetInteger("DoorState", -1);
-                     r.RightDoor.GetComponent<Animator>().SetInteger("DoorState", -1);
-                }
+                 moved = true;
                 foreach (GameObject thing in moving)
                 {
 
@@ -122,20 +144,12 @@ public class GlobalTimer : MonoBehaviour {
 					Player.GetComponent<Movement>().dead = true;
 				}
             }
-            if (timer >= 6 && GONG)
-            {
-                 foreach (ROOM r in Rooms.GetComponent<RoomGen>().rooms)
-                 {
-                      r.UpDoor.GetComponent<Animator>().SetInteger("DoorState", 0);
-                      r.LeftDoor.GetComponent<Animator>().SetInteger("DoorState", 0);
-                      r.DownDoor.GetComponent<Animator>().SetInteger("DoorState", 0);
-                      r.RightDoor.GetComponent<Animator>().SetInteger("DoorState", 0);
-                 }
-            }
+
             if (timer >= 10)
             {
                 // Signal that animations should have ended Debug
                 //Debug.Log("UNGONG");
+                 moved = false;
                 GONG = false;
                 doorSound = false;
                 timer = 0;
