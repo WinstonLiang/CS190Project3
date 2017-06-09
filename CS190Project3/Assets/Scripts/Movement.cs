@@ -20,6 +20,8 @@ public class Movement : MonoBehaviour {
 	
 	public bool dead, outside;
 
+     public GameObject winParticles;
+
     float fan = 0;
     bool anim = false;
 
@@ -38,8 +40,16 @@ public class Movement : MonoBehaviour {
     bool fail = false;
     float movingTimer = 1f;
 
+    bool died;
+    float deadTimer;
+
+    bool replay;
+
     // Use this for initialization
     void Start () {
+         replay = false;
+         died = false;
+         deadTimer = 0;
         playedSound = false;
         currentSpeed = 0.1f;
         currentPosition = currentRoom.coordinate;
@@ -105,6 +115,13 @@ public class Movement : MonoBehaviour {
         {
             CheckSpace();
             // currentRoom.Standing();
+        }
+        if (replay)
+        {
+             if (Input.GetKeyDown("r"))
+             {
+                  UnityEngine.SceneManagement.SceneManager.LoadScene("map1");
+             }
         }
         if (!fail)
         {
@@ -209,11 +226,23 @@ public class Movement : MonoBehaviour {
             AkSoundEngine.SetRTPCValue("IsExit", 2);
 
         timer += Time.deltaTime;
-		
-		if(dead)
-			dead_text.SetActive(true);
-		if(outside)
-			live_text.SetActive(true);
+
+        if (dead)
+        {
+             //dead_text.SetActive(true);
+             deadTimer += Time.deltaTime;
+             if (deadTimer >= 8f)
+             {
+                  replay = true;
+                  shroud.GetComponent<SpriteRenderer>().sprite = gameFrames[6];
+             }
+             if(!died)
+               shroud.GetComponent<ParticleSystem>().Play();
+             died = true;
+        }
+        if (outside)
+             winParticles.SetActive(true);
+			//live_text.SetActive(true);
 
         currentPosition = currentRoom.coordinate;
 
