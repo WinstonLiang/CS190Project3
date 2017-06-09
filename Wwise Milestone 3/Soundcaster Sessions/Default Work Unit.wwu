@@ -194,7 +194,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Flesh" ID="{47EFDEF0-1BA5-45CE-83EB-C34841E78882}"/>
+						<CurrentSwitchRef Name="Wet" ID="{7F3C3023-32BB-42C1-85B4-F10A6ED43AB2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
