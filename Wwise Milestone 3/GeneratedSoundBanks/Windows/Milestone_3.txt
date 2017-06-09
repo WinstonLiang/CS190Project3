@@ -8,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1153766490	Room_Ghost_Listen			\Default Work Unit\Room_Ghost_Listen	
 	1207309839	Bell_Ring			\Default Work Unit\Bell_Ring	
 	1240585254	Room_DeadEnd_Listen			\Default Work Unit\Room_DeadEnd_Listen	
+	1432716332	Game_Over			\Default Work Unit\Game_Over	
 	1460896616	Room_Wet_Stand			\Default Work Unit\Room_Wet_Stand	
 	1673855015	Room_Ghost_Enter			\Default Work Unit\Room_Ghost_Enter	
 	1814518170	Monster_Farther			\Default Work Unit\Monster_Farther	
@@ -28,6 +29,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3986959673	Room_Ghost_Stand			\Default Work Unit\Room_Ghost_Stand	
 	4052350654	Monster_Closer			\Default Work Unit\Monster_Closer	
 	4113313796	Room_Machine_Listen			\Default Work Unit\Room_Machine_Listen	
+	4182441153	Walking_Stop			\Default Work Unit\Walking_Stop	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	556921919	Floor_Types			\Default Work Unit\Floor_Types	

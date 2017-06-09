@@ -7,6 +7,7 @@ public class Movement : MonoBehaviour {
 
     public ROOM currentRoom;
     public RoomGen RoomCoords;
+    public GlobalTimer world;
 
     public Camera followme;
     public GameObject shroud;
@@ -26,8 +27,8 @@ public class Movement : MonoBehaviour {
 
     bool playedSound;
 
-    int x = 0;
-    int y = 0;
+    public int x = 0;
+    public int y = 0;
 
     float constant = 4.5f;
     float timer = 0;
@@ -174,11 +175,11 @@ public class Movement : MonoBehaviour {
              }
         }
 
-        float x = currentRoom.transform.position.x;
-        float y = currentRoom.transform.position.y;
+        float myX = currentRoom.transform.position.x;
+        float myY = currentRoom.transform.position.y;
 
-        followme.transform.position = new Vector3(x, y, -10);
-        shroud.transform.position = new Vector3(x, y, -5);
+        followme.transform.position = new Vector3(myX, myY, -10);
+        shroud.transform.position = new Vector3(myX, myY, -5);
         if (currentRoom.roomType != 2)
         {
              shroud.GetComponent<SpriteRenderer>().sprite = gameFrames[currentRoom.roomType];
@@ -213,6 +214,11 @@ public class Movement : MonoBehaviour {
 			dead_text.SetActive(true);
 		if(outside)
 			live_text.SetActive(true);
+
+        currentPosition = currentRoom.coordinate;
+
+        Int32.TryParse(currentPosition[0].ToString(), out x);
+        Int32.TryParse(currentPosition[1].ToString(), out y);
     }
 
     public void SwitchMove()
@@ -303,13 +309,34 @@ public class Movement : MonoBehaviour {
                 Debug.Log("THIS IS DEAD END");
                 GetComponent<_CHECK_DEADEND>().SetDeadend();
             }
-            else if (RoomCoords.coordinates[tryCoordinate] != currentRoom)
+            else
             {
-                RoomCoords.coordinates[tryCoordinate].Listen();
-            }
-            else if (RoomCoords.coordinates[tryCoordinate] == currentRoom)
-            {
-                currentRoom.Standing();
+                if (RoomCoords.coordinates[tryCoordinate] == RoomCoords.exit)
+                {
+                    AkSoundEngine.SetRTPCValue("Outside_Listen", 3);
+                    GetComponent<_OUTSIDE>().TheBirds();
+                }
+                else if (RoomCoords.coordinates[tryCoordinate] != currentRoom)
+                {
+                    RoomCoords.coordinates[tryCoordinate].Listen();
+                }
+                else if (RoomCoords.coordinates[tryCoordinate] == currentRoom)
+                {
+                    currentRoom.Standing();
+                    GetComponent<_WALK>().Walk();
+                }
+
+                if (monster.GetComponent<MonsterMovement>().currentRoom == RoomCoords.coordinates[tryCoordinate])
+                {
+                    AkSoundEngine.SetRTPCValue("Monster_Coming", 3);
+                }
+                if (world.threatened.Contains(RoomCoords.coordinates[tryCoordinate]))
+                {
+                    AkSoundEngine.SetRTPCValue("Monster_Coming", 2);
+                    GetComponent<MONSTER_CLOSER>().Step();
+                }
+                else
+                    GetComponent<MONSTER_TOO_FAR>().Bye();
             }
         }
         else if (!outside)

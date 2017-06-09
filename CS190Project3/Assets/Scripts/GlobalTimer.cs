@@ -8,7 +8,7 @@ public class GlobalTimer : MonoBehaviour {
     public List<GameObject> moving;
     public int second = 0;
     public GameObject Rooms;
-
+    public List<ROOM> threatened;
     public bool outside;
 
     bool GONG;
@@ -16,8 +16,6 @@ public class GlobalTimer : MonoBehaviour {
     bool moved = false;
 
     GameObject Player, Monster;
-
-    float monsterDistance = 4;
 
 	// Use this for initialization
 	void Start () {
@@ -112,33 +110,40 @@ public class GlobalTimer : MonoBehaviour {
                         Monster = thing;
                     }
                 }
-                //GetComponent<_WALK>().Walk();
 
-                float oldDistance = monsterDistance;
+                int playerX = Player.GetComponent<Movement>().x;
+                int playerY = Player.GetComponent<Movement>().y;
 
-                monsterDistance = Vector3.Distance(Player.transform.position / 4.5f, Monster.transform.position / 4.5f);
-                // So the monster looks for the approximate change in position between the player and itself.
-                // Reducing said change by the constant 4.5 that all rooms are in size.
-                // Multiplied by 2 to get a more apparent "closeness" to the player.
+                int monsterX = Monster.GetComponent<MonsterMovement>().x;
+                int monsterY = Monster.GetComponent<MonsterMovement>().y;
 
-                //Debug.Log(distanceToMonster);
-                Debug.Log(monsterDistance);
+                //Debug.Log(monsterX);
+                //Debug.Log(monsterY);
 
-                if (monsterDistance > 3)
-                    GetComponent<MONSTER_TOO_FAR>().Bye();
-                if (monsterDistance <= 3)
+                threatened = new List<ROOM>(4);
+
+                for(int i = 1; i < 3; i++)
                 {
-                    if (oldDistance > monsterDistance)
-                        GetComponent<MONSTER_CLOSER>().Step();
-                    else if (oldDistance < monsterDistance)
-                        GetComponent<MONSTER_FARTHER>().Step();
-                }
+                    float mult = Mathf.Pow(-1, i);
+                    //Debug.Log("Mult:" + mult);
+                    int x = monsterX + (int)mult;
+                    int y = monsterY + (int)mult;
 
-                // AkSoundEngine.SetRTPCValue("Monster_Coming", monsterDistance);
+                    //Debug.Log("X:" + x);
+                    //Debug.Log("Y:" + y);
+
+                    string tryCoordinateUD = monsterX.ToString() + y.ToString();
+                    string tryCoordinateLR = x.ToString() + monsterY.ToString();
+
+                    if(Rooms.GetComponent<RoomGen>().coordinates.ContainsKey(tryCoordinateUD))
+                        threatened.Add(Rooms.GetComponent<RoomGen>().coordinates[tryCoordinateUD]);
+                    if(Rooms.GetComponent<RoomGen>().coordinates.ContainsKey(tryCoordinateLR))
+                        threatened.Add(Rooms.GetComponent<RoomGen>().coordinates[tryCoordinateLR]);
+                }
 				
 				bool sameRoom = Monster.GetComponent<MonsterMovement>().currentRoom == Player.GetComponent<Movement>().currentRoom;
 
-                if (monsterDistance < 1 || sameRoom)
+                if (sameRoom)
 				{
                     Debug.Log("YOU DIED");
 					Player.GetComponent<Movement>().dead = true;

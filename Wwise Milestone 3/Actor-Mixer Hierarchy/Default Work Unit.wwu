@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SwitchContainer Name="Player Footstep" ID="{41E5DAB3-7B30-4144-8378-53C33FFA57B1}" ShortID="239295669">
 					<PropertyList>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>6</Value>
@@ -35,6 +36,11 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -289,6 +295,11 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -579,6 +590,11 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-25</Value>
@@ -819,7 +835,13 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+								<Property Name="RestartBeginningOrBackward" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-15</Value>
@@ -1058,15 +1080,27 @@
 						<GroupingBehaviorList>
 							<GroupingBehavior>
 								<ItemRef Name="Machine" ID="{87754A48-DBC8-43FF-AFCD-30B1FB0D5E8C}"/>
+								<PropertyList>
+									<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+								</PropertyList>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Flesh" ID="{B0E39566-2A85-4A79-BA31-BE667C5D5C24}"/>
+								<PropertyList>
+									<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+								</PropertyList>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Ghost" ID="{B1DD1A75-C415-4CBF-8F6C-A522517BE890}"/>
+								<PropertyList>
+									<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+								</PropertyList>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="WetConcrete" ID="{9EBE8295-4E6D-4A76-BB41-074A51EB3EFC}"/>
+								<PropertyList>
+									<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+								</PropertyList>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
@@ -1101,7 +1135,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>6</Value>
+								<Value>11</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -1180,7 +1214,7 @@
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>2</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{189729AD-4312-40B6-A6DC-131ED18EFC33}" ShortID="842530599">
@@ -1606,7 +1640,7 @@
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>1</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{41D3983B-6B98-488F-B25F-C1F6F0599C65}" ShortID="436876633">
@@ -1801,7 +1835,7 @@
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>1</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{136AF84D-EB16-4D6A-8344-43785E717040}" ShortID="1067154357">
@@ -1970,6 +2004,9 @@
 								</Property>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{D3B3F09F-9145-4189-B0BA-147B9CD874C3}" ShortID="422245556">
 											<ReferenceList>
@@ -5146,8 +5183,13 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-3.36809</YPos>
+														<YPos>1.7086</YPos>
 														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>3.43144292893037</XPos>
+														<YPos>1.2130244610206</YPos>
+														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>8.9519</XPos>
@@ -5197,7 +5239,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-20</Value>
+								<Value>-12</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -5724,7 +5766,8 @@
 									<Modifier Name="" ID="{F3F744B4-F44D-4D6B-8C48-02FC75624270}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Min" Type="Real64" Value="-1566"/>
+											<Property Name="Max" Type="Real64" Value="177"/>
+											<Property Name="Min" Type="Real64" Value="-126"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -5732,7 +5775,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>6</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

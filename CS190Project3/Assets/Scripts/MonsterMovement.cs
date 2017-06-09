@@ -16,8 +16,8 @@ public class MonsterMovement : MonoBehaviour {
     bool playedSound;
     bool moveFailed;
 
-    int x = 0;
-    int y = 0;
+    public int x = 0;
+    public int y = 0;
 
     float constant = 4.5f;
 
@@ -37,7 +37,12 @@ public class MonsterMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position = new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0);
-	}
+
+        currentPosition = currentRoom.coordinate;
+
+        Int32.TryParse(currentPosition[0].ToString(), out x);
+        Int32.TryParse(currentPosition[1].ToString(), out y);
+    }
 
     public void SwitchMove()
     {
@@ -128,6 +133,10 @@ public class MonsterMovement : MonoBehaviour {
                     }
                 }
             }
+            currentPosition = currentRoom.coordinate;
+
+            Int32.TryParse(currentPosition[0].ToString(), out x);
+            Int32.TryParse(currentPosition[1].ToString(), out y);
             toMove = 0;
         }
     }

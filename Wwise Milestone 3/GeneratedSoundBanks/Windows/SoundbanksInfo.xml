@@ -24,6 +24,7 @@
 				<Event Id="1207309839" Name="Bell_Ring" ObjectPath="\Events\Default Work Unit\Bell_Ring"/>
 				<Event Id="2719257531" Name="Clock_Tick" ObjectPath="\Events\Default Work Unit\Clock_Tick"/>
 				<Event Id="535830432" Name="Door_Open" ObjectPath="\Events\Default Work Unit\Door_Open"/>
+				<Event Id="1432716332" Name="Game_Over" ObjectPath="\Events\Default Work Unit\Game_Over"/>
 				<Event Id="733168346" Name="Game_Start" ObjectPath="\Events\Default Work Unit\Game_Start"/>
 				<Event Id="4052350654" Name="Monster_Closer" ObjectPath="\Events\Default Work Unit\Monster_Closer"/>
 				<Event Id="1814518170" Name="Monster_Farther" ObjectPath="\Events\Default Work Unit\Monster_Farther"/>
@@ -50,6 +51,7 @@
 				<Event Id="230107777" Name="Room_Wet_Listen" ObjectPath="\Events\Default Work Unit\Room_Wet_Listen"/>
 				<Event Id="1460896616" Name="Room_Wet_Stand" ObjectPath="\Events\Default Work Unit\Room_Wet_Stand"/>
 				<Event Id="3801293363" Name="Room_Wet_Walk" ObjectPath="\Events\Default Work Unit\Room_Wet_Walk"/>
+				<Event Id="4182441153" Name="Walking_Stop" ObjectPath="\Events\Default Work Unit\Walking_Stop"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="29564569" Language="SFX">
