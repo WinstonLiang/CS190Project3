@@ -123,7 +123,7 @@ public class Movement : MonoBehaviour {
                   UnityEngine.SceneManagement.SceneManager.LoadScene("map1");
              }
         }
-        if (!fail && !dead)
+        if (!fail && !dead && !outside)
         {
              if (Input.GetKey("up"))
              {
