@@ -372,7 +372,10 @@ public class Movement : MonoBehaviour {
                     }
                     else
                     {
-                        AkSoundEngine.SetRTPCValue("Monster_Coming", 1);
+                        if (monster.GetComponent<MonsterMovement>().toMove == 0)
+                            AkSoundEngine.SetRTPCValue("Monster_Coming", 1);
+                        else
+                            AkSoundEngine.SetRTPCValue("Monster_Coming", 2);
                     }
                     GetComponent<MONSTER_CLOSER>().Step();
                 }

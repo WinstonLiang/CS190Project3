@@ -69,6 +69,8 @@ public class GlobalTimer : MonoBehaviour {
 	void Update () {
         if (outside && !winPlayed)
         {
+            Debug.Log("Freedom.");
+            AkSoundEngine.SetRTPCValue("Outside_Listen", 3);
             GetComponent<_OUTSIDE>().TheBirds();
             winPlayed = true;
         }

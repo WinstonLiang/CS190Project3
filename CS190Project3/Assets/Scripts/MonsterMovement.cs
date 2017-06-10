@@ -36,7 +36,9 @@ public class MonsterMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0);
+
+        Vector3 currentRoomPos = new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, 0);
+        transform.position = Vector3.MoveTowards(transform.position, currentRoomPos, currentSpeed);
 
         currentPosition = currentRoom.coordinate;
 
