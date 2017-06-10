@@ -123,7 +123,7 @@ public class Movement : MonoBehaviour {
                   UnityEngine.SceneManagement.SceneManager.LoadScene("map1");
              }
         }
-        if (!fail)
+        if (!fail && !dead)
         {
              if (Input.GetKeyDown("up"))
              {
@@ -234,7 +234,12 @@ public class Movement : MonoBehaviour {
              if (deadTimer >= 8f)
              {
                   replay = true;
+                  shroud.GetComponent<SpriteRenderer>().sortingOrder = 3;
                   shroud.GetComponent<SpriteRenderer>().sprite = gameFrames[6];
+             }
+             else
+             {
+                  shroud.GetComponent<SpriteRenderer>().sortingOrder = 1;
              }
              if(!died)
                shroud.GetComponent<ParticleSystem>().Play();

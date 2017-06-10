@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_SCENES/Map1.unity
+- path: Assets/_SCENES/FakeNightmare.unity
   isLoaded: 1
   isActive: 1
