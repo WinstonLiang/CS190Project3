@@ -355,11 +355,12 @@ public class Movement : MonoBehaviour {
                     GetComponent<_WALK>().Walk();
                 }
 
-                if (monster.GetComponent<MonsterMovement>().currentRoom == RoomCoords.coordinates[tryCoordinate])
+                if (x == monster.GetComponent<MonsterMovement>().x && y == monster.GetComponent<MonsterMovement>().y)
                 {
+                    Debug.Log("MONSTER NEXT DOOR");
                     AkSoundEngine.SetRTPCValue("Monster_Coming", 3);
                 }
-                if (world.threatened.Contains(RoomCoords.coordinates[tryCoordinate]))
+                else if (world.threatened.Contains(RoomCoords.coordinates[tryCoordinate]))
                 {
                     AkSoundEngine.SetRTPCValue("Monster_Coming", 2);
                     GetComponent<MONSTER_CLOSER>().Step();

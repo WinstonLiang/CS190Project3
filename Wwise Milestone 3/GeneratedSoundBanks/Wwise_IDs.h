@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID BELL_RING = 1207309839U;
         static const AkUniqueID CLOCK_TICK = 2719257531U;
         static const AkUniqueID DOOR_OPEN = 535830432U;
+        static const AkUniqueID GAME_OVER = 1432716332U;
         static const AkUniqueID GAME_START = 733168346U;
         static const AkUniqueID MONSTER_CLOSER = 4052350654U;
         static const AkUniqueID MONSTER_FARTHER = 1814518170U;
@@ -25,6 +26,7 @@ namespace AK
         static const AkUniqueID OUTSIDE_CLOSE_ENOUGH = 2632241442U;
         static const AkUniqueID OUTSIDE_CLOSER = 514601847U;
         static const AkUniqueID OUTSIDE_TOO_FAR = 2888590795U;
+        static const AkUniqueID ROOM_DEADEND_ENTER = 3503416331U;
         static const AkUniqueID ROOM_DEADEND_LISTEN = 1240585254U;
         static const AkUniqueID ROOM_FLESH_ENTER = 2724478592U;
         static const AkUniqueID ROOM_FLESH_LISTEN = 2580524235U;
