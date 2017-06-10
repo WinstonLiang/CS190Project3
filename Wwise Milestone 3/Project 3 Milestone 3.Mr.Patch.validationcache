@@ -74,7 +74,7 @@
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Project 3 Milestone 3\States\Default Work Unit.wwu" DateLow="4137232074" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Project 3 Milestone 3\Switches\Default Work Unit.wwu" DateLow="4137042063" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Project 3 Milestone 3\Triggers\Default Work Unit.wwu" DateLow="4138732160" DateHigh="30592057"/>
-	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1417926362" DateHigh="30597462"/>
+	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1804184485" DateHigh="30597498"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1871318010" DateHigh="30586022"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1884328755" DateHigh="30586022"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Actor-Mixer Hierarchy\FootSteps.wwu" DateLow="3357903696" DateHigh="30597106"/>
@@ -95,20 +95,20 @@
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1906240008" DateHigh="30586022"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1896709463" DateHigh="30586022"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Effects\Factory McDSP Effects.wwu" DateLow="1927391218" DateHigh="30586022"/>
-	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Events\Default Work Unit.wwu" DateLow="79901297" DateHigh="30597455"/>
-	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Game Parameters\Default Work Unit.wwu" DateLow="1439889906" DateHigh="30595874"/>
+	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Events\Default Work Unit.wwu" DateLow="2389837983" DateHigh="30597498"/>
+	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Game Parameters\Default Work Unit.wwu" DateLow="1805184543" DateHigh="30597498"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1887538938" DateHigh="30586022"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="4138552150" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="4136132011" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Mixing Sessions\Default Work Unit.wwu" DateLow="4139322194" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Modulators\Default Work Unit.wwu" DateLow="4139702215" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Presets\Default Work Unit.wwu" DateLow="4137982117" DateHigh="30592057"/>
-	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Project 3 Milestone 3.Mr.Patch.wsettings" DateLow="1772525006" DateHigh="30597463"/>
+	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Project 3 Milestone 3.Mr.Patch.wsettings" DateLow="2800091448" DateHigh="30597498"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Project 3 Milestone 3.wproj" DateLow="4135932000" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Queries\Default Work Unit.wwu" DateLow="4138342138" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Queries\Factory Queries.wwu" DateLow="1873208119" DateHigh="30586022"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\SoundBanks\Default Work Unit.wwu" DateLow="3825441909" DateHigh="30597445"/>
-	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1649104830" DateHigh="30597295"/>
+	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1805554564" DateHigh="30597498"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\States\Default Work Unit.wwu" DateLow="4137232074" DateHigh="30592057"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Switches\Default Work Unit.wwu" DateLow="2191257623" DateHigh="30595865"/>
 	<ValidationCacheItem File="C:\Users\Mr.Patch\Documents\WwiseProjects\Wwise Nightmare\Triggers\Default Work Unit.wwu" DateLow="4138732160" DateHigh="30592057"/>

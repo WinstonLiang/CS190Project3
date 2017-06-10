@@ -294,6 +294,7 @@ public class Movement : MonoBehaviour {
             currentRoom = RoomCoords.coordinates[tryCoordinate];
             direction = "center";
             currentRoom.Enter();
+            currentRoom.Standing();
         }
         else
         {

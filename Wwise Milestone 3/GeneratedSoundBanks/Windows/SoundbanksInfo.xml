@@ -97,7 +97,7 @@
 				</File>
 				<File Id="121047549" Language="SFX">
 					<ShortName>SFX_DeadEnd_Vocal.wav</ShortName>
-					<Path>SFX\SFX_DeadEnd_Vocal_59D650E0.wem</Path>
+					<Path>SFX\SFX_DeadEnd_Vocal_B5847E5A.wem</Path>
 				</File>
 				<File Id="121741999" Language="SFX">
 					<ShortName>New Wet Walking.wav</ShortName>
@@ -295,10 +295,6 @@
 					<ShortName>SFX_Door_MultipleDrag.wav</ShortName>
 					<Path>SFX\SFX_Door_MultipleDrag_D04AF0DE.wem</Path>
 				</File>
-				<File Id="759330069" Language="SFX">
-					<ShortName>SFX_Footsteps_WetConcrete_V1.wav</ShortName>
-					<Path>SFX\SFX_Footsteps_WetConcrete_V1_0A3890C6.wem</Path>
-				</File>
 				<File Id="774723420" Language="SFX">
 					<ShortName>Boots Running Metal.wav</ShortName>
 					<Path>SFX\Boots Running Metal_65E40A53.wem</Path>
@@ -309,7 +305,7 @@
 				</File>
 				<File Id="808076968" Language="SFX">
 					<ShortName>SFX_DeadEnd_Electric.wav</ShortName>
-					<Path>SFX\SFX_DeadEnd_Electric_59D650E0.wem</Path>
+					<Path>SFX\SFX_DeadEnd_Electric_B5847E5A.wem</Path>
 				</File>
 				<File Id="837272187" Language="SFX">
 					<ShortName>SFX_Door_MultipleDrag.wav</ShortName>

@@ -168,10 +168,6 @@
 							<Value>1.99</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}"/>
-							<Value>3.40129217516152</Value>
-						</RTPCValue>
-						<RTPCValue>
 							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
 							<Value>6</Value>
 						</RTPCValue>
@@ -188,13 +184,17 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="DeadEnd_Listen" ID="{29F3C7A6-89C5-4F89-AC1F-5818F8FC602B}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Machine_Listen" ID="{FFBF65CA-F3C1-4FAF-B415-22BAB6A79793}"/>
 							<Value>2</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Wet" ID="{7F3C3023-32BB-42C1-85B4-F10A6ED43AB2}"/>
+						<CurrentSwitchRef Name="Flesh" ID="{47EFDEF0-1BA5-45CE-83EB-C34841E78882}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -14,8 +14,9 @@ public class GlobalTimer : MonoBehaviour {
     bool GONG;
     bool doorSound;
     bool moved = false;
+    bool winPlayed;
 
-    GameObject Player, Monster;
+    public GameObject Player, Monster;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +25,7 @@ public class GlobalTimer : MonoBehaviour {
         second = 0;
         outside = false;
         doorSound = false;
+        winPlayed = false;
 	}
 
      void FixedUpdate()
@@ -65,8 +67,13 @@ public class GlobalTimer : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+        if (outside && !winPlayed)
+        {
+            GetComponent<_OUTSIDE>().TheBirds();
+            winPlayed = true;
+        }
 
-        if (!outside)
+        if (!outside && !Player.GetComponent<Movement>().dead)
         {
             timer += Time.deltaTime;
             if (timer > second + 1)
@@ -145,10 +152,11 @@ public class GlobalTimer : MonoBehaviour {
 				
 				bool sameRoom = Monster.GetComponent<MonsterMovement>().currentRoom == Player.GetComponent<Movement>().currentRoom;
 
-                if (sameRoom)
+                if (sameRoom && !Player.GetComponent<Movement>().dead)
 				{
                     Debug.Log("YOU DIED");
 					Player.GetComponent<Movement>().dead = true;
+                    GetComponent<_STOP_DEADEND>().SetDeadend();
 				}
             }
 

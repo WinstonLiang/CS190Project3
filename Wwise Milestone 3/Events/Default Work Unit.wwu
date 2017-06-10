@@ -136,7 +136,6 @@
 						<Action Name="Resume" ID="{2F691511-F966-41DE-8505-2D134DFF7744}" ShortID="318190768" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
 								<Property Name="FadeCurve" Type="int16" Value="3"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
@@ -213,7 +212,6 @@
 					<ChildrenList>
 						<Action Name="Resume" ID="{BC6C01B6-E472-444B-9B48-DA2A14C9D90C}" ShortID="427944311" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
@@ -352,11 +350,11 @@
 						</Action>
 						<Action Name="Set Game Parameter" ID="{E8F45037-7FFE-4264-8117-69367CEF167B}" ShortID="365831624" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
-								<Property Name="GameParameterValue" Type="Real64" Value="0.5"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ElementList>
 								<Element ID="{D98C2204-42E6-4A88-94E5-5A406818E93C}" Global="true">
-									<ObjectRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+									<ObjectRef Name="DeadEnd_Listen" ID="{29F3C7A6-89C5-4F89-AC1F-5818F8FC602B}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -503,7 +501,6 @@
 						</Action>
 						<Action Name="Resume" ID="{84D2CA31-BF2D-480A-A7FA-5021084B29CD}" ShortID="748785044" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
@@ -665,7 +662,6 @@
 					<ChildrenList>
 						<Action Name="Resume" ID="{083083A3-EBB6-42D4-B9FF-5D7838619CAD}" ShortID="440124446" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="0.3"/>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
@@ -676,12 +672,11 @@
 						</Action>
 						<Action Name="Set Game Parameter" ID="{C1B8931A-83AD-48CC-9759-AB44444C1449}" ShortID="213382045" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-								<Property Name="GameParameterValue" Type="Real64" Value="0.5"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ElementList>
 								<Element ID="{37D648DE-72EB-4974-9773-4EFABA305290}" Global="true">
-									<ObjectRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+									<ObjectRef Name="DeadEnd_Listen" ID="{29F3C7A6-89C5-4F89-AC1F-5818F8FC602B}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -824,7 +819,6 @@
 					<ChildrenList>
 						<Action Name="Resume" ID="{C1BF4FC6-3132-41B9-B995-175D74038F8D}" ShortID="700840932" Type="Resume" Scope="One" Global="true">
 							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 								<Property Name="MasterResume" Type="bool" Value="True"/>
 							</PropertyList>
 							<ElementList>
@@ -924,14 +918,13 @@
 				</Event>
 				<Event Name="Room_DeadEnd_Enter" ID="{B8380954-E9E0-444C-A86B-79837A39DE97}">
 					<ChildrenList>
-						<Action Name="Set Game Parameter" ID="{FD6EA284-D4C2-47F8-974A-3C20E99D17C4}" ShortID="683404181" Type="SetGameParameter" Scope="One" Global="false">
+						<Action Name="Set Game Parameter" ID="{FD6EA284-D4C2-47F8-974A-3C20E99D17C4}" ShortID="683404181" Type="SetGameParameter" Scope="One" Global="true">
 							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="0.3"/>
-								<Property Name="GameParameterValue" Type="Real64" Value="10"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ElementList>
-								<Element ID="{296A128D-9F9E-426A-A959-8673A4172125}" Global="false">
-									<ObjectRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+								<Element ID="{296A128D-9F9E-426A-A959-8673A4172125}" Global="true">
+									<ObjectRef Name="DeadEnd_Listen" ID="{29F3C7A6-89C5-4F89-AC1F-5818F8FC602B}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -939,9 +932,9 @@
 				</Event>
 				<Event Name="Walk_Stop" ID="{D27F271A-F4C2-4731-9286-7FD8876B32A7}">
 					<ChildrenList>
-						<Action Name="Stop" ID="{644A257C-538A-4284-85DD-3806CD6232AF}" ShortID="1000745093" Type="Stop" Scope="One" Global="true">
+						<Action Name="Stop" ID="{644A257C-538A-4284-85DD-3806CD6232AF}" ShortID="1000745093" Type="Stop" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{111287B3-52CE-4A0E-9225-9CDAD1ECFDE3}" Global="true">
+								<Element ID="{111287B3-52CE-4A0E-9225-9CDAD1ECFDE3}" Global="false">
 									<ObjectRef Name="Player Footstep" ID="{41E5DAB3-7B30-4144-8378-53C33FFA57B1}" WorkUnitID="{29AB6D64-7056-4660-AD8A-2310AE6F3283}"/>
 								</Element>
 							</ElementList>

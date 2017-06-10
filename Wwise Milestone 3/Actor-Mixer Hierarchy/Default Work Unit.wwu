@@ -17,6 +17,11 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -162,35 +167,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="SFX_Footsteps_WetConcrete_V1" ID="{D1FDE88E-DF9C-410E-9D58-FB30E39ECAF0}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SFX_Footsteps_WetConcrete_V4" ID="{EC8F1153-3038-43BF-A45D-A2B17D3C0449}" ShortID="769475860" Type="SoundFX">
-									<PropertyList>
-										<Property Name="OverrideEffect" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
-										</Reference>
-										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SFX_Footsteps_WetConcrete_V1" ID="{0526DB42-A8F6-4B25-A212-77F676FC3401}" ShortID="759330069">
-											<PropertyList>
-												<Property Name="TrimBegin" Type="Real64" Value="18.3501004746909"/>
-												<Property Name="TrimEnd" Type="Real64" Value="18.4642830854635"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>SFX_Footsteps_WetConcrete_V1.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SFX_Footsteps_WetConcrete_V1" ID="{0526DB42-A8F6-4B25-A212-77F676FC3401}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="SFX_Footsteps_WetConcrete_V5" ID="{4A41E4BC-D445-4EF8-803D-6CC398E38936}" ShortID="792137040" Type="SoundFX">
@@ -1160,6 +1136,7 @@
 					<ChildrenList>
 						<BlendContainer Name="Wet Room" ID="{9432CCCD-FB4E-4661-B3A8-AFFD126BE87F}" ShortID="230354358">
 							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
 								<Property Name="BypassEffect" Type="bool">
 									<RTPCList>
 										<RTPC Name="" ID="{C901379D-4ED5-4086-AD71-5491DA8BB6B6}" ShortID="191706801">
@@ -1497,17 +1474,25 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<Sound Name="SFX_Room_Wet_Stream" ID="{2552D02E-E75B-4E05-9ED2-000A56B6B8C6}" ShortID="338565068" Type="SoundFX">
+								<RandomSequenceContainer Name="Water Sound" ID="{EF7B807E-A5BE-403D-BB8B-7212DF690DBB}" ShortID="296474133">
 									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="PreFetchLength" Type="int16">
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>0</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
+										<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoopCount" Type="int32" Value="20"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="60"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
-												<Value>-25</Value>
+												<Value>True</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1520,15 +1505,51 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="74806__mrmayo__creek-1" ID="{2152C1B8-816D-458B-9E5F-4E3DFB2D1CA5}" ShortID="847441279">
-											<Language>SFX</Language>
-											<AudioFile>74806__mrmayo__creek-1.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="SFX_Room_Wet_Stream" ID="{2552D02E-E75B-4E05-9ED2-000A56B6B8C6}" ShortID="338565068" Type="SoundFX">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="LoopCount" Type="int32" Value="9"/>
+												<Property Name="PreFetchLength" Type="int16">
+													<ValueList>
+														<Value>0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
+												</Reference>
+												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Hall_Large" ID="{6D154498-FF6D-4823-96FC-56841B70E079}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D530546C-5410-4007-ACE5-D9FE407C813B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="74806__mrmayo__creek-1" ID="{2152C1B8-816D-458B-9E5F-4E3DFB2D1CA5}" ShortID="847441279">
+													<Language>SFX</Language>
+													<AudioFile>74806__mrmayo__creek-1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="74806__mrmayo__creek-1" ID="{2152C1B8-816D-458B-9E5F-4E3DFB2D1CA5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="74806__mrmayo__creek-1" ID="{2152C1B8-816D-458B-9E5F-4E3DFB2D1CA5}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<BlendTrackList>
 								<BlendTrack Name="Wet Room" ID="{F905682E-3173-4678-8E88-6CF7975864D2}" ShortID="20566162">
@@ -5093,7 +5114,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>6</Value>
+								<Value>3</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -5107,6 +5128,53 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="SFX_DeadEnd_Electric" ID="{A3BE109A-08B8-43C6-8219-BF3F7F2BB72C}" ShortID="666927016" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{16C1CA4A-2DC1-4054-BF15-0822852D66F7}" ShortID="55578268">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DeadEnd_Listen" ID="{29F3C7A6-89C5-4F89-AC1F-5818F8FC602B}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{0404ABB6-AB4E-40C7-9D11-9D711A6520CF}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1.49703</XPos>
+														<YPos>1</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.50977060322855</XPos>
+														<YPos>25</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>2</XPos>
+														<YPos>50</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
@@ -5126,6 +5194,47 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SFX_DeadEnd_Vocal" ID="{541DA636-5AB5-47E6-80FE-32095CB8DB19}" ShortID="1041199323" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{52527442-EC03-4306-95D0-BD5100DDC469}" ShortID="828943872">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DeadEnd_Listen" ID="{29F3C7A6-89C5-4F89-AC1F-5818F8FC602B}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{6DCBB9B0-EB1B-4511-A878-28FA484740EE}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>4.88506</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1.48937977909941</XPos>
+														<YPos>-2.73030000831827</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.50042</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>2</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2817BAE0-3EC0-459F-8962-3C162B202895}"/>
@@ -5145,114 +5254,6 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
-					<BlendTrackList>
-						<BlendTrack Name="Dead End Door" ID="{A09CAAB0-7429-4EB2-B4D2-C4851676AEB7}" ShortID="871691403">
-							<PropertyList>
-								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-								<Property Name="Lowpass" Type="int16">
-									<RTPCList>
-										<RTPC Name="" ID="{053A5F85-BEE6-4200-BBF8-4D3CDE4A1F4E}" ShortID="779533235">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{BE7740FF-7511-4219-98E9-2C5306E816BE}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>63</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>3.61091</XPos>
-														<YPos>45</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>6.05169</XPos>
-														<YPos>64</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>10</XPos>
-														<YPos>71</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<RTPCList>
-										<RTPC Name="" ID="{32DA6287-4D31-4FE2-90A8-221CC96DCB7D}" ShortID="375130345">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{E108C5C3-5E06-475D-9B89-6C3C1E9EE77F}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>1.7086</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>3.43144292893037</XPos>
-														<YPos>1.2130244610206</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>8.9519</XPos>
-														<YPos>16.90196</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>10</XPos>
-														<YPos>19.40078</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="LayerCrossFadeControlInput">
-									<ObjectRef Name="DeadEnd_Listen" ID="{FDFC677B-5F2B-49E5-B1E1-494CE2C4C48C}" WorkUnitID="{28DF1867-9EB0-4D7B-9042-F4D66DF5A0E0}"/>
-								</Reference>
-							</ReferenceList>
-							<BlendTrackAssocList>
-								<BlendTrackAssoc>
-									<ItemRef Name="SFX_DeadEnd_Electric" ID="{A3BE109A-08B8-43C6-8219-BF3F7F2BB72C}"/>
-									<CrossfadingInfo>
-										<LeftEdgePos>0</LeftEdgePos>
-										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>9.9995</RightEdgePos>
-										<RightFadingMode>None</RightFadingMode>
-									</CrossfadingInfo>
-								</BlendTrackAssoc>
-								<BlendTrackAssoc>
-									<ItemRef Name="SFX_DeadEnd_Vocal" ID="{541DA636-5AB5-47E6-80FE-32095CB8DB19}"/>
-									<CrossfadingInfo>
-										<LeftEdgePos>3.26992103374013</LeftEdgePos>
-										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>10</RightEdgePos>
-										<RightFadingMode>Automatic</RightFadingMode>
-									</CrossfadingInfo>
-								</BlendTrackAssoc>
-							</BlendTrackAssocList>
-						</BlendTrack>
-					</BlendTrackList>
 				</BlendContainer>
 				<RandomSequenceContainer Name="Timer" ID="{4DBFEB7E-EE0A-45C6-AAF2-41184DF816A1}" ShortID="436501927">
 					<PropertyList>
