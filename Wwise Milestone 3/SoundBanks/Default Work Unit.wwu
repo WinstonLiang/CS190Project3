@@ -19,6 +19,7 @@
 						<ObjectRef Name="Room_Machine_Listen" ID="{2D59BAE0-385F-44B8-BC1F-9B1E25204AFA}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Flesh_Walk" ID="{28755E14-63BA-4537-97B9-61BD15E8D107}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ouside_Farther" ID="{F3C750BA-CA6F-4720-BAF6-679634A1D848}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Walk_Stop" ID="{D27F271A-F4C2-4731-9286-7FD8876B32A7}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Flesh_Listen" ID="{14F86B4C-AA07-47F7-A57C-75E0858CF439}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Flesh_Stand" ID="{90FB1424-F7F8-4864-9988-C79B0FF39F3E}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Room_Wet_Walk" ID="{2B4F444F-8B21-49B3-A076-912F0DE8A207}" WorkUnitID="{917D9D9F-3D70-4AEB-B057-F5B4150A2084}" Filter="7" Origin="Manual"/>

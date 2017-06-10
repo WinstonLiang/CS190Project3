@@ -120,7 +120,9 @@ public class GlobalTimer : MonoBehaviour {
                 //Debug.Log(monsterX);
                 //Debug.Log(monsterY);
 
-                threatened = new List<ROOM>(4);
+                threatened = new List<ROOM>(5);
+
+                threatened.Add(Monster.GetComponent<MonsterMovement>().currentRoom);
 
                 for(int i = 1; i < 3; i++)
                 {

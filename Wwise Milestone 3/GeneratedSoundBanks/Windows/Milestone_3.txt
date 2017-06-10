@@ -24,6 +24,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3106607740	Monster_Too_Far			\Default Work Unit\Monster_Too_Far	
 	3419782079	Room_Machine_Stand			\Default Work Unit\Room_Machine_Stand	
 	3503416331	Room_DeadEnd_Enter			\Default Work Unit\Room_DeadEnd_Enter	
+	3647363293	Walk_Stop			\Default Work Unit\Walk_Stop	
 	3699824517	Room_Flesh_Walk			\Default Work Unit\Room_Flesh_Walk	
 	3764520922	Room_Wet_Enter			\Default Work Unit\Room_Wet_Enter	
 	3801293363	Room_Wet_Walk			\Default Work Unit\Room_Wet_Walk	

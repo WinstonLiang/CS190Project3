@@ -44,6 +44,7 @@ namespace AK
         static const AkUniqueID ROOM_WET_LISTEN = 230107777U;
         static const AkUniqueID ROOM_WET_STAND = 1460896616U;
         static const AkUniqueID ROOM_WET_WALK = 3801293363U;
+        static const AkUniqueID WALK_STOP = 3647363293U;
     } // namespace EVENTS
 
     namespace SWITCHES

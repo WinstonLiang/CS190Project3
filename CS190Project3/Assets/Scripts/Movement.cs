@@ -125,7 +125,7 @@ public class Movement : MonoBehaviour {
         }
         if (!fail && !dead)
         {
-             if (Input.GetKeyDown("up"))
+             if (Input.GetKey("up"))
              {
                   direction = "up";
                   if (!RoomCoords.GetComponent<GlobalTimer>().outside)
@@ -133,7 +133,7 @@ public class Movement : MonoBehaviour {
                        playedSound = false;
                   }
              }
-             if (Input.GetKeyDown("down"))
+             if (Input.GetKey("down"))
              {
                   direction = "down";
                   if (!RoomCoords.GetComponent<GlobalTimer>().outside)
@@ -141,7 +141,7 @@ public class Movement : MonoBehaviour {
                        playedSound = false;
                   }
              }
-             if (Input.GetKeyDown("right"))
+             if (Input.GetKey("right"))
              {
                   direction = "right";
                   if (!RoomCoords.GetComponent<GlobalTimer>().outside)
@@ -149,7 +149,7 @@ public class Movement : MonoBehaviour {
                        playedSound = false;
                   }
              }
-             if (Input.GetKeyDown("left"))
+             if (Input.GetKey("left"))
              {
                   direction = "left";
                   if (!RoomCoords.GetComponent<GlobalTimer>().outside)
@@ -360,18 +360,26 @@ public class Movement : MonoBehaviour {
                     GetComponent<_WALK>().Walk();
                 }
 
-                if (x == monster.GetComponent<MonsterMovement>().x && y == monster.GetComponent<MonsterMovement>().y)
+                if (world.threatened.Contains(RoomCoords.coordinates[tryCoordinate]))
                 {
-                    Debug.Log("MONSTER NEXT DOOR");
-                    AkSoundEngine.SetRTPCValue("Monster_Coming", 3);
-                }
-                else if (world.threatened.Contains(RoomCoords.coordinates[tryCoordinate]))
-                {
-                    AkSoundEngine.SetRTPCValue("Monster_Coming", 2);
+                    if (world.threatened[0] == RoomCoords.coordinates[tryCoordinate])
+                    {
+                        //Debug.Log("X:" + x);
+                        //Debug.Log("Y:" + y);
+                        //Debug.Log("MONSTER NEXT DOOR");
+                        AkSoundEngine.SetRTPCValue("Monster_Coming", 3);
+                    }
+                    else
+                    {
+                        AkSoundEngine.SetRTPCValue("Monster_Coming", 1);
+                    }
                     GetComponent<MONSTER_CLOSER>().Step();
                 }
                 else
+                {
+                    //Debug.Log("BYE");
                     GetComponent<MONSTER_TOO_FAR>().Bye();
+                }
             }
         }
         else if (!outside)

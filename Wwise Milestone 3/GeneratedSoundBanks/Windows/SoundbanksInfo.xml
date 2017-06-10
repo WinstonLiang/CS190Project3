@@ -52,6 +52,7 @@
 				<Event Id="230107777" Name="Room_Wet_Listen" ObjectPath="\Events\Default Work Unit\Room_Wet_Listen"/>
 				<Event Id="1460896616" Name="Room_Wet_Stand" ObjectPath="\Events\Default Work Unit\Room_Wet_Stand"/>
 				<Event Id="3801293363" Name="Room_Wet_Walk" ObjectPath="\Events\Default Work Unit\Room_Wet_Walk"/>
+				<Event Id="3647363293" Name="Walk_Stop" ObjectPath="\Events\Default Work Unit\Walk_Stop"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="29564569" Language="SFX">
