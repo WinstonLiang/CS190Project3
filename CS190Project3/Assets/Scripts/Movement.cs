@@ -36,7 +36,7 @@ public class Movement : MonoBehaviour {
     float constant = 4.5f;
     float timer = 0;
 
-    string direction;
+    public string direction;
 
     bool fail = false;
     float movingTimer = 1f;
@@ -45,6 +45,8 @@ public class Movement : MonoBehaviour {
     float deadTimer;
 
     bool replay;
+
+    float start = 0f;
 
     // Use this for initialization
     void Start () {
@@ -66,6 +68,8 @@ public class Movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+          if (start < 2.5f)
+               start += Time.deltaTime;
           if (fail && movingTimer < 1f)
           {
                movingTimer += Time.deltaTime;
@@ -125,7 +129,7 @@ public class Movement : MonoBehaviour {
                   UnityEngine.SceneManagement.SceneManager.LoadScene("map1");
              }
         }
-        if (!fail && !dead && !outside)
+        if (!fail && !dead && !outside && start >= 2.5f)
         {
              if (Input.GetKey("up"))
              {

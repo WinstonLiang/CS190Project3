@@ -100,6 +100,7 @@ public class GlobalTimer : MonoBehaviour {
             {
                 // Signal for all to move Debug
                 //Debug.Log("GONG");
+                 /*
                  moved = true;
                 foreach (GameObject thing in moving)
                 {
@@ -118,6 +119,32 @@ public class GlobalTimer : MonoBehaviour {
                         thing.GetComponent<MonsterMovement>().SwitchMove();
                         Monster = thing;
                     }
+                }
+                 */
+                foreach (GameObject thing in moving)
+                {
+                     if (thing.name == "SamplePlayer")
+                     {
+                          if (thing.GetComponent<Movement>().direction != "center")
+                          {
+                               moved = true;
+                               thing.GetComponent<Movement>().SwitchMove();
+                               if (thing.GetComponent<Movement>().currentRoom == Rooms.GetComponent<RoomGen>().exit)
+                               {
+                                    outside = true;
+                               }
+                               Player = thing;
+                          }
+                     }
+
+                }
+                foreach (GameObject thing in moving)
+                {
+                     if (thing.name == "SampleMonster" && moved)
+                     {
+                          thing.GetComponent<MonsterMovement>().SwitchMove();
+                          Monster = thing;
+                     }
                 }
 
                 int playerX = Player.GetComponent<Movement>().x;
@@ -160,6 +187,59 @@ public class GlobalTimer : MonoBehaviour {
 					Player.GetComponent<Movement>().dead = true;
                     GetComponent<_STOP_DEADEND>().SetDeadend();
 				}
+            }
+
+            if (timer > 6.5f && !moved)
+            {
+                 moved = true;
+                 foreach (GameObject thing in moving)
+                 {
+                      if (thing.name == "SampleMonster")
+                      {
+                           thing.GetComponent<MonsterMovement>().SwitchMove();
+                           Monster = thing;
+                      }
+                 }
+                 int playerX = Player.GetComponent<Movement>().x;
+                 int playerY = Player.GetComponent<Movement>().y;
+
+                 int monsterX = Monster.GetComponent<MonsterMovement>().x;
+                 int monsterY = Monster.GetComponent<MonsterMovement>().y;
+
+                 //Debug.Log(monsterX);
+                 //Debug.Log(monsterY);
+
+                 threatened = new List<ROOM>(5);
+
+                 threatened.Add(Monster.GetComponent<MonsterMovement>().currentRoom);
+
+                 for (int i = 1; i < 3; i++)
+                 {
+                      float mult = Mathf.Pow(-1, i);
+                      //Debug.Log("Mult:" + mult);
+                      int x = monsterX + (int)mult;
+                      int y = monsterY + (int)mult;
+
+                      //Debug.Log("X:" + x);
+                      //Debug.Log("Y:" + y);
+
+                      string tryCoordinateUD = monsterX.ToString() + y.ToString();
+                      string tryCoordinateLR = x.ToString() + monsterY.ToString();
+
+                      if (Rooms.GetComponent<RoomGen>().coordinates.ContainsKey(tryCoordinateUD))
+                           threatened.Add(Rooms.GetComponent<RoomGen>().coordinates[tryCoordinateUD]);
+                      if (Rooms.GetComponent<RoomGen>().coordinates.ContainsKey(tryCoordinateLR))
+                           threatened.Add(Rooms.GetComponent<RoomGen>().coordinates[tryCoordinateLR]);
+                 }
+
+                 bool sameRoom = Monster.GetComponent<MonsterMovement>().currentRoom == Player.GetComponent<Movement>().currentRoom;
+
+                 if (sameRoom && !Player.GetComponent<Movement>().dead)
+                 {
+                      Debug.Log("YOU DIED");
+                      Player.GetComponent<Movement>().dead = true;
+                      GetComponent<_STOP_DEADEND>().SetDeadend();
+                 }
             }
 
             if (timer >= 10)
