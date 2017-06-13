@@ -234,12 +234,12 @@ public class Movement : MonoBehaviour {
              if (deadTimer >= 8f)
              {
                   replay = true;
-                  shroud.GetComponent<SpriteRenderer>().sortingOrder = 3;
+                  shroud.GetComponent<SpriteRenderer>().sortingOrder = 5;
                   shroud.GetComponent<SpriteRenderer>().sprite = gameFrames[6];
              }
              else
              {
-                  shroud.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                  shroud.GetComponent<SpriteRenderer>().sortingOrder = 3;
              }
              if(!died)
                shroud.GetComponent<ParticleSystem>().Play();
