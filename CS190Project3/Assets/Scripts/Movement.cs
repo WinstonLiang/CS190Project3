@@ -350,6 +350,7 @@ public class Movement : MonoBehaviour {
                 {
                     AkSoundEngine.SetRTPCValue("Outside_Listen", 3);
                     GetComponent<_OUTSIDE>().TheBirds();
+                    RoomCoords.coordinates[tryCoordinate].Listen();
                 }
                 else if (RoomCoords.coordinates[tryCoordinate] != currentRoom)
                 {
