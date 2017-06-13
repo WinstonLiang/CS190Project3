@@ -28,6 +28,7 @@ public class Movement : MonoBehaviour {
     string currentPosition;
 
     bool playedSound;
+	bool playOnce;
 
     public int x = 0;
     public int y = 0;
@@ -51,6 +52,7 @@ public class Movement : MonoBehaviour {
          died = false;
          deadTimer = 0;
         playedSound = false;
+		playOnce = true;
         currentSpeed = 0.1f;
         currentPosition = currentRoom.coordinate;
 
@@ -246,7 +248,15 @@ public class Movement : MonoBehaviour {
              died = true;
         }
         if (outside)
-             winParticles.SetActive(true);
+		{
+			winParticles.SetActive(true);
+			if(playOnce)
+			{
+				playOnce = false;
+				AkSoundEngine.SetRTPCValue("Outside_Listen", 3);
+				GetComponent<_OUTSIDE>().TheBirds();
+			}
+		}
 			//live_text.SetActive(true);
 
         currentPosition = currentRoom.coordinate;
